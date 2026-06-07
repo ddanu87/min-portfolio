@@ -19,8 +19,8 @@ navLinks.forEach(link => {
 
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
-    const isClickInsideNav = navMenu.contains(e.target) || hamburger.contains(e.target);
-    if (!isClickInsideNav && navMenu.classList.contains('active')) {
+    const isClickInsideNav = navMenu && hamburger && (navMenu.contains(e.target) || hamburger.contains(e.target));
+    if (!isClickInsideNav && navMenu && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
     }
 });
@@ -98,7 +98,7 @@ if ('IntersectionObserver' in window) {
 const currentYear = new Date().getFullYear();
 const footerText = document.querySelector('footer p:first-child');
 if (footerText) {
-    footerText.textContent = `© ${currentYear} Daniel Anu | Multimediedesigner 1. semester`;
+    footerText.textContent = `© ${currentYear} Danusan Padmarajah | 1. semester portfolio`;
 }
 
 // Form handling (if needed in future)
