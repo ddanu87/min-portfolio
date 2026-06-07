@@ -1,26 +1,33 @@
-# Daniel Anu - 1. Semester Portfolio
+# Danusan Padmarajah - 1. semester portfolio
 
-## 📌 Projekt Beskrivelse
+## Projektbeskrivelse
 
-Dette er mit første semester portfolio for Multimediedesign uddannelsen på KEA. Portfolioet dokumenterer min udvikling som designer og udvikler, med fokus på web design, UX/UI, JavaScript og designproces.
+Dette repository indeholder mit portfolio-website til 1. semester på multimediedesigneruddannelsen.
 
-### Portfolio Website
-🌐 **Live:** https://ddanu87.github.io/min-portfolio/
+Portfolioet er udviklet for at samle mine projekter, min proces og min læring fra semesteret. Sitet viser, hvordan jeg har arbejdet med grundlæggende webudvikling, UX/UI, animation, brugerforståelse, designproces, indholdsstruktur og refleksion.
 
-### GitHub Repository
-📁 **Repository:** https://github.com/ddanu87/min-portfolio
+## Live website
+
+🌐 https://ddanu87.github.io/min-portfolio/
+
+## GitHub repository
+
+📁 https://github.com/ddanu87/min-portfolio
 
 ---
 
-## 🎯 Formål med Portfolioet
+## Formål
 
-Portfolioet skal:
-- Vise mine projekter fra 1. semester
-- Dokumentere min designproces (research → prototyping → kodning)
-- Reflektere over min læring og udvikling
-- Demonstrere tekniske færdigheder inden for frontend
-- Vise hvordan jeg håndterer udfordringer (bl.a. sygdom og fravær)
-- Dokumentere gruppearbejde og collaboration
+Formålet med portfolioet er at give et tydeligt overblik over:
+
+- hvem jeg er som studerende
+- hvilke projekter jeg har arbejdet med
+- hvordan jeg har arbejdet med design og udvikling
+- hvilke metoder og værktøjer jeg har brugt
+- hvad jeg har lært
+- hvad jeg ville forbedre fremadrettet
+
+Portfolioet dokumenterer både de færdige løsninger og processen bag dem.
 
 ---
 
@@ -35,12 +42,9 @@ min-portfolio/
 ├── style.css           # Styling for hele sitet
 ├── script.js           # JavaScript for interaktivitet
 ├── README.md           # Denne fil
-├── assets/             # Mappe til billeder, ikoner osv.
-└── docs/               # Dokumentation
+├── assets/             # Billeder, ikoner osv. (fremtidigt)
+└── docs/               # Dokumentation (fremtidigt)
 ```
-
-### Vigtig Note
-Alle HTML, CSS og JavaScript filer ligger direkte i roden af repositoryet, ikke inde i mapper. Dette er nødvendigt for at GitHub Pages kan finde `index.html` på forsiden.
 
 ---
 
@@ -57,261 +61,104 @@ Alle HTML, CSS og JavaScript filer ligger direkte i roden af repositoryet, ikke 
 - **VS Code** - Code editor
 
 ### Best Practices
-- Responsive Mobile-First Design
-- Semantic HTML
-- Accessibility (WCAG guidelines)
-- CSS Grid og Flexbox
-- Smooth Animations og Transitions
+- ✅ Responsive Mobile-First Design
+- ✅ Semantic HTML
+- ✅ CSS Grid og Flexbox
+- ✅ Smooth Animations og Transitions
 
 ---
 
 ## 📚 Projekter fra 1. Semester
 
 ### Tema 2: Computersite (HTML/CSS)
-**Beskrivelse:** Mit første webprojekt med grundlæggende HTML og CSS.
-
-**Fokusområder:**
+**Fokus:** Grundlæggende webudvikling
 - Semantisk HTML struktur
 - CSS layouting med Flexbox
 - Responsiv design
-- Mobile-first tilgang
+- [Se projekt](#) | [GitHub](https://github.com/ddanu87)
 
-**Læringsresultat:** Solid forståelse af HTML-semantik og CSS fundamentals.
-
----
-
-### Tema 3: OBBG.dk (UX/UI)
-**Beskrivelse:** UX/UI redesign projekt for Odense Bysorkester.
-
-**Fokusområder:**
-- Brugerundersøgelse (interviews, surveys)
-- Persona development
-- Wireframing i Figma
-- Interactive prototypes
-- Brugertest og feedback
-- Iterative design improvements
-
-**Læringsresultat:** Brugercentreret design metodologi og hvordan man itererer baseret på bruger feedback.
-
----
-
-### Tema 4: Royal Click Fighter (JavaScript/Animation)
-**Beskrivelse:** Interaktivt spil udviklet med HTML, CSS og JavaScript.
-
-**Fokusområder:**
-- JavaScript game mechanics
-- Event handling og listeners
-- CSS animations
-- Game state management
-- Score system og leaderboard
-- Testing og balancing
-
-**Læringsresultat:** Dybere forståelse af JavaScript og hvordan man skaber engaging brugeroplèvelser.
-
----
-
-### Tema 5: Virksomhedssite (Fullstack Frontend)
-**Beskrivelse:** Gruppeprojekt med professionelt website for virkelig virksomhed.
-
-**Fokusområder:**
-- Møde med stakeholder
-- Kravspecifikation
-- Fælles design system
-- HTML/CSS/JavaScript implementering
-- Git collaboration
+### Tema 3: UX/UI - OBBG.dk
+**Fokus:** Brugercentreret design
+- Brugerundersøgelse og persona-udvikling
+- Wireframes i Figma
+- Interactive prototyper
 - Brugertest og iteration
-- SEO og performance
+- [Se projekt](#) | [GitHub](https://github.com/ddanu87)
 
-**Læringsresultat:** Helhed fra concept til launch, teamsamarbejde, og professionel udviklerproces.
+### Tema 4: Royal Click Fighter
+**Fokus:** JavaScript og animation
+- Klikbaseret browser-spil
+- JavaScript game mechanics
+- CSS animationer
+- Event handling og score system
+- [Se projekt](#) | [GitHub](https://github.com/ddanu87)
 
----
-
-## 🔄 Min Designproces
-
-### 1. Research & Analyse
-- Forstå problemet og målgruppen
-- Brugerundersøgelse
-- Konkurrentanalyse
-
-### 2. Ideudvikling
-- Brainstorming
-- Rapid sketching
-- Konceptualisering
-
-### 3. Moodboard & Stilguide
-- Farvepalette
-- Typografi
-- Design systemet
-
-### 4. Wireframing
-- Low-fidelity layouts
-- Information architecture
-- Brugerflow mapping
-
-### 5. Prototyping
-- High-fidelity mockups
-- Interactive prototypes
-- Animation planning
-
-### 6. Brugertest
-- Test med rigtige brugere
-- Indsamle feedback
-- Identificer problemer
-
-### 7. Kodning
-- Implementer design i HTML/CSS/JS
+### Tema 5: Virksomhedssite
+**Fokus:** Fullstack frontend og teamsamarbejde
+- Targetgruppe-analyse
+- Indholdsstruktur
+- Visuel identitet
 - Responsiv design
-- Cross-browser testing
-
-### 8. Optimering
-- Performance tuning
-- Accessibility kontrol
-- SEO optimization
-
-### 9. Iteration
-- Analytics review
-- User feedback implementation
-- Continuous improvement
+- Brugertest
+- [Se projekt](#) | [GitHub](https://github.com/ddanu87)
 
 ---
 
-## 🎨 Accessibility & Responsivt Design
+## 🎯 Min Designproces
 
-### Accessibility (WCAG 2.1)
-- ✅ Semantisk HTML struktur
-- ✅ Alt text på billeder
-- ✅ Proper heading hierarchy
-- ✅ Color contrast compliance
-- ✅ Keyboard navigation
-- ✅ Focus indicators
-- ✅ ARIA labels hvor relevant
+1. **Research & Analyse** - Forståelse for problem og målgruppe
+2. **Ideudvikling** - Brainstorming og koncepter
+3. **Moodboard & Stilguide** - Visuelt udtryk
+4. **Wireframes** - Struktur uden visuelle elementer
+5. **Prototyping** - High-fidelity mockups
+6. **Brugertest** - Test med rigtige brugere
+7. **Kodning** - Implementering i HTML/CSS/JS
+8. **Test & Optimering** - Cross-browser, performance, accessibility
+9. **Iteration** - Løbende forbedringer
 
-### Responsive Design
-- ✅ Mobile-first CSS
-- ✅ Flexbox & Grid layouts
-- ✅ Media queries for different breakpoints
-- ✅ Fluid typography
-- ✅ Touch-friendly buttons & links
-- ✅ Tested on:
-  - iPhone, iPad
-  - Android devices
-  - Desktop (Chrome, Firefox, Safari, Edge)
+Se mere på [Proces siden](proces.html).
 
 ---
 
-## 🚀 GitHub Pages Setup
+## 🔄 GitHub Pages Setup
 
-Portfolioet hostes på GitHub Pages og deployes automatisk når jeg pusher til `main` branch.
+Portfolioet hostes på GitHub Pages og deployes automatisk fra `main` branch.
 
-### Aktivering af GitHub Pages
-1. Gå til Repository Settings
-2. Vælg "Pages" i venstre menu
-3. Vælg "Deploy from a branch"
-4. Branch: `main`
-5. Folder: `/ (root)`
-6. Click "Save"
-
-**Portfolio vil være tilgængelig på:** https://ddanu87.github.io/min-portfolio/
+### Aktivering:
+1. Gå til Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `main`
+4. Folder: `/ (root)`
+5. Save
 
 ---
 
-## 📤 Aflevering i WISEflow
-
-Portfolioet bliver afleveret som:
-
-1. **Portfolio Website Link:**
-   https://ddanu87.github.io/min-portfolio/
-
-2. **GitHub Repository Link:**
-   https://github.com/ddanu87/min-portfolio
-
-### Hvad der vises i portfolioet:
-- ✅ Forside med kort introduktion
-- ✅ Portfolio side med alle 4 projekter
-- ✅ Proces side med detaljeret forklaring
-- ✅ Om mig side med refleksion
-- ✅ Responsive design der virker på alle devices
-- ✅ GitHub Pages aktiveret
-- ✅ Alle kilder dokumenteret
-
----
-
-## 🧠 Refleksion Over 1. Semester
+## 💡 Refleksion over 1. Semester
 
 ### Hvad er gået godt?
-- Udviklet solid foundation i HTML/CSS/JavaScript
-- Lært brugercentreret design metodologi
-- Erfaring med teamsamarbejde og Git
-- Forståelse for designproces og iteration
-- Håndteret udfordringer (sygdom) konstruktivt
+- Udviklet forståelse for sammenhængen mellem design og kode
+- Lært brugercentreret designproces
+- Erfaring med teamsamarbejde
 
-### Hvad kan forbedres?
-- Bedre tidsplanlægning fra dag 1
-- Dybere JavaScript fra start
-- Mere proaktiv kommunikation i grupper
-- Tidligere start på dokumentation
+### Hvad kunne forbedres?
+- Mere løbende dokumentation
+- Tidligere brugertest
+- Bedre tidsplanering
 
-### Learnings
-1. **User-centric thinking er vigtig** - All decisions should be based on user needs
-2. **Iteration beats perfection** - Feedback og continuous improvement
-3. **Communication matters** - Clear communication prevents problems
-4. **Process before pixels** - Good process leads to better design
-5. **Resilience** - Hvordan man håndterer setbacks og fortsætter
-
-### Fremtidsmål for 2. Semester
-- Lær backend teknologi (Node.js, databases)
-- Gå dybere ind i JavaScript frameworks (React)
-- Fokus på performance optimization
-- Mere komplekse interaktive features
-- Maintain high accessibility standards
-
----
-
-## 📝 Installation & Kørsel Lokalt
-
-### Clone repositoryet
-```bash
-git clone https://github.com/ddanu87/min-portfolio.git
-cd min-portfolio
-```
-
-### Åbn lokalt
-Brug en live server (fx VS Code Live Server extension):
-```bash
-# Hvis du har VS Code
-# 1. Install Live Server extension
-# 2. Right-click index.html
-# 3. "Open with Live Server"
-```
-
-Eller åbn direkte i browser:
-```
-file:///path/to/min-portfolio/index.html
-```
-
----
-
-## 🔗 Links
-
-- **Portfolio:** https://ddanu87.github.io/min-portfolio/
-- **GitHub:** https://github.com/ddanu87
-- **WISEflow:** (Aflevering her)
+### Næste skridt
+- Dybere JavaScript
+- Backend teknologi
+- Mere komplekse features
 
 ---
 
 ## 📞 Kontakt
 
-**Daniel Anu**  
-Multimediedesigner Studerende - KEA  
-GitHub: [@ddanu87](https://github.com/ddanu87)  
-
----
-
-## 📄 Licens
-
-Projektet er lavet til uddannelsesmål som en del af 1. semester på Multimediedesign, KEA.
+**Danusan Padmarajah**  
+Multimediedesigner Studerende  
+GitHub: [@ddanu87](https://github.com/ddanu87)
 
 ---
 
 **Sidst opdateret:** Juni 2026  
-**Version:** 1.0 - Initial Portfolio Setup
+**Version:** 1.0 - Portfolio Setup
