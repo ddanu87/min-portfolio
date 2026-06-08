@@ -696,3 +696,26 @@ footer a:hover {
         padding: 0 15px;
     }
 }
+/* Exam cleanup additions */
+.project-card p strong {
+  color: #333;
+}
+
+footer a {
+  color: #00d9ff;
+}
+
+button.hamburger {
+  background: transparent;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+}
