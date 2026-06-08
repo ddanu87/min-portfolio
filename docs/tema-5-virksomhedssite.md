@@ -27,6 +27,10 @@ Løsningen blev et virksomhedssite med fokus på Bird Bars stemning. Designet br
 - Kodeeksempler fra HTML og CSS
 - Brugertest og refleksion
 
+## Links
+
+- Figma proces og design: https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn
+
 ## Værktøjer
 
 - Figma
