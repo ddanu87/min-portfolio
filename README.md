@@ -2,9 +2,9 @@
 
 ## Projektbeskrivelse
 
-Dette repository indeholder mit portfolio-website til 1. semester på multimediedesigneruddannelsen.
+Dette repository indeholder mit portfolio-website til 1. semester på multimediedesign.
 
-Portfolioet er udviklet for at samle mine projekter, min proces og min læring fra semesteret. Sitet viser, hvordan jeg har arbejdet med grundlæggende webudvikling, UX/UI, animation, brugerforståelse, designproces, indholdsstruktur og refleksion.
+Portfolioet viser mine projekter, min proces, mine refleksioner og min læring fra 1. semester. Sitet er udviklet med HTML, CSS og JavaScript og er designet til at være responsivt.
 
 ## Live website
 
@@ -16,16 +16,22 @@ https://github.com/ddanu87/min-portfolio
 
 ## Formål
 
-Formålet med portfolioet er at give et tydeligt overblik over:
+Formålet med portfolioet er at vise mit arbejde og min læring fra 1. semester. Besøgende skal kunne se mine projekter, forstå min proces og læse mine refleksioner.
 
-- hvem jeg er som studerende
-- hvilke projekter jeg har arbejdet med
-- hvordan jeg har arbejdet med design og udvikling
-- hvilke metoder og værktøjer jeg har brugt
-- hvad jeg har lært
-- hvad jeg ville forbedre fremadrettet
+Portfolioet opfylder kravene ved at være opbygget med:
 
-Portfolioet dokumenterer både de færdige løsninger og processen bag dem.
+- Forside
+- Portfolio-side
+- Proces-side
+- Om mig-side
+- HTML, CSS og JavaScript
+- Responsivt design
+- Dokumentation
+- GitHub Pages-link
+- Public GitHub repository
+- Projekter fra 1. semester
+- Løsning, proces og læring/refleksion for hvert tema
+- Links, tekst og billeder/dokumentation for hvert tema
 
 ## Struktur
 
@@ -33,29 +39,31 @@ Repositoryet indeholder:
 
 - `index.html` - forside
 - `portfolio.html` - projekter fra 1. semester
-- `proces.html` - proces, sygdom/fravær, gruppearbejde og refleksion
-- `om-mig.html` - personlig side og samlet læring
+- `proces.html` - proces og refleksion
+- `om-mig.html` - om mig og min faglige udvikling
 - `style.css` - styling og responsivt layout
-- `script.js` - mobilmenu og simple interaktioner
-- `README.md` - dokumentation
+- `script.js` - JavaScript til mobilmenu og interaktion
+- `README.md` - projektbeskrivelse og dokumentation
+- `docs/` - yderligere dokumentation og eksamensmateriale
+- `assets/` - billeder og grafisk materiale
 
 ## Projekter
 
 ### Tema 2: Grundlæggende web
 
-Jeg arbejdede med et computersite og lærte grundlæggende HTML, CSS, filstruktur, navigation og responsivt layout.
+Computersite med fokus på HTML, CSS, navigation, filstruktur og responsivt layout.
 
 ### Tema 3: UX/UI
 
-Jeg arbejdede med OBBG.dk som fiktivt UX/UI-koncept med research, målgruppe, wireframes, prototype, visuel identitet og refleksion over brugeroplevelse.
+OBBG.dk som fiktivt UX/UI-projekt med research, wireframes, prototype og designvalg.
 
 ### Tema 4: Royal Click Fighter
 
-Jeg udviklede et klikbaseret browser-spil med HTML, CSS og JavaScript. Projektet viser arbejde med interaktion, point, liv, timer, feedback og spilmekanik.
+Klikbaseret browser-spil med JavaScript, animation, point, timer og brugerfeedback.
 
 ### Tema 5: Virksomhedssite
 
-Jeg arbejdede med et virksomhedssite med fokus på målgruppe, indholdsstruktur, visuel identitet, responsivt design, gruppearbejde og brugertest.
+Virksomhedssite med fokus på målgruppe, indholdsstruktur, visuel identitet, brugertest og gruppearbejde.
 
 ## Teknologier
 
@@ -68,7 +76,7 @@ Jeg arbejdede med et virksomhedssite med fokus på målgruppe, indholdsstruktur,
 
 ## Proces
 
-Min proces har bestået af:
+Min proces bestod af:
 
 1. Forståelse af opgaven
 2. Indsamling af materiale
@@ -81,33 +89,16 @@ Min proces har bestået af:
 
 ## Sygdom, fravær og gruppearbejde
 
-Mit semester har været påvirket af sygdom og fravær. Det har gjort processen mere ujævn, især i forbindelse med gruppearbejde og løbende dokumentation.
+Mit semester har været påvirket af sygdom og fravær. Det har gjort processen mere ujævn, men det er beskrevet som faglig refleksion. Jeg har lært, at struktur, kommunikation og dokumentation er afgørende i teamprojekter.
 
-Jeg bruger ikke dette som en undskyldning, men som en refleksion over min proces. Det har lært mig, at kommunikation, planlægning, rollefordeling og dokumentation er vigtigt i digitale projekter.
+## Dokumentationsmappe
 
-## Accessibility og responsivt design
+Se `docs/` for detaljerede dokumenter om eksamenskrav, proces, spillet Royal Click Fighter, UX/UI-projektet OBBG.dk, brugertest, kodeforklaring, mundtlig præsentation, tjekliste og afleveringslinks.
 
-Jeg har arbejdet med:
-
-- semantisk HTML
-- tydelig navigation
-- læsbar tekst
-- responsivt layout
-- mobilvenlig menu
-- struktur med overskrifter og sektioner
-
-## Aflevering i WISEflow
-
-De to afleveringslinks er:
+## WISEflow
 
 Portfolio website:
 https://ddanu87.github.io/min-portfolio/
 
 GitHub repository:
 https://github.com/ddanu87/min-portfolio
-
-## Samlet refleksion
-
-Portfolioet viser min udvikling gennem 1. semester. Jeg har arbejdet med webudvikling, UX/UI, animation, brugertest, designproces og refleksion.
-
-Det vigtigste jeg har lært er, at en digital løsning ikke kun handler om udseende. Den skal også være struktureret, brugervenlig, tilgængelig og teknisk forståelig.

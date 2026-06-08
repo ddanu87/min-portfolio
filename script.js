@@ -43,7 +43,7 @@ if ('IntersectionObserver' in window) {
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-  const cards = document.querySelectorAll('.project-card, .highlight-card, .learning-card, .process-step, .challenge-box');
+  const cards = document.querySelectorAll('.project-card, .highlight-card, .process-step, .challenge-box');
   cards.forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
