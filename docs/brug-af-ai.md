@@ -1,13 +1,24 @@
 # Brug af AI
 
 ## Hvad
-AI er brugt som støtte til tekst, struktur og overblik.
+
+AI er brugt som støtteværktøj i arbejdet med portfolioet.
 
 ## Hvor
-AI er brugt til portfolio-tekster, README, dokumentationsfiler, tjekliste og formulering af refleksion.
+
+AI er brugt til:
+
+- struktur på portfolioet
+- formulering af tekst
+- README
+- dokumentationsfiler
+- tjekliste
+- refleksion over proces og læring
 
 ## Hvordan
-Jeg har givet mine egne projekter, links og beskrivelser som grundlag. AI har hjulpet med at gøre teksten mere klar og opdelt.
+
+Jeg har givet mine egne projekter, links, beskrivelser og krav som grundlag. AI har hjulpet med at gøre teksten mere klar, mere sammenhængende og mere eksamensrettet.
 
 ## Hvorfor
-Formålet var at skabe bedre overblik, undgå sammenblanding af projekter og sikre, at dokumentationen svarer på opgave, proces, løsning
+
+Jeg brugte AI for at skabe bedre overblik, undgå at projekterne blev
