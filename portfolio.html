@@ -3,74 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio med projekter fra 1. semester: computersite, UX/UI, Royal Click Fighter og virksomhedssite.">
+  <meta name="description" content="Portfolio med projekter fra 1. semester: computersite, OBBG emnesite, Royal Click Fighter og virksomhedssite.">
   <title>Portfolio | Danusan Padmarajah</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .projects-grid {
-      align-items: stretch;
-    }
-
-    .project-card {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-visual {
-      margin: 0;
-      background: #111827;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    }
-
-    .project-image {
-      display: block;
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      object-position: center;
-      background: #111827;
-    }
-
-    .project-visual figcaption {
-      padding: 0.85rem 1rem;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #e5e7eb;
-      background: #111827;
-    }
-
-    .image-role {
-      display: inline-block;
-      margin-bottom: 0.35rem;
-      padding: 0.2rem 0.55rem;
-      border-radius: 999px;
-      background: rgba(0, 217, 255, 0.16);
-      color: #7dd3fc;
-      font-weight: 700;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .project-content {
-      flex: 1;
-    }
-
-    .project-note {
-      margin-top: 1rem;
-      padding: 0.9rem 1rem;
-      border-left: 4px solid #667eea;
-      border-radius: 6px;
-      background: #f4f6ff;
-      color: #374151;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 700px) {
-      .project-image {
-        height: 190px;
-      }
-    }
+    .projects-grid { align-items: stretch; }
+    .project-card { display: flex; flex-direction: column; }
+    .project-visual { margin: 0; background: #111827; border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+    .project-image { display: block; width: 100%; height: 230px; object-fit: cover; object-position: center; background: #111827; }
+    .project-visual figcaption { padding: 0.85rem 1rem; font-size: 0.9rem; line-height: 1.5; color: #e5e7eb; background: #111827; }
+    .image-role { display: inline-block; margin-bottom: 0.35rem; padding: 0.2rem 0.55rem; border-radius: 999px; background: rgba(0, 217, 255, 0.16); color: #7dd3fc; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .project-content { flex: 1; }
+    .project-note { margin-top: 1rem; padding: 0.9rem 1rem; border-left: 4px solid #667eea; border-radius: 6px; background: #f4f6ff; color: #374151; font-size: 0.95rem; }
+    @media (max-width: 700px) { .project-image { height: 190px; } }
   </style>
 </head>
 <body>
@@ -91,7 +36,7 @@
     <section class="page-header">
       <div class="container">
         <h1>Mine projekter</h1>
-        <p>Fire projekter fra 1. semester. Hvert billede er nu sat ind med en tydelig funktion: enten som screenshot, stemningsbillede, visuel identitet eller procesdokumentation.</p>
+        <p>Fire projekter fra 1. semester. Hvert projekt viser opgave, proces, løsning, læring og refleksion.</p>
       </div>
     </section>
 
@@ -112,27 +57,27 @@
               <p><strong>Hvorfor:</strong> Projektet viser grundlæggende webudvikling med HTML, CSS og filstruktur.</p>
               <p><strong>Hvordan:</strong> HTML bruges til struktur, og CSS bruges til layout, farver, typografi og responsivt design.</p>
               <p><strong>Læring:</strong> Jeg lærte, hvordan struktur og styling arbejder sammen i et website.</p>
-              <div class="project-note">Billedet fungerer som dokumentation af resultatet, ikke som dekoration.</div>
+              <div class="project-note">Dette projekt viser fundamentet for resten af semesteret: struktur, layout og navigation.</div>
               <div class="project-links"><a href="docs/tema-2-computersite.md">Tema-dokumentation</a> · <a href="docs/kodeforklaring.md">Kodeforklaring</a> · <a href="docs/billeder-materialer.md">Billeder</a></div>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3>Tema 3: UX/UI / OBBG.dk</h3>
-              <span class="project-tags"><span class="tag">UX/UI</span><span class="tag">Figma</span><span class="tag">Brugertest</span></span>
+              <h3>Tema 3: Sandkassesite / Emnesite - OBBG.dk</h3>
+              <span class="project-tags"><span class="tag">UX/UI</span><span class="tag">Research</span><span class="tag">Figma</span><span class="tag">Brugertest</span></span>
             </div>
             <figure class="project-visual">
-              <img src="assets/obbg-screenshot.jpg" alt="OBBG.dk interface med cyberstil, brætspil og betting-univers" class="project-image">
-              <figcaption><span class="image-role">Visuel identitet</span><br>Billedet bruges til at forklare OBBG.dk-konceptets digitale univers: strategi, brætspil, neonfarver og teknologisk betting-platform.</figcaption>
+              <img src="assets/obbg-screenshot.jpg" alt="OBBG.dk emnesite med mørk visuel stil og strategisk spilunivers" class="project-image">
+              <figcaption><span class="image-role">Emnesite</span><br>Billedet bruges til at forklare OBBG.dk som sandkasse- og emnesite med research, wireframes, prototype, test og kodet løsning.</figcaption>
             </figure>
             <div class="project-content">
-              <p><strong>Hvad:</strong> Et UX/UI-projekt med målgruppe, prototype, visuel identitet og kodet site.</p>
-              <p><strong>Hvorfor:</strong> Projektet viser, hvordan et digitalt koncept udvikles med fokus på brugerens behov.</p>
-              <p><strong>Hvordan:</strong> Jeg arbejdede med research, Figma, brugerflow, prototype og kodning.</p>
-              <p><strong>Læring:</strong> Jeg lærte, at UX/UI handler om navigation, informationsstruktur og tydelig kommunikation.</p>
-              <div class="project-note">OBBG-billedet er nu sat som projektets visuelle identitet, så det ikke virker som et tilfældigt billede.</div>
-              <div class="project-links"><a href="https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&t=O4wCwWObGDOfGKJw-1" target="_blank" rel="noopener">Figma</a> · <a href="https://obbg.dk/kea/03_ux/01_kodet_site/index.html" target="_blank" rel="noopener">Kodet site</a> · <a href="docs/tema-3-uxui-obbg.md">Tema-dokumentation</a></div>
+              <p><strong>Hvad:</strong> Et fiktivt emnesite om OBBG.dk med fokus på digital brugeroplevelse, visuel identitet og tydelig navigation.</p>
+              <p><strong>Hvorfor:</strong> Projektet viser, hvordan et digitalt koncept kan udvikles med research, målgruppe, brugerflow og test.</p>
+              <p><strong>Hvordan:</strong> Jeg arbejdede med research, moodboard, styletile, wireframes, prototype, brugertest og kodet site.</p>
+              <p><strong>Læring:</strong> Jeg lærte, at UX/UI handler om at forbinde brugerbehov, struktur, visuelt design og teknisk løsning.</p>
+              <div class="project-note">Det rigtige materiale til OBBG.dk er Figma-processen: moodboard, research, wireframes, prototype, test og kode.</div>
+              <div class="project-links"><a href="docs/tema-3-uxui-obbg.md">Tema-dokumentation</a></div>
             </div>
           </article>
 
@@ -146,30 +91,30 @@
               <figcaption><span class="image-role">Spilinterface</span><br>Billedet viser spillets visuelle stil og bruges til at forklare koblingen mellem JavaScript, brugerfeedback og spilmekanik.</figcaption>
             </figure>
             <div class="project-content">
-              <p><strong>Hvad:</strong> Royal Click Fighter er et klikbaseret browser-spil.</p>
+              <p><strong>Hvad:</strong> Royal Click Fighter er et klikbaseret browserspil.</p>
               <p><strong>Hvorfor:</strong> Projektet viser JavaScript, events, timer, point, liv og brugerfeedback.</p>
               <p><strong>Hvordan:</strong> Jeg brugte papirprototype, aktivitetsdiagram, HTML, CSS og JavaScript.</p>
               <p><strong>Læring:</strong> Jeg lærte, hvordan JavaScript kan styre interaktion og spiltilstande.</p>
-              <div class="project-note">Billedet er placeret som interface-dokumentation, fordi projektets vigtigste fokus er interaktion.</div>
+              <div class="project-note">Projektet var vigtigt, fordi det gjorde JavaScript konkret gennem regler, point, liv og feedback.</div>
               <div class="project-links"><a href="docs/tema-4-royal-click-fighter.md">Tema-dokumentation</a> · <a href="docs/royal-click-fighter-dokumentation.md">Spildokumentation</a> · <a href="docs/brugertest-og-feedback.md">Feedback</a></div>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3>Tema 5: Virksomhedssite</h3>
-              <span class="project-tags"><span class="tag">Gruppearbejde</span><span class="tag">UX</span><span class="tag">Kodning</span></span>
+              <h3>Tema 5: Virksomhedssite / Bird Bar</h3>
+              <span class="project-tags"><span class="tag">Gruppearbejde</span><span class="tag">Research</span><span class="tag">UX</span><span class="tag">Kodning</span></span>
             </div>
             <figure class="project-visual">
-              <img src="assets/virksomhedssite-screenshot.jpg" alt="Virksomhedssite screenshot med layout, billeder og indhold" class="project-image">
-              <figcaption><span class="image-role">Resultat</span><br>Billedet viser det færdige virksomhedssite og dokumenterer sammenhængen mellem afsender, målgruppe, indhold og layout.</figcaption>
+              <img src="assets/virksomhedssite-screenshot.jpg" alt="Virksomhedssite for Bird Bar med layout, billeder og indhold" class="project-image">
+              <figcaption><span class="image-role">Virksomhedssite</span><br>Billedet bruges til at forklare Bird Bar-projektet med research, planlægning, wireframes, færdige sider, kode og test.</figcaption>
             </figure>
             <div class="project-content">
-              <p><strong>Hvad:</strong> Et virksomhedssite udviklet som gruppeprojekt.</p>
-              <p><strong>Hvorfor:</strong> Projektet viser sammenhæng mellem afsender, målgruppe, indhold, design og teknik.</p>
-              <p><strong>Hvordan:</strong> Vi arbejdede med research, målgruppe, wireframes, brugertest, billeder og kodning.</p>
-              <p><strong>Læring:</strong> Jeg lærte, at kommunikation, rollefordeling og dokumentation er vigtigt i gruppearbejde.</p>
-              <div class="project-note">Billedet er ikke bare pynt. Det viser, hvordan det endelige site blev løst visuelt.</div>
+              <p><strong>Hvad:</strong> Et virksomhedssite for Bird Bar udviklet som gruppeprojekt.</p>
+              <p><strong>Hvorfor:</strong> Projektet viser sammenhæng mellem afsender, målgruppe, indhold, visuel identitet og responsivt website.</p>
+              <p><strong>Hvordan:</strong> Vi arbejdede med research, målgruppe, moodboard, wireframes, prototyper, billeder, HTML, CSS og test.</p>
+              <p><strong>Læring:</strong> Jeg lærte, at et virksomhedssite skal koble virksomhedens stemning med brugerens behov og den tekniske løsning.</p>
+              <div class="project-note">Det rigtige materiale til dette projekt er Bird Bar-processen: research, planlægning, prototyper, færdigt produkt, kode og test.</div>
               <div class="project-links"><a href="docs/tema-5-virksomhedssite.md">Tema-dokumentation</a> · <a href="docs/proces-dokumentation.md">Proces</a> · <a href="docs/brugertest-og-feedback.md">Brugertest</a></div>
             </div>
           </article>
