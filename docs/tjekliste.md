@@ -11,7 +11,7 @@
 - [ ] Sitet virker på mobil
 - [ ] Sitet virker på desktop
 - [ ] Der står Danusan Padmarajah alle steder
-- [ ] Der står ikke Daniel Anu nogen steder
+- [ ] Der står ikke et forkert navn nogen steder
 - [ ] Der findes ingen tomme href="#" links
 
 ## GitHub
