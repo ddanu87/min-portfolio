@@ -1,19 +1,19 @@
 # Billeder og materialer
 
-## Formål
+## Hvad
 Billederne viser de fire projekter visuelt.
 
-## Placering
-Billederne er placeret i `assets/` og bruges på `portfolio.html`.
+## Hvor
+De ligger i `assets/` og bruges på `portfolio.html`.
+
+## Hvorfor
+Hvert tema skal have tekst, link og billede. Billederne gør forskellen mellem projekterne tydelig.
 
 ## Oversigt
-- `computersite-screenshot.jpg`: Tema 2.
-- `obbg-screenshot.jpg`: Tema 3.
-- `royal-click-fighter-screenshot.jpg`: Tema 4.
-- `virksomhedssite-screenshot.jpg`: Tema 5.
+- `assets/computersite-screenshot.jpg` - Tema 2.
+- `assets/obbg-screenshot.jpg` - Tema 3.
+- `assets/royal-click-fighter-screenshot.jpg` - Tema 4.
+- `assets/virksomhedssite-screenshot.jpg` - Tema 5.
 
-## Brug
-Hvert billede støtter teksten om løsning, proces og læring.
-
-## Refleksion
-Billederne gør portfolioet lettere at forstå, men forklarer ikke processen alene. Derfor bruges de sammen med tekst, links og dokumentation.
+## Hvordan
+Billederne er sat ind med `img` i HTML og stylet med `.project-image` i CSS.
