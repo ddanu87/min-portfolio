@@ -1,10 +1,10 @@
 # Eksamenskrav
 
-Dette dokument samler kravene til portfolioet og forklarer, hvordan portfolioet opfylder dem.
+Dette dokument forklarer, hvordan portfolioet opfylder kravene til 1. semester portfolioeksamen.
 
 ## Formål
 
-Portfolioet skal vise min faglige udvikling fra 1. semester på multimediedesign. Det skal ikke kun være et website, men også dokumentere min proces, mine valg, min læring og mine refleksioner.
+Portfolioet viser min faglige udvikling fra 1. semester på multimediedesign. Det dokumenterer proces, valg, læring og refleksion.
 
 ## Rød tråd
 
@@ -12,4 +12,4 @@ Jeg har på 1. semester lært at udvikle digitale løsninger fra idé til færdi
 
 ## Struktur på sitet
 
-Portfolioet består
+Portfolio
