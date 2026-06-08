@@ -1,31 +1,59 @@
-# Tema 3 - UX/UI - OBBG.dk
+# Tema 3 - Sandkassesite / Emnesite - OBBG.dk
 
 ## Hvad
-Jeg arbejdede med UX/UI-projektet OBBG.dk. Projektet indeholder målgruppe, wireframes, prototype, visuel identitet og kodet site.
+
+Jeg arbejdede med OBBG.dk som et sandkasse- og emnesite. Projektet handler om at udvikle et digitalt koncept med fokus på research, målgruppe, brugerflow, wireframes, prototype, brugertest og kodet løsning.
 
 ## Hvorfor
-Projektet blev lavet for at lære, hvordan man udvikler et digitalt koncept med fokus på brugerens behov.
 
-## Hvordan
-Jeg arbejdede med research, målgruppe, brugerflow, Figma, prototype, designvalg og kodet løsning.
+Projektet blev lavet for at lære, hvordan man udvikler et digitalt koncept fra ide til færdigt website. Fokus var på brugerens behov, informationsstruktur, visuel identitet og tydelig navigation.
+
+## Proces
+
+Processen bestod af:
+
+- research af lignende digitale platforme
+- målgruppe og brugerbehov
+- moodboard og visuel retning
+- styletile med farver, typografi og UI-elementer
+- wireframes til desktop og mobil
+- prototype i Figma
+- brugertest og analyse af feedback
+- kodet site med HTML, CSS og JavaScript
 
 ## Løsning
-Løsningen blev et fiktivt UX/UI-koncept med prototype og kodet website.
+
+Løsningen blev et fiktivt emnesite med mørk visuel stil, grønne detaljer, tydelig navigation og fokus på brugerflow. Designet skulle give en teknologisk og strategisk stemning.
+
+## Materiale jeg kan vise til eksamen
+
+- Research og ideudvikling
+- Moodboard
+- Wireframes
+- Prototype
+- Styletile
+- Brugertest og analyse
+- Kodet website
+- Dokumentation af HTML, CSS og JavaScript
 
 ## Links
-- Prototype: https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465
+
 - Figma: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&t=O4wCwWObGDOfGKJw-1
 - Kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
 
 ## Værktøjer
+
 - Figma
 - HTML
 - CSS
-- UX-metoder
+- JavaScript
+- Brugertest
 - Browser-test
 
 ## Læring
-Jeg lærte, at UX/UI handler om brugerens behov, navigation, informationsstruktur og tydelig kommunikation.
+
+Jeg lærte, at et emnesite ikke kun handler om visuelt design. Det handler også om at kunne forklare målgruppe, brugerbehov, struktur, brugerflow, visuel identitet, testresultater og tekniske valg.
 
 ## Refleksion
-Sygdom påvirkede præsentationen, men materialet blev færdiggjort. Hvis jeg arbejdede videre, ville jeg lave mere brugertest og arbejde mere med accessibility, jura, etik og datasikkerhed.
+
+Hvis jeg skulle arbejde videre med OBBG.dk, ville jeg gøre testresultaterne mere tydelige, forbedre accessibility og arbejde endnu mere med troværdighed og ansvarlig kommunikation. Projektet lærte mig, at struktur, læsbarhed og tydelige valg er vigtigt, når man udvikler et digitalt koncept.
