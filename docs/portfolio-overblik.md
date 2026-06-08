@@ -15,4 +15,4 @@ Royal Click Fighter. Fokus: JavaScript, spilmekanik, point, liv og timer.
 Virksomhedssite. Fokus: målgruppe, indhold, visuel identitet og gruppearbejde.
 
 ## Rød tråd
-Fra grundlæggende web til UX/UI, animation og samlet
+Portfolio
