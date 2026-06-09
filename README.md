@@ -15,6 +15,7 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 - `portfolio.html` - fire projekter fra 1. semester med billeder, links, løsning, proces, læring og refleksion
 - `proces.html` - før, under og efter udviklingen af portfolioet
 - `om-mig.html` - afsender, portræt, uddannelse, kompetencer og refleksion
+- `mobilsite/index.html` - intern Tema 2-løsning for Grundlæggende web / Mobilsite
 - `obbg-figma.html` - Figma, FigJam/proces og kodet site til OBBG.dk
 - `birdbar-figma.html` - Figma-link til Bird Bar
 - `tema-2-mobilsite.html`, `tema-3-emnesite-obbg.html`, `tema-4-animation.html`, `tema-5-virksomhedssite.html` - klikbare dokumentationssider
@@ -23,7 +24,7 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 
 ## Projekter
 
-1. Tema 2 - Mobilsite / desktop-udbygning
+1. Tema 2 - Grundlæggende web / Mobilsite
 2. Tema 3 - OBBG.dk / emnesite og sandkassesite
 3. Tema 4 - Animation og spil / Royal Click Fighter
 4. Tema 5 - Virksomhedssite/redesign - Bird Bar
@@ -40,6 +41,7 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 ## Assets og dokumentation
 
 - Portfolioens billeder ligger i `assets/images/` og bruges via normale filstier eller projektlinks.
+- Den interne Tema 2-løsning ligger i `mobilsite/`.
 - De klikbare dokumentationssider ligger i roden som HTML-sider.
 - Baggrundsnoter og eksamensforberedelse ligger i `docs/`.
 
