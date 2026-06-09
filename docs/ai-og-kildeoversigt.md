@@ -35,13 +35,16 @@ Jeg har selv gennemgået indholdet og skal kunne forklare:
 - Eksamensinformation for 1. semester, forår 2026
 - T06 Portfolio-eksamen, forår 2026
 - Egne projekter og noter fra 1. semester
-- Egne Figma-filer og prototyper
+- `01_website/mobilesite` - Tema 2 mobilesite/desktop-udbygning
+- `02_emnesite` og `03_ux/01_kodet_site` - OBBG emnesite/sandkassesite
+- `04_animation` - Royal Click Fighter
+- Egne Figma/FigJam-filer og prototyper
 - Egne screenshots og procesmaterialer
 - GitHub Pages og GitHub repository
 
 ## Egne projekter
 
-- Tema 2 - Grundlæggende web / Computersite
-- Tema 3 - Sandkassesite / Emnesite - OBBG.dk
+- Tema 2 - Mobilesite / desktop-udbygning
+- Tema 3 - OBBG.dk / Emnesite og sandkassesite
 - Tema 4 - Animation og spil / Royal Click Fighter
-- Tema 5 - Virksomhedssite - Bird Bar
+- Tema 5 - Virksomhedssite/redesign - Bird Bar
