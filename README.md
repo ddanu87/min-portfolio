@@ -17,12 +17,13 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 - `om-mig.html` - afsender, portræt, uddannelse, kompetencer og refleksion
 - `obbg-figma.html` - Figma, FigJam/proces og kodet site til OBBG.dk
 - `birdbar-figma.html` - Figma-link til Bird Bar
-- `tema-2-web.html`, `tema-3-emnesite-obbg.html`, `tema-4-animation.html`, `tema-5-virksomhedssite.html` - klikbare dokumentationssider
+- `tema-2-mobilsite.html`, `tema-3-emnesite-obbg.html`, `tema-4-animation.html`, `tema-5-virksomhedssite.html` - klikbare dokumentationssider
+- `tema-2-web.html` - gammel Tema 2-adresse, som videresender til `tema-2-mobilsite.html`
 - `royal-click-fighter.html` - intern spilbar Tema 4-demo
 
 ## Projekter
 
-1. Tema 2 - Mobilesite / desktop-udbygning
+1. Tema 2 - Mobilsite / desktop-udbygning
 2. Tema 3 - OBBG.dk / emnesite og sandkassesite
 3. Tema 4 - Animation og spil / Royal Click Fighter
 4. Tema 5 - Virksomhedssite/redesign - Bird Bar
@@ -48,8 +49,7 @@ Vigtige dokumenter:
 - `docs/mundtlig-disposition.md`
 - `docs/ai-og-kildeoversigt.md`
 - `docs/teststatus.md`
-- `docs/tema-2-mobilesite.md`
-- `docs/tema-2-web.md`
+- `docs/tema-2-mobilsite.md`
 - `docs/tema-3-emnesite-obbg.md`
 - `docs/tema-4-animation.md`
 - `docs/tema-5-virksomhedssite.md`
