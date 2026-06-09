@@ -1,24 +1,35 @@
-# Tema 2 - Grundlæggende web / Computersite
+# Tema 2 - Mobilesite / desktop-udbygning
 
 ## Hvad
 
-Jeg arbejdede med et grundlæggende computersite, hvor fokus var HTML, CSS, semantisk struktur, navigation, billeder og responsivt layout.
+Jeg arbejdede videre på mobilsitet, så det også virkede på desktop. Projektet ligger lokalt i `01_website/mobilesite` og handler om grundlæggende HTML, CSS, struktur, navigation, billeder og responsivt layout.
 
 ## Link
 
-- Live computersite: https://obbg.dk/kea/02_web/01_website/website/index.html
+- Live mobilesite: https://obbg.dk/kea/02_web/01_website/website/index.html
+
+## Opgavekrav
+
+- Websitet skulle bestå af 5 sider.
+- Siderne skulle følge udleveret wireframe og layoutdiagram.
+- Tekst og billeder var udleveret, plus eget foto/tekst på `min_computer.html`.
+- Sitet skulle have farver og to forskellige fonte.
+- CSS skulle deles i styling og layout. I min mappe ligger det som `style.css` og `layout.css`.
+- HTML5 skulle validere uden fejl.
+- Sitet måtte ikke indekseres af søgemaskiner og skulle derfor have `meta name="robots" content="noindex"`.
 
 ## Proces
 
-Jeg startede med at opbygge siderne i HTML og derefter style dem med CSS. Projektet bestod af flere undersider, blandt andet forside, galleri, komponenter, min computer og operativsystemer.
+Jeg startede med at opbygge de fem sider i HTML og brugte derefter CSS til layout, farver, fonte, spacing og responsiv desktop-tilpasning. Jeg fulgte layoutdiagrammets id- og class-navne og testede navigation og billedvisning i browseren.
 
 ## Værktøjer
 
 - HTML
 - CSS
-- Billeder/webp
+- VS Code
 - Browser-test
 - Responsivt layout
+- GitHub/GitHub Pages
 
 ## Læring
 
@@ -26,4 +37,4 @@ Jeg lærte, hvordan HTML og CSS arbejder sammen, og hvordan struktur, typografi,
 
 ## Refleksion
 
-Hvis jeg skulle forbedre projektet i dag, ville jeg arbejde mere mobile-first, dokumentere processen bedre og kontrollere accessibility tidligere.
+Hvis jeg skulle forbedre projektet i dag, ville jeg validere tidligere, arbejde endnu mere systematisk mobile-first og kontrollere accessibility/kontrast tidligere i processen.
