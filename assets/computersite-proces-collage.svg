@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="744" viewBox="0 0 900 744">
-  <rect width="900" height="744" fill="#f8fafc"/>
-  <text x="40" y="50" font-family="Arial" font-size="28" font-weight="700" fill="#111827">Tema 2 - Computersite</text>
-  <text x="40" y="82" font-family="Arial" font-size="18" fill="#4b5563">Forside - navigation - undersider - galleri - billeder
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500"><rect width="900" height="500" fill="#f8fafc"/><text x="40" y="55" font-family="Arial" font-size="30" font-weight="700" fill="#111827">Tema 2 - Computersite</text><text x="40" y="90" font-family="Arial" font-size="18" fill="#4b5563">Forside, navigation, undersider, galleri, billeder og responsivt layout</text><rect
