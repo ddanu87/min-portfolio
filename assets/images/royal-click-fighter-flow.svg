@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Royal Click Fighter aktivitetsdiagram</title>
+  <desc id="desc">Aktivitetsdiagram for Royal Click Fighter med start, spil, point, liv, vundet og tabt.</desc>
+  <rect width="1200" height="760" fill="#f4f7f8"/>
+  <text x="600" y="80" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="900" fill="#111827">Aktivitetsdiagram</text>
+  <text x="600" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#24313a">Royal Click Fighter: spilflow og JavaScript-tilstande</text>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#204b60"/></marker>
+  </defs>
+  <g font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="28" text-anchor="middle">
+    <rect x="475" y="165" width="250" height="70" rx="16" fill="#204b60"/><text x="600" y="210" fill="#fff">Startskærm</text>
+    <rect x="475" y="285" width="250" height="70" rx="16" fill="#eef4f7" stroke="#204b60" stroke-width="4"/><text x="600" y="330" fill="#17212b">Start timer</text>
+    <rect x="475" y="405" width="250" height="70" rx="16" fill="#eef4f7" stroke="#204b60" stroke-width="4"/><text x="600" y="450" fill="#17212b">Spawn element</text>
+    <rect x="155" y="535" width="260" height="74" rx="16" fill="#e8f7ef" stroke="#2d6a4f" stroke-width="4"/><text x="285" y="582" fill="#17212b">Klik god: + point</text>
+    <rect x="785" y="535" width="260" height="74" rx="16" fill="#fff1f2" stroke="#9f1239" stroke-width="4"/><text x="915" y="582" fill="#17212b">Klik dårlig: - liv</text>
+    <rect x="155" y="650" width="260" height="62" rx="16" fill="#2d6a4f"/><text x="285" y="690" fill="#fff">Vundet</text>
+    <rect x="785" y="650" width="260" height="62" rx="16" fill="#9f1239"/><text x="915" y="690" fill="#fff">Tabt</text>
+  </g>
+  <g stroke="#204b60" stroke-width="5" marker-end="url(#arrow)" fill="none">
+    <line x1="600" y1="235" x2="600" y2="278"/>
+    <line x1="600" y1="355" x2="600" y2="398"/>
+    <path d="M560 475 C480 520 395 535 305 535"/>
+    <path d="M640 475 C720 520 805 535 895 535"/>
+    <line x1="285" y1="609" x2="285" y2="642"/>
+    <line x1="915" y1="609" x2="915" y2="642"/>
+    <path d="M725 440 C865 420 930 360 910 285 C890 225 770 205 733 204"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#24313a">
+    <text x="315" y="520">score >= mål</text>
+    <text x="890" y="520">liv = 0 eller tid ude</text>
+    <text x="930" y="340">loop indtil spillet slutter</text>
+  </g>
+</svg>
