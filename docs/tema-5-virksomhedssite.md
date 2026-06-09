@@ -29,7 +29,7 @@ Løsningen blev et virksomhedssite med fokus på Bird Bars stemning. Designet br
 
 ## Links
 
-- Figma proces og design: https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn
+- Figma proces og design: https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn/Virksomhed-site?node-id=0-1&p=f&t=WPAA1Ppk9YOMbGkP-0
 
 ## Værktøjer
 
