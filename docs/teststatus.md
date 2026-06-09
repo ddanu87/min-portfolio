@@ -16,6 +16,11 @@
 
 - `portfolio.html` er omskrevet fra minificeret HTML til en læsbar og eksamensvenlig struktur.
 - Portfolioet viser nu Tema 2, Tema 3, Tema 4 og Tema 5 med opgave, løsning, proces, læring og refleksion.
+- Portfolioet har nu billeder/procesmateriale for temaerne.
+- Tema 2 har live link og dokumentationsside.
+- Tema 3 har Figma-prototype, Figma-dokumentation, kodet site og dokumentationsside.
+- Tema 4 har dokumentationsside med papirprototype, aktivitetsdiagram og JavaScript-proces.
+- Tema 5 har Figma-link, procesbillede og dokumentationsside.
 - Forsiden forklarer tydeligere, hvad sitet viser, og hvordan det bruges til eksamen.
 - Processiden kobler portfolioarbejdet til før, under og efter udviklingen.
 - Om mig-siden beskriver afsender, uddannelse, erfaring, kompetencer og refleksion tydeligere.
@@ -27,7 +32,10 @@
 
 - Live portfolio: https://ddanu87.github.io/min-portfolio/
 - GitHub repo: https://github.com/ddanu87/min-portfolio
-- OBBG Figma: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&p=f&t=ZDF1nsZxCWpEcB2O-0
+- Tema 2 live site: https://obbg.dk/kea/02_web/01_website/website/index.html
+- OBBG Figma prototype: https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465
+- OBBG Figma dokumentation: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&t=O4wCwWObGDOfGKJw-1
+- OBBG kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
 - Bird Bar Figma: https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn/Virksomhed-site?node-id=0-1&p=f&t=WPAA1Ppk9YOMbGkP-0
 
 ## Klar til aflevering
