@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Intern klikbar demo af Royal Click Fighter fra Tema 4 animation og JavaScript.">
+  <title>Royal Click Fighter | Tema 4</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="readability.css">
+  <style>
+    body { background: #f4f7f8; }
+    .game-page { padding: 4.5rem 0 3rem; }
+    .game-shell { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    .game-hero { background: #111827; color: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; }
+    .game-hero h1, .game-hero p { color: #fff; }
+    .game-hero h1 { margin-bottom: 0.35rem; }
+    .game-board { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; border: 4px solid #204b60; background: linear-gradient(145deg, #0b1020, #21152e 58%, #102c35); box-shadow: 0 16px 40px rgba(17,24,39,0.22); }
+    .game-board::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(45,212,191,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(45,212,191,0.13) 1px, transparent 1px); background-size: 70px 70px; opacity: 0.45; }
+    .hud { position: absolute; z-index: 5; top: 0.75rem; left: 0.75rem; right: 0.75rem; display: flex; gap: 0.5rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .hud span { display: inline-flex; align-items: center; min-height: 2rem; padding: 0.35rem 0.7rem; border-radius: 999px; background: rgba(255,255,255,0.92); color: #111827; font-weight: 800; }
+    .timer-track { flex: 1 1 180px; max-width: 420px; height: 0.8rem; border-radius: 999px; background: rgba(255,255,255,0.28); overflow: hidden; border: 1px solid rgba(255,255,255,0.4); }
+    .timer-fill { width: 100%; height: 100%; background: #2dd4bf; transform-origin: left center; }
+    .target { position: absolute; z-index: 4; width: clamp(46px, 7vw, 82px); aspect-ratio: 1; border-radius: 50%; border: 3px solid rgba(255,255,255,0.75); display: grid; place-items: center; font-size: clamp(1.3rem, 3vw, 2.4rem); font-weight: 900; cursor: pointer; user-select: none; animation: fall var(--speed, 4s) linear forwards; box-shadow: 0 0 18px rgba(45,212,191,0.8); }
+    .target.good { background: #ffd166; color: #111827; }
+    .target.bad { background: #9f1239; color: #fff; box-shadow: 0 0 18px rgba(244,63,94,0.75); }
+    @keyframes fall { from { transform: translateY(-120px) rotate(0deg); } to { transform: translateY(calc(100vh + 200px)) rotate(240deg); } }
+    .overlay { position: absolute; inset: 0; z-index: 8; display: grid; place-items: center; padding: 1rem; background: rgba(11,16,32,0.72); text-align: center; }
+    .overlay-card { width: min(520px, 100%); padding: 1.25rem; border-radius: 8px; background: #ffffff; color: #111827; }
+    .overlay-card h2, .overlay-card p { color: #111827; }
+    .game-controls { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0 1.5rem; }
+    .game-doc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
+    .game-doc-grid article { background: #fff; border: 1px solid #d5e0e5; border-radius: 8px; padding: 1rem; }
+    .game-doc-grid h2 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+    .hidden { display: none; }
+    @media (max-width: 680px) { .game-page { padding-top: 3.8rem; } .hud { align-items: stretch; } .hud span { font-size: 0.85rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Danusan Padmarajah</a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Forside</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="proces.html" class="nav-link">Proces</a></li>
+          <li><a href="om-mig.html" class="nav-link">Om mig</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Åbn menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="game-page">
+    <div class="game-shell">
+      <section class="game-hero">
+        <p class="eyebrow">Tema 4 · Animation og JavaScript</p>
+        <h1>Royal Click Fighter</h1>
+        <p>Klik på mønter, terninger og stjerner for at få point. Undgå bomberne. Demoen ligger internt i portfolioen, så linket virker direkte på GitHub Pages.</p>
+      </section>
+
+      <section class="game-board" id="game-board" aria-label="Royal Click Fighter spilområde">
+        <div class="hud" aria-live="polite">
+          <span>Point: <strong id="score">0</strong></span>
+          <span>Liv: <strong id="lives">3</strong></span>
+          <div class="timer-track" aria-label="Tid tilbage"><div class="timer-fill" id="timer-fill"></div></div>
+          <span>Mål: 10</span>
+        </div>
+        <div class="overlay" id="overlay">
+          <div class="overlay-card">
+            <h2>Klar?</h2>
+            <p>Du har 20 sekunder til at nå 10 point uden at miste alle liv.</p>
+            <button class="btn-link" id="start-button" type="button">Start spil</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="game-controls">
+        <button class="btn-link" id="restart-button" type="button">Nulstil</button>
+        <a class="btn-link" href="tema-4-animation.html">Se dokumentation</a>
+        <a class="btn-link" href="portfolio.html#tema-4">Tilbage til portfolio</a>
+      </div>
+
+      <section class="game-doc-grid" aria-label="Spilregler og teknik">
+        <article><h2>Spilmekanik</h2><p>Gode elementer giver point. Dårlige elementer fjerner liv. Spillet slutter ved 10 point, 0 liv eller når tiden løber ud.</p></article>
+        <article><h2>JavaScript</h2><p>Demoen bruger state, timers, click-events, tilfældige elementer og DOM-opdatering af point, liv og resultat.</p></article>
+        <article><h2>Responsivt layout</h2><p>Spilområdet bruger 16:9-format, så det skalerer på mobil og desktop uden at miste formen.</p></article>
+      </section>
+    </div>
+  </main>
+
+  <footer><div class="container"><p>&copy; 2026 Danusan Padmarajah | 1. semester portfolio</p></div></footer>
+  <script src="script.js"></script>
+  <script>
+    const board = document.getElementById('game-board');
+    const overlay = document.getElementById('overlay');
+    const startButton = document.getElementById('start-button');
+    const restartButton = document.getElementById('restart-button');
+    const scoreEl = document.getElementById('score');
+    const livesEl = document.getElementById('lives');
+    const timerFill = document.getElementById('timer-fill');
+
+    const game = { score: 0, lives: 3, playing: false, target: 10, duration: 20000, spawn: null, timer: null, started: 0 };
+    const goodItems = ['$', 'D6', '*'];
+    const badItems = ['X', '!'];
+
+    function updateHud() {
+      scoreEl.textContent = game.score;
+      livesEl.textContent = game.lives;
+    }
+
+    function clearTargets() {
+      board.querySelectorAll('.target').forEach((item) => item.remove());
+    }
+
+    function showOverlay(title, text, buttonText = 'Start spil') {
+      overlay.classList.remove('hidden');
+      overlay.innerHTML = `<div class="overlay-card"><h2>${title}</h2><p>${text}</p><button class="btn-link" id="start-button" type="button">${buttonText}</button></div>`;
+      overlay.querySelector('button').addEventListener('click', startGame);
+    }
+
+    function endGame(title, text) {
+      game.playing = false;
+      window.clearInterval(game.spawn);
+      window.clearInterval(game.timer);
+      clearTargets();
+      showOverlay(title, text, 'Spil igen');
+    }
+
+    function spawnTarget() {
+      if (!game.playing) return;
+      const isGood = Math.random() > 0.35;
+      const item = document.createElement('button');
+      item.type = 'button';
+      item.className = `target ${isGood ? 'good' : 'bad'}`;
+      item.textContent = isGood ? goodItems[Math.floor(Math.random() * goodItems.length)] : badItems[Math.floor(Math.random() * badItems.length)];
+      item.style.left = `${Math.random() * 82 + 4}%`;
+      item.style.top = '-90px';
+      item.style.setProperty('--speed', `${3.4 + Math.random() * 1.8}s`);
+      item.dataset.kind = isGood ? 'good' : 'bad';
+      item.addEventListener('click', () => handleClick(item));
+      item.addEventListener('animationend', () => item.remove());
+      board.appendChild(item);
+    }
+
+    function handleClick(item) {
+      if (!game.playing) return;
+      if (item.dataset.kind === 'good') {
+        game.score += item.textContent === '*' ? 2 : 1;
+      } else {
+        game.lives -= 1;
+      }
+      item.remove();
+      updateHud();
+      if (game.score >= game.target) endGame('Du vandt', `Du nåede ${game.score} point.`);
+      if (game.lives <= 0) endGame('Game over', `Du endte med ${game.score} point.`);
+    }
+
+    function startGame() {
+      game.score = 0;
+      game.lives = 3;
+      game.playing = true;
+      game.started = Date.now();
+      updateHud();
+      clearTargets();
+      overlay.classList.add('hidden');
+      timerFill.style.transform = 'scaleX(1)';
+      game.spawn = window.setInterval(spawnTarget, 850);
+      game.timer = window.setInterval(() => {
+        const progress = Math.max(0, 1 - ((Date.now() - game.started) / game.duration));
+        timerFill.style.transform = `scaleX(${progress})`;
+        if (progress <= 0) endGame('Tiden er gået', `Du endte med ${game.score} point.`);
+      }, 80);
+    }
+
+    restartButton.addEventListener('click', () => endGame('Nulstillet', 'Start en ny runde, når du er klar.'));
+    startButton.addEventListener('click', startGame);
+    updateHud();
+  </script>
+</body>
+</html>
