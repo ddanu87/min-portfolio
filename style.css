@@ -315,6 +315,22 @@ li {
   padding: 1.6rem;
 }
 
+.project-media {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f2f5f7;
+  border: 1px solid #dde5ea;
+  border-radius: 8px;
+}
+
+.project-media p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #5f6d76;
+}
+
 .project-content ul,
 .step-content ul,
 .info-card ul {
@@ -357,9 +373,10 @@ li {
 }
 
 .project-image {
-  width: 100%;
+  width: min(100%, 520px);
+  max-height: 340px;
+  object-fit: cover;
   border-radius: 8px;
-  margin: 1rem 0;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
