@@ -1,11 +1,16 @@
-# Tema 2 - Mobilsite / desktop-udbygning
+# Tema 2 - Grundlæggende web / Mobilsite
 
 ## Hvad
 
-Jeg arbejdede videre på mobilsitet, så det også virkede på desktop. Projektet ligger lokalt i `01_website/mobilesite` og handler om grundlæggende HTML, CSS, struktur, navigation, billeder og responsivt layout.
+Jeg arbejdede videre på mobilsitet, så det også virkede på desktop. Projektet ligger lokalt i `01_website/mobilesite` og er nu også lagt ind i portfolio-repoet i `mobilsite/`, så links virker direkte på GitHub Pages.
 
-## Intern portfolio-side
+## Interne links
 
+- Mobilsite forside: `mobilsite/index.html`
+- Min computer: `mobilsite/min_computer.html`
+- Operativsystemer: `mobilsite/operativsystemer.html`
+- Komponenter: `mobilsite/komponenter.html`
+- Galleri: `mobilsite/galleri.html`
 - Tema 2 dokumentation: `tema-2-mobilsite.html`
 
 ## Opgavekrav
