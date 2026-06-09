@@ -18,7 +18,7 @@
 - [ ] Alle links virker i browser.
 - [ ] Figma-links kan åbnes af modtageren.
 - [ ] Eventuelle screenshots/projektbilleder er tilføjet, hvis de findes.
-- [ ] Afleverings-PDF har to klikbare links.
+- [x] Afleverings-PDF har to klikbare links.
 
 ## Links til aflevering
 
