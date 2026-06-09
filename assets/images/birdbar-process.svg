@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bird Bar proces</title>
+  <desc id="desc">Illustration af Figma-proces for Bird Bar virksomhedssite.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f4fbfb"/><stop offset="1" stop-color="#dde5ea"/></linearGradient></defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <text x="600" y="92" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="900" fill="#182633">Bird Bar</text>
+  <text x="600" y="136" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#345c72">Virksomhedssite · research · prototype · test</text>
+  <g transform="translate(135 190)">
+    <rect width="270" height="360" rx="16" fill="#ffffff" stroke="#dde5ea" stroke-width="3"/>
+    <rect x="28" y="32" width="214" height="120" rx="12" fill="#345c72"/>
+    <rect x="28" y="185" width="170" height="18" rx="9" fill="#263238"/><rect x="28" y="225" width="210" height="14" rx="7" fill="#7f8b93"/><rect x="28" y="258" width="190" height="14" rx="7" fill="#7f8b93"/>
+    <text x="135" y="324" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#345c72">Research</text>
+  </g>
+  <g transform="translate(465 190)">
+    <rect width="270" height="360" rx="16" fill="#ffffff" stroke="#dde5ea" stroke-width="3"/>
+    <rect x="30" y="34" width="86" height="86" rx="10" fill="#28d7e6"/><rect x="145" y="34" width="86" height="86" rx="10" fill="#7a3b69"/><rect x="30" y="150" width="202" height="120" rx="12" fill="#edf6f8"/>
+    <text x="135" y="324" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#345c72">Wireframes</text>
+  </g>
+  <g transform="translate(795 190)">
+    <rect width="270" height="360" rx="16" fill="#ffffff" stroke="#dde5ea" stroke-width="3"/>
+    <rect x="34" y="40" width="202" height="250" rx="14" fill="#17212b"/>
+    <circle cx="87" cy="115" r="32" fill="#28d7e6"/><rect x="130" y="96" width="72" height="14" rx="7" fill="#f7fbff"/><rect x="75" y="192" width="120" height="46" rx="8" fill="#ffffff"/>
+    <text x="135" y="324" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#345c72">Prototype</text>
+  </g>
+  <rect x="390" y="610" width="420" height="58" rx="8" fill="#345c72"/>
+  <text x="600" y="648" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" fill="#ffffff">Figma dokumentation</text>
+</svg>
