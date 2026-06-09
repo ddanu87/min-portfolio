@@ -9,7 +9,7 @@
 - `obbg-figma.html`
 - `birdbar-figma.html`
 - `tema-2-web.html`
-- `tema-3-uxui-obbg.html`
+- `tema-3-emnesite-obbg.html`
 - `tema-4-animation.html`
 - `royal-click-fighter.html`
 - `tema-5-virksomhedssite.html`
@@ -24,6 +24,7 @@
 - Tema 2 beskriver nu 5 sider, udleveret wireframe/layoutdiagram, to fonte, farver, CSS-opdeling, HTML-validering og noindex.
 - Tema 3 er rettet til OBBG.dk som emnesite/sandkassesite.
 - Tema 3 beskriver nu selvvalgt emne, 3 designassociationer, centralt budskab, brugerrejse, styletile, storyboard, visuelle elementer, billeder og AI-dokumentation.
+- Tema 3 har nu korrekt filnavn: `tema-3-emnesite-obbg.html` og `docs/tema-3-emnesite-obbg.md`.
 - Tema 4 er intern og stabil med `royal-click-fighter.html`, `tema-4-animation.html#grafik`, `tema-4-animation.html#teknik` og interne SVG-assets.
 - Tema 5 er udbygget med virksomhedssite/redesign-krav: teamkontrakt, SCRUM/Trello, research, prototype, foto, form, custom property, noindex, test og Lighthouse.
 - `portfolio.html` viser nu alle fire projekter med opgave, løsning, proces, læring og refleksion.
