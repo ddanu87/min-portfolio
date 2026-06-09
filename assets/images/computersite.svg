@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tema 2 computersite</title>
+  <desc id="desc">Illustration af et responsivt computersite med HTML og CSS.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#d8f3f5"/><stop offset="1" stop-color="#f7fbff"/></linearGradient>
+    <linearGradient id="screen" x1="0" x2="1"><stop offset="0" stop-color="#233747"/><stop offset="1" stop-color="#345c72"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect x="170" y="130" width="860" height="500" rx="28" fill="#17212b"/>
+  <rect x="205" y="165" width="790" height="405" rx="14" fill="url(#screen)"/>
+  <rect x="258" y="220" width="300" height="34" rx="8" fill="#28d7e6"/>
+  <rect x="258" y="285" width="560" height="18" rx="9" fill="#e9f4f7" opacity=".88"/>
+  <rect x="258" y="325" width="470" height="18" rx="9" fill="#e9f4f7" opacity=".62"/>
+  <rect x="258" y="395" width="170" height="54" rx="8" fill="#ffffff"/>
+  <rect x="468" y="395" width="170" height="54" rx="8" fill="#ffffff" opacity=".74"/>
+  <rect x="678" y="395" width="170" height="54" rx="8" fill="#ffffff" opacity=".52"/>
+  <rect x="490" y="630" width="220" height="36" rx="10" fill="#17212b"/>
+  <rect x="340" y="674" width="520" height="28" rx="14" fill="#263238"/>
+  <text x="600" y="92" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" fill="#182633">Tema 2 · Grundlæggende web</text>
+  <text x="600" y="728" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#345c72">HTML · CSS · responsivt layout</text>
+</svg>
