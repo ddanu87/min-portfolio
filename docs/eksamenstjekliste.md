@@ -19,7 +19,11 @@
 - [x] Royal Click Fighter har direkte spilleside-link.
 - [x] Bird Bar forklarer ærligt, at der ikke er fundet separat live-link.
 - [x] Portfolio linker til HTML-dokumentationssider i stedet for rå markdown-filer.
-- [x] Base64-billeder er flyttet ud af `portfolio.html` og erstattet af assets i `assets/images/`.
+- [x] Portfolio og dokumentationssider bruger billeder/procesmateriale fra VS Code-mapperne.
+- [x] Der er tilføjet beskrivelser/billedtekster til projektmaterialerne.
+- [x] Der er tilføjet flere projektlinks fra VS Code-materialet.
+- [x] Tekst, links, billedtekster og knapper har fået bedre kontrast via `readability.css`.
+- [x] Base64-billeder er flyttet ud af `portfolio.html` og erstattet af assets/projektmaterialer.
 - [x] Eksterne links bruger `rel="noopener noreferrer"`.
 - [x] CSS har variabler, fokusmarkering og bedre billedregler.
 - [x] Bird Bar har “Min rolle”.
