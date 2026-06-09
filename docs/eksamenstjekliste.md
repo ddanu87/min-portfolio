@@ -16,7 +16,9 @@
 
 ## Reviewpunkter rettet
 
-- [x] Royal Click Fighter har direkte spilleside-link.
+- [x] Royal Click Fighter har nu intern spilbar side: `royal-click-fighter.html`.
+- [x] Tema 4 bruger interne billeder/assets i stedet for døde eksterne billedlinks.
+- [x] Tema 4 har interne links til grafik/proces og teknik via `tema-4-animation.html#grafik` og `tema-4-animation.html#teknik`.
 - [x] Bird Bar forklarer ærligt, at der ikke er fundet separat live-link.
 - [x] Portfolio linker til HTML-dokumentationssider i stedet for rå markdown-filer.
 - [x] Portfolio og dokumentationssider bruger billeder/procesmateriale fra VS Code-mapperne.
@@ -35,7 +37,7 @@
 ## Indhold der bør kontrolleres manuelt
 
 - [ ] GitHub Pages viser de seneste ændringer fra `main`.
-- [ ] Alle links virker i browser.
+- [ ] Alle interne links virker i browser, især `royal-click-fighter.html` og `tema-4-animation.html`.
 - [ ] Figma-links kan åbnes af modtageren.
 
 ## Links til aflevering
