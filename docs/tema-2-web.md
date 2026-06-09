@@ -4,5 +4,6 @@ Denne note er erstattet af den korrekt navngivne Tema 2-note:
 
 - `docs/tema-2-mobilsite.md`
 - `tema-2-mobilsite.html`
+- `mobilsite/index.html`
 
-Den gamle HTML-side `tema-2-web.html` videresender til den nye Mobilsite-side, så gamle links stadig virker.
+Temaet hedder “Grundlæggende web”, og projektet hedder “Mobilsite / desktop-udbygning”. Den gamle HTML-side `tema-2-web.html` videresender til Tema 2-dokumentationen, så gamle links stadig virker.
