@@ -17,6 +17,7 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 - `om-mig.html` - afsender, portræt, uddannelse, kompetencer og refleksion
 - `obbg-figma.html` - Figma, prototype og kodet site til OBBG.dk
 - `birdbar-figma.html` - Figma-link til Bird Bar
+- `tema-2-web.html`, `tema-3-uxui-obbg.html`, `tema-4-animation.html`, `tema-5-virksomhedssite.html` - klikbare dokumentationssider
 
 ## Projekter
 
@@ -34,9 +35,11 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 - GitHub til versionsstyring
 - GitHub Pages til publicering
 
-## Dokumentation
+## Assets og dokumentation
 
-Dokumentationen ligger i `docs/`. Den forklarer krav, proces, AI-brug, kode og de fire projekter.
+- Portfolioens billeder ligger i `assets/images/` og bruges via normale filstier.
+- De klikbare dokumentationssider ligger i roden som HTML-sider.
+- Baggrundsnoter og eksamensforberedelse ligger i `docs/`.
 
 Vigtige dokumenter:
 
