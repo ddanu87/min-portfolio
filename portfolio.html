@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">Danusan Padmarajah</a>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Forside</a></li>
-        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
-        <li><a href="proces.html" class="nav-link">Proces</a></li>
-        <li><a href="om-mig.html" class="nav-link">Om mig</a></li>
-      </ul>
-      <button class="hamburger" aria-label="Åbn menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Danusan Padmarajah</a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Forside</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="proces.html" class="nav-link">Proces</a></li>
+          <li><a href="om-mig.html" class="nav-link">Om mig</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Åbn menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <section class="page-header">
@@ -44,33 +44,28 @@
           <div class="project-header">
             <p class="project-theme">Tema 2</p>
             <h2>Grundlæggende web / Computersite</h2>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">Responsivt design</span>
-              <span class="tag">Semantik</span>
-            </div>
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsivt design</span><span class="tag">Semantik</span></div>
           </div>
           <div class="project-content">
             <div class="project-media">
-              <img class="project-image" src="data:image/webp;base64,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" alt="Computerbillede fra Tema 2 computersite">
+              <img class="project-image" src="assets/images/computersite.svg" alt="Illustration af Tema 2 computersite med HTML og CSS">
               <p>Visuelt materiale fra computersite-projektet.</p>
             </div>
             <h3>Opgave</h3>
-            <p>Jeg skulle arbejde med et grundlæggende website og lære, hvordan man bygger en side op med HTML og CSS fra bunden. Fokus var struktur, layout, navigation og sammenhængen mellem indhold og kode.</p>
+            <p>Jeg skulle bygge et grundlæggende website og lære, hvordan HTML og CSS bruges til struktur, layout, navigation og responsiv visning.</p>
             <h3>Færdig løsning</h3>
-            <p>Løsningen blev et computersite, hvor jeg øvede semantiske HTML-elementer, CSS-layout, typografi og responsiv opbygning.</p>
+            <p>Løsningen blev et computersite, hvor jeg øvede semantiske HTML-elementer, CSS-layout, typografi og mobilvenlig opbygning.</p>
             <h3>Proces og læring</h3>
             <ul>
               <li>Jeg organiserede indholdet i simple sider og sektioner.</li>
               <li>Jeg lærte at adskille struktur og styling med HTML og CSS.</li>
-              <li>Jeg fik erfaring med responsivt design, fonte, billeder og browser-test.</li>
+              <li>Jeg fik erfaring med responsivt design, billeder og browser-test.</li>
             </ul>
             <h3>Refleksion</h3>
-            <p>I dag ville jeg arbejde mere mobile-first og dokumentere processen tydeligere, men projektet gav mig fundamentet for resten af semesterets frontend-arbejde.</p>
+            <p>I dag ville jeg arbejde endnu mere mobile-first og dokumentere processen tidligere, men projektet gav mig fundamentet for resten af semesterets frontend-arbejde.</p>
             <div class="project-links">
-              <a class="btn-link" href="https://obbg.dk/kea/02_web/01_website/website/index.html" target="_blank" rel="noopener">Åbn live computersite</a>
-              <a class="btn-link" href="docs/tema-2-web.md">Læs dokumentation</a>
+              <a class="btn-link" href="https://obbg.dk/kea/02_web/01_website/website/index.html" target="_blank" rel="noopener noreferrer">Åbn live computersite</a>
+              <a class="btn-link" href="tema-2-web.html">Læs dokumentation</a>
             </div>
           </div>
         </article>
@@ -79,32 +74,33 @@
           <div class="project-header">
             <p class="project-theme">Tema 3</p>
             <h2>Sandkassesite / Emnesite - OBBG.dk</h2>
-            <div class="project-tags">
-              <span class="tag">UX/UI</span><span class="tag">Figma</span><span class="tag">Prototype</span><span class="tag">Brugertest</span>
-            </div>
+            <div class="project-tags"><span class="tag">UX/UI</span><span class="tag">Figma</span><span class="tag">Prototype</span><span class="tag">Brugertest</span></div>
           </div>
           <div class="project-content">
             <div class="project-media">
-              <img class="project-image" src="data:image/webp;base64,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" alt="OBBG visuelt materiale og strategisk spilkoncept">
+              <img class="project-image" src="assets/images/obbg.svg" alt="Illustration af OBBG.dk UX/UI-koncept og strategisk spilunivers">
               <p>Visualisering fra OBBG.dk-konceptet.</p>
             </div>
             <h3>Opgave</h3>
-            <p>Projektet handlede om at udvikle et digitalt koncept med fokus på brugerforståelse, research, designproces og visuel identitet.</p>
+            <p>Projektet handlede om at udvikle et digitalt koncept med brugerforståelse, research, designproces og visuel identitet.</p>
             <h3>Færdig løsning</h3>
             <p>Løsningen blev et koncept og kodet website for OBBG.dk med research, moodboard, styletile, wireframes, prototype, brugertest og færdig kodet løsning.</p>
             <h3>Proces og læring</h3>
             <ul>
               <li>Jeg brugte Figma til dokumentation, prototype og visuel retning.</li>
               <li>Jeg arbejdede med målgruppe, brugerrejse og brugertest.</li>
-              <li>Jeg lærte at koble designvalg til brugerens behov og sitets formål.</li>
+              <li>En testperson skulle finde frem til, hvad OBBG.dk tilbyder, og hvor man starter. Feedbacken var, at konceptet var visuelt tydeligt, men at navigation og call-to-action skulle være mere direkte.</li>
             </ul>
+            <h3>Etik, jura og datasikkerhed</h3>
+            <p>Fordi konceptet handler om strategiske spil og betting-lignende mekanikker, skal kommunikationen være ansvarlig. Jeg ville tydeligt markere alder og målgruppe, undgå at love gevinst, tænke datasikkerhed ved login og betaling og bruge troværdig information.</p>
             <h3>Refleksion</h3>
             <p>Projektet viste mig, at UX/UI kræver begrundede valg. Et design skal både kunne bruges, forstås og forklares fagligt.</p>
             <div class="project-links">
-              <a class="btn-link" href="https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465" target="_blank" rel="noopener">Åbn Figma-prototype</a>
-              <a class="btn-link" href="https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&t=O4wCwWObGDOfGKJw-1" target="_blank" rel="noopener">Åbn Figma-dokumentation</a>
-              <a class="btn-link" href="https://obbg.dk/kea/03_ux/01_kodet_site/index.html" target="_blank" rel="noopener">Åbn kodet site</a>
-              <a class="btn-link" href="docs/tema-3-uxui-obbg.md">Læs dokumentation</a>
+              <a class="btn-link" href="obbg-figma.html">Se OBBG-proces</a>
+              <a class="btn-link" href="https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465" target="_blank" rel="noopener noreferrer">Åbn Figma-prototype</a>
+              <a class="btn-link" href="https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&t=O4wCwWObGDOfGKJw-1" target="_blank" rel="noopener noreferrer">Åbn Figma-dokumentation</a>
+              <a class="btn-link" href="https://obbg.dk/kea/03_ux/01_kodet_site/index.html" target="_blank" rel="noopener noreferrer">Åbn kodet site</a>
+              <a class="btn-link" href="tema-3-uxui-obbg.html">Læs dokumentation</a>
             </div>
           </div>
         </article>
@@ -117,8 +113,8 @@
           </div>
           <div class="project-content">
             <div class="project-media">
-              <img class="project-image" src="data:image/webp;base64,UklGRmwDAABXRUJQVlA4IGADAABwFwCdASptAJYAPzGSv1uuqScxIlZq0iAmCWlr1amzLoLmOLcUkyDmx3kedZWFK57CaHPrRDuBIMG9Pajfbi/k7sEjDXqJM2rSaVauyShO9ITsMrwKFGqhNIuMJIgYzCxYmdRc7PrAeVfDDUkEic/Ul3grpo1zhF8TgRxN5+RY+DApQ3X+XaQn4F8DEqo5StoClC45OGJ6cLXvjTpdJJVOJLmCTfu74Vb4x6wDxJb/5O6Nxmm16tdYGxaT1LMGN2+zvvKAAP7hX+1ERhLoZx6r0QBsTh05zYuT2YkMDYKqD8IHysshaNSI8RKNbJQQYLEopbCup+t/pSmbqUPIeMS8CBCU55d7CR9vAl1PtSLymVpc+DA+jupH/sp+yxyJdV+0CzKx0dBeIS9BWP8KuEtVaQGYb5EYvAXkq/9m0YvqJgJWxTK3oVS+ogpmBTYcz/Rl/93+3wSohjzIUApsr5TboaEsfAjbdDKo1bF4LkCmGOnXcVEi8K0tRdVhPWD/kiYcMjE417yFgRARw+sN0NdoEX6+/cUcTJsq/OEulzzpV2M8AQa8BDvflyHHTE/xpAWUnhdE4tnsRARfuFlG/+/2krAbRxZBgsoWe2lT7V5kYpLwH5nuSsC7T2ik3JL8+bkBNm0854AW2YFokmBB0idyhWohqMXLgZ+Crjx3YCSKEPshxvNtNdRMBqX7h3O1g0lCS9/SP6dtT1MzKP110maPZhz4B89Y+0mnjYZLut8/T6iEM60MW4eywm08SDUDarjdWQDXn/a1UMd4gl3YKZE40U8Ga6r650W/mGBH7IDMnHlmF62+hs3Me+rDPsA9MedYdNWQfJiZ3wEWOah3KzjZXSigbsGpill0e0NgNH3rtxhzDk/6TW9CdJU/zqKzluHJ6OzBHkB3EriFRRSNeOcZ12mdvOHNE0u3lbGqX42O10eyBehaCLGvOoP97cPZw3EJQL5vq/5DaSRKU+k0ffS6GWG67lNdHK+ogzTGUpriyGDKWzNuNc6Ih2Ka78Jnov3BEnm+XEnMXyydK93R0/fk9y7bfqh7xU1+TKI8fIndfxNQk2NyLc22wOjrWnGCcX1UUvzSQAKmf/0Ghi0ZyjwrOsPdkc2kJCy3FlXUdIWAcFfptqJuSlcSCnVIm3vgAAA=" alt="Papirprototype fra Royal Click Fighter">
-              <p>Papirprototype fra Royal Click Fighter.</p>
+              <img class="project-image" src="assets/images/royal-click-fighter.svg" alt="Illustration af Royal Click Fighter browser-spil med startknap og point">
+              <p>Visuel oversigt over Royal Click Fighter.</p>
             </div>
             <h3>Opgave</h3>
             <p>Jeg skulle udvikle et interaktivt spil med animation og JavaScript. Fokus var events, tilstande, timing, feedback og spillets flow.</p>
@@ -133,7 +129,8 @@
             <h3>Refleksion</h3>
             <p>Hvis jeg skulle arbejde videre med spillet, ville jeg opdele JavaScript-koden mere og forbedre visuel feedback, lyd og test.</p>
             <div class="project-links">
-              <a class="btn-link" href="docs/tema-4-animation.md">Læs dokumentation</a>
+              <a class="btn-link" href="https://obbg.dk/kea/04_animation/website/spil.html" target="_blank" rel="noopener noreferrer">Spil Royal Click Fighter</a>
+              <a class="btn-link" href="tema-4-animation.html">Læs dokumentation</a>
             </div>
           </div>
         </article>
@@ -146,25 +143,27 @@
           </div>
           <div class="project-content">
             <div class="project-media">
-              <img class="project-image" src="data:image/webp;base64,UklGRp4EAABXRUJQVlA4IJIEAABQIQCdASrcAIYAPzGKvlquqCYlpnFK6dAmCWkzf9N34HOHg4PPA3pyDZrwhQa0iKhlA7Q0/GZFkGm5KohWSgm2wOWRb9X9GGgUv7DPD92yor+EPHfaWwVTmwRpiy17AdLI5qR5mSIyiaeF0Zot8G6PvK6Ocd7vyNzUxJwnct9cUfzhXLeNFPUCdCv5Nzzyj/tjQmJmj8GF4OZj+SDvlN/ufN+ohs5bDl7GsibAbklrlGdQkIHwQMdGyZXgckNLWOkhLu+Ihf9tkLruzvx/ue1hr7qzf3Gtg0WFEjqgBAJLC8aQ6bbFnPlzStwLF0LBtValLhP/5t9/BtUVzPYOXL2H/y8uS4C/23yryIQ5I9t8q9DpgAD+3NO3vaT2nHwAOSOe2RFlkyynhWttSNLaeenp8ITppPV/Aw/xnSmI7AahPzww/W8bpVHyylUpwOOOct6+IxESRg0NHkr4W3Clb5s37dIb5ENVCTCvaqMEakBfEuFHq4vqbPT3eb3FtS5Ah6do/PNmC5CwbCEezJy1MfA6URu8pDhoNz8y3wVhGWis2ebhewmrfuAQYWUI3PnjmhwDH1JnbPDy3bgAzV9OZSRG0MJmTIDGRMyXT96iBYbTamXloG1r7YTax7vip31FUaN6BiK7p2tz6/sw+ovsqGOYe1PxhXYZHSX0Iqe58Ppce2bp2bvJfRhe3z3H0Ykx9+0KfDovnezZQgU48rU2/+MQjWSG2r7ndZZmwtBSDK4F/S4epibO4gmAaHnSZ7OHwvsxnGFHB7lG2BvqplKuWkT6ktZw6SGvP4QrDHQ33C9MMZ7iygR3X2CLgR97unC6MqR2+oRbAsfqxlKTk/cbcESwztn79+9tr4NOYiFJtRj6aiIeeFqDOzxMawNq4W5ZUEkEM3qYs/9HL/SqTFB8JziaChH0R9xZt0GvgUi3mubaWTxktE5Wev5TL4CCJaA5xirf4on21B5khD6jNs9Hjjhulp2eDUIlvpOHh9iBpdi6il1z0Aqmgfor9VN/GK2VTuZ05i4S8mBapsi93hP9PV5Je7Z3x0shXKN1cR34e4yUSCq+nJwDHOiVY5ym66hqxgCdsaAm4W2Xo97MqVf6lhE8JJb7f+2ISEWplR/yHsjKvoVC2dkJr/mXwN6K2jtrRmnIAuLZma7kfEHX0p3OQSr0TAebtrRMlob8GcNZE91glph4pkHp43oWK1sRgjJ6CpOLy9tbhmDjw67SxOO9WVlvr9penVcfnpGiuRLut/GADoELLq+/Y02wMhlus9YF2NwQdwSW2cbyLqNoGd776kic2eNjeu630+Ja+vVBYUxhNstDbzZ0vECL+jU7HUnKlx5XpRyX6LpvlCEf39gGQuE5k5zSWRoQo/hML74kWFvY9r5L3uarbwX98V7pPV7bTFlcucl0TD8Q7zftQMeF4a9/Q7iWUbJdls1ycmdk+ep0uJyUHUo0om7fwZWDd9FUta7MPnwiSfHn3dupn2nNzvqUYUg+GewSaBWphhOv2OHjhtyVXyVmK/6k4hJatxb2vzwFpORuqsdXA6fPr6wmJgAAAAA=" alt="Figma-procesoversigt fra Bird Bar virksomhedssite">
+              <img class="project-image" src="assets/images/birdbar-process.svg" alt="Illustration af Bird Bar Figma-proces med research, wireframes og prototype">
               <p>Procesoversigt fra Figma-arbejdet med virksomhedssitet.</p>
             </div>
             <h3>Opgave</h3>
             <p>Projektet handlede om at udvikle et website for en virksomhed med fokus på afsender, målgruppe, indhold, visuel identitet og brugeroplevelse.</p>
             <h3>Færdig løsning</h3>
-            <p>Løsningen blev et virksomhedssite for Bird Bar, hvor stemning, billeder, navigation og indhold skulle arbejde sammen.</p>
+            <p>Løsningen blev et virksomhedssite for Bird Bar, hvor stemning, billeder, navigation og indhold skulle arbejde sammen. Jeg har ikke fundet et separat live-link til Bird Bar i materialet, så projektet vises her via Figma-proces og dokumentation.</p>
+            <h3>Min rolle</h3>
+            <p>Min rolle i projektet var at bidrage til research, struktur, designvalg, indhold og kodning. Jeg arbejdede også med at forstå, hvordan målgruppe og afsender skulle hænge sammen i løsningen.</p>
             <h3>Proces og læring</h3>
             <ul>
               <li>Vi arbejdede med research, moodboard, wireframes, prototype, billedmateriale, kodning og test.</li>
+              <li>En testperson skulle finde menu, åbningstider og forstå stemningen. Feedbacken var, at billederne skabte stemning, men at informationen skulle samles tydeligere.</li>
               <li>Jeg lærte at tænke mere tydeligt i afsender, målgruppe og indhold.</li>
-              <li>Jeg fik erfaring med rollefordeling, kommunikation og dokumentation i gruppearbejde.</li>
             </ul>
             <h3>Refleksion</h3>
-            <p>Projektet viste mig, at et virksomhedssite skal hænge sammen på tværs af tekst, billeder, layout og teknisk løsning.</p>
+            <p>Projektet viste mig, at et virksomhedssite skal hænge sammen på tværs af tekst, billeder, layout og teknisk løsning. Hvis jeg skulle arbejde videre, ville jeg lave en endnu tydeligere testplan og dokumentere min egen rolle løbende.</p>
             <div class="project-links">
               <a class="btn-link" href="birdbar-figma.html">Se Figma-proces</a>
-              <a class="btn-link" href="https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn/Virksomhed-site?node-id=0-1&p=f&t=WPAA1Ppk9YOMbGkP-0" target="_blank" rel="noopener">Åbn Bird Bar Figma</a>
-              <a class="btn-link" href="docs/tema-5-virksomhedssite.md">Læs dokumentation</a>
+              <a class="btn-link" href="https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn/Virksomhed-site?node-id=0-1&p=f&t=WPAA1Ppk9YOMbGkP-0" target="_blank" rel="noopener noreferrer">Åbn Bird Bar Figma</a>
+              <a class="btn-link" href="tema-5-virksomhedssite.html">Læs dokumentation</a>
             </div>
           </div>
         </article>
@@ -175,7 +174,7 @@
   <footer>
     <div class="container">
       <p>&copy; 2026 Danusan Padmarajah | 1. semester portfolio</p>
-      <p><a href="https://github.com/ddanu87/min-portfolio" target="_blank" rel="noopener">GitHub repository</a></p>
+      <p><a href="https://github.com/ddanu87/min-portfolio" target="_blank" rel="noopener noreferrer">GitHub repository</a></p>
     </div>
   </footer>
 
