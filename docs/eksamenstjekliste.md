@@ -16,19 +16,20 @@
 
 ## Projektnavne rettet
 
-- [x] Tema 2 står nu som Mobilsite / desktop-udbygning.
+- [x] Tema 2 står nu som Grundlæggende web / Mobilsite.
 - [x] Tema 3 står nu som OBBG.dk / emnesite og sandkassesite.
 - [x] Tema 4 står som Royal Click Fighter / animation og spil.
 - [x] Tema 5 står som Bird Bar / virksomhedssite og redesign.
 
 ## Tema 2 krav dækket
 
-- [x] 5 sider nævnt.
+- [x] Mobilsite-projektet ligger internt i `mobilsite/`.
+- [x] 5 sider nævnt og oprettet: forside, Min computer, Operativsystemer, Komponenter og Galleri.
 - [x] Wireframe og layoutdiagram nævnt.
 - [x] Farver, to fonte og CSS-opdeling nævnt.
 - [x] HTML-validering og noindex nævnt.
-- [x] Portfolioen linker nu til intern og stabil Tema 2-side: `tema-2-mobilsite.html`.
-- [x] Den gamle adresse `tema-2-web.html` videresender til den nye Mobilsite-side.
+- [x] Portfolioen linker til intern Tema 2-løsning: `mobilsite/index.html`.
+- [x] Den gamle adresse `tema-2-web.html` videresender til Tema 2-dokumentationen.
 
 ## Tema 3 krav dækket
 
@@ -57,7 +58,7 @@
 ## Indhold der bør kontrolleres manuelt
 
 - [ ] GitHub Pages viser de seneste ændringer fra `main`.
-- [ ] Alle interne links virker i browser, især `tema-2-mobilsite.html`, `royal-click-fighter.html` og `tema-4-animation.html`.
+- [ ] Alle interne links virker i browser, især `mobilsite/index.html`, `tema-2-mobilsite.html`, `royal-click-fighter.html` og `tema-4-animation.html`.
 - [ ] Figma/FigJam-links kan åbnes af modtageren.
 
 ## Links til aflevering
