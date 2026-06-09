@@ -5,7 +5,7 @@
 - [x] Forside der introducerer portfolioet og giver navigation.
 - [x] Portfolio med projekter fra 1. semester.
 - [x] Hvert projekt forklarer løsning, proces og læring.
-- [x] Portfolioet linker til relevante materialer, fx Figma/FigJam, live sites og dokumentation.
+- [x] Portfolioet linker til relevante materialer, fx Figma/FigJam, interne projektsider og dokumentation.
 - [x] Portfolioet viser billeder/procesmateriale for temaerne.
 - [x] Om mig-side med portræt, uddannelse, erfaring og refleksion.
 - [x] HTML, CSS og JavaScript brugt fra bunden.
@@ -16,7 +16,7 @@
 
 ## Projektnavne rettet
 
-- [x] Tema 2 står nu som Mobilesite / desktop-udbygning.
+- [x] Tema 2 står nu som Mobilsite / desktop-udbygning.
 - [x] Tema 3 står nu som OBBG.dk / emnesite og sandkassesite.
 - [x] Tema 4 står som Royal Click Fighter / animation og spil.
 - [x] Tema 5 står som Bird Bar / virksomhedssite og redesign.
@@ -27,7 +27,8 @@
 - [x] Wireframe og layoutdiagram nævnt.
 - [x] Farver, to fonte og CSS-opdeling nævnt.
 - [x] HTML-validering og noindex nævnt.
-- [x] Live-link fra PDF'en er bevaret.
+- [x] Portfolioen linker nu til intern og stabil Tema 2-side: `tema-2-mobilsite.html`.
+- [x] Den gamle adresse `tema-2-web.html` videresender til den nye Mobilsite-side.
 
 ## Tema 3 krav dækket
 
@@ -56,7 +57,7 @@
 ## Indhold der bør kontrolleres manuelt
 
 - [ ] GitHub Pages viser de seneste ændringer fra `main`.
-- [ ] Alle interne links virker i browser, især `royal-click-fighter.html` og `tema-4-animation.html`.
+- [ ] Alle interne links virker i browser, især `tema-2-mobilsite.html`, `royal-click-fighter.html` og `tema-4-animation.html`.
 - [ ] Figma/FigJam-links kan åbnes af modtageren.
 
 ## Links til aflevering
