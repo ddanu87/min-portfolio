@@ -12,10 +12,10 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 ## Sider
 
 - `index.html` - forside, introduktion og hurtigt overblik
-- `portfolio.html` - fire projekter fra 1. semester med løsning, proces, læring og refleksion
+- `portfolio.html` - fire projekter fra 1. semester med billeder, links, løsning, proces, læring og refleksion
 - `proces.html` - før, under og efter udviklingen af portfolioet
 - `om-mig.html` - afsender, portræt, uddannelse, kompetencer og refleksion
-- `obbg-figma.html` - Figma-link til OBBG.dk
+- `obbg-figma.html` - Figma, prototype og kodet site til OBBG.dk
 - `birdbar-figma.html` - Figma-link til Bird Bar
 
 ## Projekter
@@ -44,7 +44,9 @@ Vigtige dokumenter:
 - `docs/mundtlig-disposition.md`
 - `docs/ai-og-kildeoversigt.md`
 - `docs/teststatus.md`
+- `docs/tema-2-web.md`
 - `docs/tema-3-uxui-obbg.md`
+- `docs/tema-4-animation.md`
 - `docs/tema-5-virksomhedssite.md`
 
 ## AI-brug
