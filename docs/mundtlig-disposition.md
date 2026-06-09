@@ -8,15 +8,15 @@
 ## 0:30-1:30 - Struktur og afsender
 
 - Forsiden giver overblik og navigation.
-- Portfolio-siden viser fire temaer.
+- Portfolio-siden viser fire projekter.
 - Om mig-siden viser mig som afsender og min faglige udvikling.
 
 ## 1:30-3:15 - Projekter og læring
 
-- Tema 2: grundlæggende HTML, CSS, semantik og responsivt design.
-- Tema 3: UX/UI, research, Figma, prototype og brugertest.
-- Tema 4: JavaScript, animation, interaktion og spilstruktur.
-- Tema 5: virksomhedssite, afsender, målgruppe, indhold og gruppearbejde.
+- Tema 2: mobilesite/desktop-udbygning med HTML, CSS, wireframe, layoutdiagram, 5 sider og noindex.
+- Tema 3: OBBG.dk som emnesite/sandkassesite med designassociationer, centralt budskab, brugerrejse, styletile og Figma/FigJam-proces.
+- Tema 4: Royal Click Fighter med JavaScript, animation, interaktion, point, liv og spilstruktur.
+- Tema 5: Bird Bar virksomhedssite/redesign med research, SCRUM/Trello, prototype, indhold, test og gruppearbejde.
 
 ## 3:15-4:30 - Proces for portfolioet
 
@@ -32,7 +32,8 @@
 ## Ting jeg skal være klar til at forklare
 
 - Hvordan mobilmenuen virker i JavaScript.
-- Hvorfor portfolio-siden er struktureret ens for hvert tema.
-- Hvordan jeg har arbejdet med brugerforståelse og test.
-- Hvordan jeg har brugt Figma i Tema 3 og Tema 5.
+- Hvorfor portfolio-siden er struktureret ens for hvert projekt.
+- Hvordan Tema 2 gik fra mobile-first til desktop.
+- Hvordan OBBG bruger emne, budskab, designassociationer og brugerrejse.
+- Hvordan jeg har brugt Figma/FigJam i OBBG og Bird Bar.
 - Hvad jeg ville forbedre, hvis jeg havde mere tid.
