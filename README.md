@@ -15,29 +15,30 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 - `portfolio.html` - fire projekter fra 1. semester med billeder, links, løsning, proces, læring og refleksion
 - `proces.html` - før, under og efter udviklingen af portfolioet
 - `om-mig.html` - afsender, portræt, uddannelse, kompetencer og refleksion
-- `obbg-figma.html` - Figma, prototype og kodet site til OBBG.dk
+- `obbg-figma.html` - Figma, FigJam/proces og kodet site til OBBG.dk
 - `birdbar-figma.html` - Figma-link til Bird Bar
 - `tema-2-web.html`, `tema-3-uxui-obbg.html`, `tema-4-animation.html`, `tema-5-virksomhedssite.html` - klikbare dokumentationssider
+- `royal-click-fighter.html` - intern spilbar Tema 4-demo
 
 ## Projekter
 
-1. Tema 2 - Grundlæggende web / Computersite
-2. Tema 3 - Sandkassesite / Emnesite - OBBG.dk
+1. Tema 2 - Mobilesite / desktop-udbygning
+2. Tema 3 - OBBG.dk / emnesite og sandkassesite
 3. Tema 4 - Animation og spil / Royal Click Fighter
-4. Tema 5 - Virksomhedssite - Bird Bar
+4. Tema 5 - Virksomhedssite/redesign - Bird Bar
 
 ## Teknologi
 
 - HTML til struktur og semantik
 - CSS til layout, typografi, farver og responsivt design
 - JavaScript til mobilmenu og interaktion
-- Figma til design og prototyper
+- Figma/FigJam til design, prototyper og proces
 - GitHub til versionsstyring
 - GitHub Pages til publicering
 
 ## Assets og dokumentation
 
-- Portfolioens billeder ligger i `assets/images/` og bruges via normale filstier.
+- Portfolioens billeder ligger i `assets/images/` og bruges via normale filstier eller projektlinks.
 - De klikbare dokumentationssider ligger i roden som HTML-sider.
 - Baggrundsnoter og eksamensforberedelse ligger i `docs/`.
 
