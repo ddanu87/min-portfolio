@@ -13,6 +13,7 @@
 - `tema-4-animation.html`
 - `tema-5-virksomhedssite.html`
 - `style.css`
+- `readability.css`
 - `script.js`
 - dokumentation i `docs/`
 
@@ -20,7 +21,11 @@
 
 - `portfolio.html` er omskrevet fra minificeret HTML til en læsbar og eksamensvenlig struktur.
 - Portfolioet viser nu Tema 2, Tema 3, Tema 4 og Tema 5 med opgave, løsning, proces, læring og refleksion.
-- Base64-billeder er fjernet fra `portfolio.html` og erstattet af normale assets i `assets/images/`.
+- Portfolioet bruger nu konkrete billed-/procesmaterialer fra VS Code-mapperne, fx `computer-cutout.webp`, `hero-image.webp`, Royal Click Fighter-screendump og Bird Bar-procesboard.
+- Dokumentationssiderne har nu billeder/procesmateriale med forklarende billedtekster.
+- Der er tilføjet flere relevante projektlinks fra VS Code-materialet, fx Tema 2 galleri/min computer og Tema 4 grafik/teknik.
+- `readability.css` er tilføjet for bedre kontrast på tekst, billedtekster, links og knapper.
+- Base64-billeder er fjernet fra `portfolio.html` og erstattet af normale billedstier eller eksterne projektmaterialer med fallback-assets.
 - Portfolioets dokumentationslinks går nu til klikbare HTML-sider i stedet for direkte til markdown-filer.
 - Alle hovedsider har navigation i et `<header>`-element.
 - Eksterne links bruger `rel="noopener noreferrer"`.
@@ -37,9 +42,10 @@
 - Live portfolio: https://ddanu87.github.io/min-portfolio/
 - GitHub repo: https://github.com/ddanu87/min-portfolio
 - Tema 2 live site: https://obbg.dk/kea/02_web/01_website/website/index.html
+- Tema 2 galleri: https://obbg.dk/kea/02_web/01_website/website/galleri.html
 - Royal Click Fighter: https://obbg.dk/kea/04_animation/website/spil.html
+- Royal grafik/teknik: https://obbg.dk/kea/04_animation/website/grafik.html og https://obbg.dk/kea/04_animation/website/teknik.html
 - OBBG Figma prototype: https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465
-- OBBG Figma dokumentation: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&t=O4wCwWObGDOfGKJw-1
 - OBBG kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
 - Bird Bar Figma: https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn/Virksomhed-site?node-id=0-1&p=f&t=WPAA1Ppk9YOMbGkP-0
 
