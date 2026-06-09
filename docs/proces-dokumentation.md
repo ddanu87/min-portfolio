@@ -8,11 +8,11 @@ Jeg startede med at gennemgå eksamenskravene. Det blev tydeligt, at portfolioet
 
 Jeg samlede materiale fra mine projekter:
 
-- computersite
-- UX/UI-projektet OBBG.dk
-- Royal Click Fighter
-- virksomhedssite
-- Figma-materiale
+- Tema 2: mobilesite / desktop-udbygning
+- Tema 3: OBBG.dk emnesite/sandkassesite
+- Tema 4: Royal Click Fighter animation og spil
+- Tema 5: Bird Bar virksomhedssite/redesign
+- Figma/FigJam-materiale
 - papirprototype
 - aktivitetsdiagram
 - feedback
@@ -55,4 +55,4 @@ I gruppeprojekter har jeg lært, at rollefordeling, ansvar og kommunikation er v
 
 ## Samlet refleksion
 
-Portfolio-processen har hjulpet mig med at samle min læring. Jeg kan se en udvikling fra grundlæggende HTML og CSS til projekter med UX/UI, JavaScript, brugertest og refleksion.
+Portfolio-processen har hjulpet mig med at samle min læring. Jeg kan se en udvikling fra grundlæggende HTML og CSS til projekter med emnesite, JavaScript, redesign, brugertest, gruppearbejde og refleksion.
