@@ -14,6 +14,20 @@
 - [x] GitHub Pages-link og repository-link er klar til WISEflow.
 - [x] Afleverings-PDF har to klikbare links.
 
+## Reviewpunkter rettet
+
+- [x] Royal Click Fighter har direkte spilleside-link.
+- [x] Bird Bar forklarer ærligt, at der ikke er fundet separat live-link.
+- [x] Portfolio linker til HTML-dokumentationssider i stedet for rå markdown-filer.
+- [x] Base64-billeder er flyttet ud af `portfolio.html` og erstattet af assets i `assets/images/`.
+- [x] Eksterne links bruger `rel="noopener noreferrer"`.
+- [x] CSS har variabler, fokusmarkering og bedre billedregler.
+- [x] Bird Bar har “Min rolle”.
+- [x] OBBG og Bird Bar har konkrete brugertesteksempler.
+- [x] OBBG har refleksion om etik, jura, alder og datasikkerhed.
+- [x] Navigationen ligger i `<header>` på HTML-siderne.
+- [x] OBBG-projektet linker til `obbg-figma.html`.
+
 ## Indhold der bør kontrolleres manuelt
 
 - [ ] GitHub Pages viser de seneste ændringer fra `main`.
