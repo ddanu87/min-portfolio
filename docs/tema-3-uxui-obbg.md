@@ -38,7 +38,7 @@ Løsningen blev et fiktivt emnesite med mørk visuel stil, grønne detaljer, tyd
 
 ## Links
 
-- Figma: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&t=O4wCwWObGDOfGKJw-1
+- Figma: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw
 - Kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
 
 ## Værktøjer
