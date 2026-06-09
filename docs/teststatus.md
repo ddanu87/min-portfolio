@@ -6,6 +6,11 @@
 - `portfolio.html`
 - `proces.html`
 - `om-mig.html`
+- `mobilsite/index.html`
+- `mobilsite/min_computer.html`
+- `mobilsite/operativsystemer.html`
+- `mobilsite/komponenter.html`
+- `mobilsite/galleri.html`
 - `obbg-figma.html`
 - `birdbar-figma.html`
 - `tema-2-mobilsite.html`
@@ -21,19 +26,18 @@
 
 ## Rettet
 
-- Tema 2 er rettet til “Mobilsite / desktop-udbygning”.
-- Tema 2 bruger nu stabile interne links i portfolioen: `tema-2-mobilsite.html`, `#sider`, `#krav` og `#proces`.
-- Den gamle side `tema-2-web.html` videresender til den nye Mobilsite-side, så gamle links ikke dør.
+- Tema 2 hedder nu “Grundlæggende web”.
+- Tema 2-projektet hedder “Mobilsite / desktop-udbygning”.
+- Mobilsite-projektet er lagt ind internt i `mobilsite/`, så links virker på GitHub Pages.
 - Tema 2 beskriver nu 5 sider, udleveret wireframe/layoutdiagram, to fonte, farver, CSS-opdeling, HTML-validering og noindex.
+- Den gamle side `tema-2-web.html` videresender til den nye Tema 2-dokumentationsside, så gamle links ikke dør.
 - Tema 3 er rettet til OBBG.dk som emnesite/sandkassesite.
-- Tema 3 beskriver nu selvvalgt emne, 3 designassociationer, centralt budskab, brugerrejse, styletile, storyboard, visuelle elementer, billeder og AI-dokumentation.
-- Tema 3 har nu korrekt filnavn: `tema-3-emnesite-obbg.html` og `docs/tema-3-emnesite-obbg.md`.
+- Tema 3 beskriver selvvalgt emne, 3 designassociationer, centralt budskab, brugerrejse, styletile, storyboard, visuelle elementer, billeder og AI-dokumentation.
 - Tema 4 er intern og stabil med `royal-click-fighter.html`, `tema-4-animation.html#grafik`, `tema-4-animation.html#teknik` og interne SVG-assets.
 - Tema 5 er udbygget med virksomhedssite/redesign-krav: teamkontrakt, SCRUM/Trello, research, prototype, foto, form, custom property, noindex, test og Lighthouse.
 - `portfolio.html` viser nu alle fire projekter med opgave, løsning, proces, læring og refleksion.
 - Dokumentationssiderne har billeder/procesmateriale med forklarende billedtekster.
 - `readability.css` er tilføjet for bedre kontrast på tekst, billedtekster, links og knapper.
-- Portfolioets dokumentationslinks går til klikbare HTML-sider i stedet for direkte til markdown-filer.
 - Alle hovedsider har navigation i et `<header>`-element.
 - Eksterne links bruger `rel="noopener noreferrer"`.
 - AI-brug og kilder er dokumenteret i `docs/ai-og-kildeoversigt.md`.
@@ -43,6 +47,7 @@
 
 - Live portfolio: https://ddanu87.github.io/min-portfolio/
 - GitHub repo: https://github.com/ddanu87/min-portfolio
+- Intern Tema 2 mobilsite: https://ddanu87.github.io/min-portfolio/mobilsite/index.html
 - Intern Tema 2 dokumentation: https://ddanu87.github.io/min-portfolio/tema-2-mobilsite.html
 - OBBG Figma prototype: https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465
 - OBBG kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
