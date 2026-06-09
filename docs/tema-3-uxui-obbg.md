@@ -23,22 +23,11 @@ Processen bestod af:
 
 ## Løsning
 
-Løsningen blev et fiktivt emnesite med mørk visuel stil, grønne detaljer, tydelig navigation og fokus på brugerflow. Designet skulle give en teknologisk og strategisk stemning.
-
-## Materiale jeg kan vise til eksamen
-
-- Research og ideudvikling
-- Moodboard
-- Wireframes
-- Prototype
-- Styletile
-- Brugertest og analyse
-- Kodet website
-- Dokumentation af HTML, CSS og JavaScript
+Løsningen blev et fiktivt emnesite med mørk visuel stil, grønne detaljer, tydelig navigation og fokus på brugerflow.
 
 ## Links
 
-- Figma: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw
+- Figma: https://www.figma.com/design/0x2RSKlqVBpHzFcGiEQKsw/obbg?node-id=0-1&p=f&t=ZDF1nsZxCWpEcB2O-0
 - Kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
 
 ## Værktøjer
@@ -52,8 +41,8 @@ Løsningen blev et fiktivt emnesite med mørk visuel stil, grønne detaljer, tyd
 
 ## Læring
 
-Jeg lærte, at et emnesite ikke kun handler om visuelt design. Det handler også om at kunne forklare målgruppe, brugerbehov, struktur, brugerflow, visuel identitet, testresultater og tekniske valg.
+Jeg lærte, at et emnesite ikke kun handler om visuelt design. Det handler også om målgruppe, brugerbehov, struktur, brugerflow, visuel identitet, testresultater og tekniske valg.
 
 ## Refleksion
 
-Hvis jeg skulle arbejde videre med OBBG.dk, ville jeg gøre testresultaterne mere tydelige, forbedre accessibility og arbejde endnu mere med troværdighed og ansvarlig kommunikation. Projektet lærte mig, at struktur, læsbarhed og tydelige valg er vigtigt, når man udvikler et digitalt koncept.
+Hvis jeg skulle arbejde videre med OBBG.dk, ville jeg gøre testresultaterne mere tydelige og arbejde mere med accessibility.
