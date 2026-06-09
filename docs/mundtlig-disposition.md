@@ -13,7 +13,7 @@
 
 ## 1:30-3:15 - Projekter og læring
 
-- Tema 2: mobilesite/desktop-udbygning med HTML, CSS, wireframe, layoutdiagram, 5 sider og noindex.
+- Tema 2: Mobilsite/desktop-udbygning med HTML, CSS, wireframe, layoutdiagram, 5 sider og noindex.
 - Tema 3: OBBG.dk som emnesite/sandkassesite med designassociationer, centralt budskab, brugerrejse, styletile og Figma/FigJam-proces.
 - Tema 4: Royal Click Fighter med JavaScript, animation, interaktion, point, liv og spilstruktur.
 - Tema 5: Bird Bar virksomhedssite/redesign med research, SCRUM/Trello, prototype, indhold, test og gruppearbejde.
