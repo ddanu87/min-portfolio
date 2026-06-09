@@ -2,20 +2,29 @@
 
 ## Hvad
 
-Jeg arbejdede med Royal Click Fighter, et klikbaseret browser-spil i neon/casino-stil. Projektet handlede om animation, interaktion og JavaScript.
+Royal Click Fighter er et klikbaseret browser-spil i neon/casino-stil. Projektet handler om animation, interaktion, JavaScript-events, point, liv, timer og spiltilstande.
 
-## Procesmateriale fundet
+## Interne links i portfolioen
 
-- Papirprototype RoyalClickFighter
-- Aktivitetsdiagram Danusan
-- Skitser/screenshots fra spilprocessen
-- Kode med JavaScript-events, point, tid og feedback
+- Spilbar demo: `royal-click-fighter.html`
+- Dokumentationsside: `tema-4-animation.html`
+- Grafik/proces: `tema-4-animation.html#grafik`
+- Teknik: `tema-4-animation.html#teknik`
+
+Jeg har gjort Tema 4 intern i portfolio-repoet, fordi de gamle eksterne links til `obbg.dk/kea/04_animation/...` ikke var stabile. Nu virker projektlink og billeder direkte på GitHub Pages.
+
+## Procesmateriale
+
+- `assets/images/royal-click-fighter.svg` - intern spilillustration
+- `assets/images/royal-click-fighter-wireframe.svg` - wireframe/papirprototype
+- `assets/images/royal-click-fighter-flow.svg` - aktivitetsdiagram/spilflow
+- Lokal VS Code-mappe viste også screenshots og projektfiler fra `04_animation/website/`
 
 ## Proces
 
-Jeg startede med ide, papirprototype og aktivitetsdiagram, så spillets flow var tydeligt før kodning. Derefter byggede jeg spillet med HTML, CSS og JavaScript.
+Jeg startede med spilidé, papirprototype og aktivitetsdiagram, så spillets flow var tydeligt før kodning. Derefter byggede jeg spillet op med HTML, CSS og JavaScript.
 
-Spillet bruger klik-events, gode og dårlige elementer, point, timer, start/reset og feedback til brugeren.
+Spillet bruger klik-events, gode og dårlige elementer, point, liv, timer, start/reset og feedback til brugeren.
 
 ## Værktøjer
 
