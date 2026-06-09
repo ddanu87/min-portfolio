@@ -3,16 +3,21 @@
 Dette portfolio viser fire projekter fra 1. semester.
 
 ## Tema 2
-Computersite. Fokus: HTML, CSS, navigation og responsivt layout.
+
+Mobilesite / desktop-udbygning. Fokus: HTML, CSS, 5 sider, wireframe, layoutdiagram, mobile-first og desktop-layout.
 
 ## Tema 3
-OBBG.dk. Fokus: UX/UI, Figma, prototype og brugerflow.
+
+OBBG.dk som emnesite/sandkassesite. Fokus: selvvalgt emne, 3 designassociationer, centralt budskab, brugerrejse, styletile, storyboard og Figma/FigJam-proces.
 
 ## Tema 4
-Royal Click Fighter. Fokus: JavaScript, spilmekanik, point, liv og timer.
+
+Royal Click Fighter. Fokus: JavaScript, animation, spilmekanik, point, liv og timer.
 
 ## Tema 5
-Virksomhedssite. Fokus: målgruppe, indhold, visuel identitet og gruppearbejde.
+
+Virksomhedssite/redesign for Bird Bar. Fokus: SCRUM/Trello, research, målgruppe, indhold, visuel identitet, prototype, test og gruppearbejde.
 
 ## Rød tråd
-Portfolio
+
+Portfolioet viser en progression fra grundlæggende HTML/CSS til konceptudvikling, JavaScript, redesign, brugerforståelse, test og refleksion.
