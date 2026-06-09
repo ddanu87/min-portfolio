@@ -8,7 +8,8 @@
 - `om-mig.html`
 - `obbg-figma.html`
 - `birdbar-figma.html`
-- `tema-2-web.html`
+- `tema-2-mobilsite.html`
+- `tema-2-web.html` videresender til `tema-2-mobilsite.html`
 - `tema-3-emnesite-obbg.html`
 - `tema-4-animation.html`
 - `royal-click-fighter.html`
@@ -20,7 +21,9 @@
 
 ## Rettet
 
-- Tema 2 er rettet fra “computersite” til “mobilesite / desktop-udbygning”.
+- Tema 2 er rettet til “Mobilsite / desktop-udbygning”.
+- Tema 2 bruger nu stabile interne links i portfolioen: `tema-2-mobilsite.html`, `#sider`, `#krav` og `#proces`.
+- Den gamle side `tema-2-web.html` videresender til den nye Mobilsite-side, så gamle links ikke dør.
 - Tema 2 beskriver nu 5 sider, udleveret wireframe/layoutdiagram, to fonte, farver, CSS-opdeling, HTML-validering og noindex.
 - Tema 3 er rettet til OBBG.dk som emnesite/sandkassesite.
 - Tema 3 beskriver nu selvvalgt emne, 3 designassociationer, centralt budskab, brugerrejse, styletile, storyboard, visuelle elementer, billeder og AI-dokumentation.
@@ -40,8 +43,7 @@
 
 - Live portfolio: https://ddanu87.github.io/min-portfolio/
 - GitHub repo: https://github.com/ddanu87/min-portfolio
-- Tema 2 live mobilesite: https://obbg.dk/kea/02_web/01_website/website/index.html
-- Tema 2 galleri: https://obbg.dk/kea/02_web/01_website/website/galleri.html
+- Intern Tema 2 dokumentation: https://ddanu87.github.io/min-portfolio/tema-2-mobilsite.html
 - OBBG Figma prototype: https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465
 - OBBG kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
 - Intern Tema 4 demo: https://ddanu87.github.io/min-portfolio/royal-click-fighter.html
