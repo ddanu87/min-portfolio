@@ -11,6 +11,7 @@ function renderHeader(activePage = '') {
     ['Wallet', `${OBBG_BASE}/pages/wallet.html`, 'wallet'],
     ['Leaderboard', `${OBBG_BASE}/pages/leaderboard.html`, 'leaderboard'],
     ['Profile', `${OBBG_BASE}/pages/profile.html`, 'profile'],
+    ['Strategy', `${OBBG_BASE}/pages/product-strategy.html`, 'strategy'],
     ['Responsible', `${OBBG_BASE}/pages/responsible-gaming.html`, 'responsible'],
     ['Legal', `${OBBG_BASE}/pages/legal-roadmap.html`, 'legal']
   ];
