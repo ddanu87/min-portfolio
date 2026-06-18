@@ -34,10 +34,15 @@ function calculatePayout(totalPot, fee) {
   return Math.max(0, Number(totalPot || 0) - Number(fee || 0));
 }
 
+function createDemoId() {
+  if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+  return `${Date.now()}-${Math.floor(Math.random() * 100000)}`;
+}
+
 function addTransaction(type, amount, description) {
   const transactions = getTransactions();
   transactions.unshift({
-    id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
+    id: createDemoId(),
     type,
     amount,
     description,
