@@ -1,7 +1,7 @@
 function selectGame(gameId) {
   const game = getGameById(gameId);
   localStorage.setItem('obbgSelectedGame', JSON.stringify(game));
-  window.location.href = 'match-setup.html';
+  window.location.href = `${OBBG_BASE}/pages/match-setup.html`;
 }
 
 function getSelectedGame() {
@@ -45,7 +45,7 @@ function createMatch(stake) {
 
   const numbers = calculateMatchNumbers(numericStake);
   const match = {
-    id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
+    id: createDemoId(),
     game: selectedGame,
     stake: numericStake,
     opponentName: generateOpponent(),
