@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Demo — OBBG</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body data-page="login">
+  <header data-header></header>
+
+  <main class="container page">
+    <div class="grid grid-2">
+      <section class="card">
+        <span class="eyebrow">Fake auth · localStorage only</span>
+        <h1>Enter the OBBG demo</h1>
+        <p class="lead">Create a fake demo user. This is not real authentication and does not connect to payments, banking or gambling services.</p>
+        <div class="disclaimer">Demo coins have no real-world value and cannot be withdrawn.</div>
+      </section>
+
+      <section class="card">
+        <form class="form" data-login-form>
+          <div class="field">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="MancalaPlayer" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="demo@example.com" required>
+          </div>
+          <label style="display:flex; gap:10px; align-items:flex-start;">
+            <input name="age" type="checkbox" style="width:auto; margin-top:5px;" required>
+            <span>I confirm I am 18+ and understand this is a demo-only prototype.</span>
+          </label>
+          <button class="btn" type="submit">Enter demo</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer data-footer></footer>
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/games.js"></script>
+  <script src="../assets/js/wallet.js"></script>
+  <script src="../assets/js/leaderboard.js"></script>
+  <script src="../assets/js/matchmaking.js"></script>
+  <script src="../assets/js/auth.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
