@@ -1,0 +1,103 @@
+@media (max-width: 980px) {
+  .hero,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    min-height: 360px;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text);
+    padding: 8px 12px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 16px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #0b1220;
+    padding: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 12px;
+  }
+
+  .stake-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .board {
+    grid-template-columns: repeat(6, minmax(40px, 1fr));
+    gap: 8px;
+  }
+
+  .store {
+    grid-row: auto;
+    grid-column: span 3;
+    min-height: 72px;
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: min(100% - 22px, var(--max));
+  }
+
+  .page {
+    padding-top: 26px;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .actions,
+  .btn {
+    width: 100%;
+  }
+
+  .actions .btn {
+    width: 100%;
+  }
+
+  .stake-options {
+    grid-template-columns: 1fr;
+  }
+
+  .history-item,
+  .match-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, minmax(48px, 1fr));
+  }
+
+  .store {
+    grid-column: span 3;
+  }
+}
