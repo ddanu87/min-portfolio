@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Setup — OBBG</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body data-page="match-setup">
+  <header data-header></header>
+  <main class="container page">
+    <section class="section-head">
+      <span class="eyebrow">Demo match setup</span>
+      <h1>Set your stake</h1>
+      <p class="lead">The demo pot is locked before the match begins. No real money is used.</p>
+    </section>
+
+    <section class="grid grid-2">
+      <article class="card" data-selected-game></article>
+      <article class="card wallet-card">
+        <h3>Your demo balance</h3>
+        <strong class="stat" data-balance>0 coins</strong>
+        <p class="muted">Demo coins have no real-world value and cannot be withdrawn.</p>
+      </article>
+    </section>
+
+    <section class="grid grid-2 section">
+      <article class="card">
+        <h2>Choose demo stake</h2>
+        <div class="stake-options">
+          <button class="stake-option" type="button" data-stake="10">10</button>
+          <button class="stake-option" type="button" data-stake="25">25</button>
+          <button class="stake-option active" type="button" data-stake="50">50</button>
+          <button class="stake-option" type="button" data-stake="100">100</button>
+        </div>
+        <button class="btn" type="button" data-find-opponent style="margin-top: 18px;">Find opponent</button>
+      </article>
+
+      <article class="card">
+        <h2>Transparent fee model</h2>
+        <div class="match-summary" data-stake-summary></div>
+      </article>
+    </section>
+
+    <section class="disclaimer">This prototype uses demo coins only. A real-money version would require licensing, KYC, AML, age verification and responsible gaming controls.</section>
+  </main>
+  <footer data-footer></footer>
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/games.js"></script>
+  <script src="../assets/js/wallet.js"></script>
+  <script src="../assets/js/leaderboard.js"></script>
+  <script src="../assets/js/matchmaking.js"></script>
+  <script src="../assets/js/auth.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
