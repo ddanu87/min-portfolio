@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBBG — Online Betting Board Games</title>
+  <meta name="description" content="A demo-only peer-to-peer cultural board game platform prototype.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="home">
+  <header data-header></header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <span class="eyebrow">Demo prototype · No real money</span>
+        <h1>Online Betting Board Games</h1>
+        <p class="lead">Play cultural board games against real players — not the house. OBBG is a peer-to-peer skill gaming concept with demo coins, transparent match fees and a legal-first roadmap.</p>
+        <div class="actions">
+          <a class="btn" href="pages/login.html">Explore prototype</a>
+          <a class="btn secondary" href="pages/legal-roadmap.html">View legal roadmap</a>
+        </div>
+      </div>
+
+      <div class="card hero-panel">
+        <div class="orbit-card one">
+          <span class="badge success">No house opponent</span>
+          <h3>Player vs player</h3>
+          <p>Matches are between real users. The platform only hosts the game flow.</p>
+        </div>
+        <div class="orbit-card two">
+          <span class="badge">Demo pot</span>
+          <h3>100 coins locked</h3>
+          <p>Winner payout: 95 coins · Fee: 5 coins</p>
+        </div>
+        <div class="orbit-card three">
+          <span class="badge warning">Legal-first</span>
+          <h3>Real-money requires licensing</h3>
+          <p>KYC, AML, age checks, limits and approvals must exist before launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-head">
+        <h2>Problem</h2>
+        <p class="muted">Traditional casino platforms often use a house advantage model where the platform mathematically benefits from player losses.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card"><h3>House advantage</h3><p>The platform is often the opponent or controls the odds.</p></article>
+        <article class="card"><h3>Low transparency</h3><p>Players do not always understand fees, odds or expected losses.</p></article>
+        <article class="card"><h3>Weak culture layer</h3><p>Many games ignore the cultural board game traditions people already know.</p></article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-head">
+        <h2>Solution</h2>
+        <p class="muted">OBBG positions the platform as a host, not as the house. Players compete against each other in cultural board games and the service fee is transparent.</p>
+      </div>
+      <div class="grid grid-4">
+        <article class="card"><h3>1. Choose game</h3><p>Pick a cultural board game from the lobby.</p></article>
+        <article class="card"><h3>2. Set demo stake</h3><p>Use demo coins to show the flow without real money.</p></article>
+        <article class="card"><h3>3. Match player</h3><p>The system creates a player-vs-player match.</p></article>
+        <article class="card"><h3>4. Demo payout</h3><p>The winner receives the demo pot minus a transparent fee.</p></article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-head">
+        <h2>Featured games</h2>
+        <p class="muted">Start narrow. Prove one playable skill-first game before adding higher-chance modes.</p>
+      </div>
+      <div class="grid grid-4" id="game-list"></div>
+    </section>
+
+    <section class="container section">
+      <div class="disclaimer">
+        <strong>Prototype disclaimer:</strong> This prototype does not use real money. No deposits, withdrawals, cash prizes or payment systems are included. Real-money features require legal licensing, KYC, AML, responsible gaming controls and approval.
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/games.js"></script>
+  <script src="assets/js/wallet.js"></script>
+  <script src="assets/js/leaderboard.js"></script>
+  <script src="assets/js/matchmaking.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
