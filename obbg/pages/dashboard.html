@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — OBBG</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body data-page="dashboard">
+  <header data-header></header>
+  <main class="container page">
+    <section class="section-head">
+      <span class="eyebrow">Demo dashboard</span>
+      <h1>Welcome back, <span data-username>player</span></h1>
+      <p class="lead">Control your fake wallet, start demo matches and review the fairness model.</p>
+    </section>
+
+    <section class="grid grid-4">
+      <article class="card stat-card wallet-card"><span>Demo balance</span><strong class="stat" data-balance>0 coins</strong></article>
+      <article class="card stat-card"><span>Rank</span><strong class="stat" data-rank>Bronze</strong></article>
+      <article class="card stat-card"><span>Wins</span><strong class="stat" data-wins>0</strong></article>
+      <article class="card stat-card"><span>Losses</span><strong class="stat" data-losses>0</strong></article>
+    </section>
+
+    <section class="grid grid-2 section">
+      <article class="card" data-active-match></article>
+      <article class="card">
+        <h3>Featured Game: Oware / Mancala</h3>
+        <p class="muted">A strategic cultural board game format. This prototype includes a simplified playable demo.</p>
+        <div class="actions" style="margin-top: 18px;">
+          <a class="btn" href="lobby.html">Open lobby</a>
+          <a class="btn secondary" href="legal-roadmap.html">Legal roadmap</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid grid-3">
+      <article class="card"><h3>No house opponent</h3><p>OBBG never plays against the user in the product concept.</p></article>
+      <article class="card"><h3>Transparent service fee</h3><p>The prototype uses a clear 5% demo match fee.</p></article>
+      <article class="card"><h3>Demo only</h3><p>No deposits, withdrawals, cash prizes or real-money features.</p></article>
+    </section>
+  </main>
+  <footer data-footer></footer>
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/games.js"></script>
+  <script src="../assets/js/wallet.js"></script>
+  <script src="../assets/js/leaderboard.js"></script>
+  <script src="../assets/js/matchmaking.js"></script>
+  <script src="../assets/js/auth.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
