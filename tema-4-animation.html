@@ -3,137 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Udvidet dokumentation for Tema 4 Royal Click Fighter animation og JavaScript-spil.">
-  <title>Tema 4 dokumentation | Danusan Padmarajah</title>
+  <meta name="description" content="Personlig dokumentation af Royal Click Fighter med spilflow, CSS-animationer, JavaScript og refleksion.">
+  <title>Tema 4 Royal Click Fighter | Danusan Padmarajah</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="readability.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="logo">Danusan Padmarajah</a>
-        <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link">Forside</a></li>
-          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-          <li><a href="proces.html" class="nav-link">Proces</a></li>
-          <li><a href="om-mig.html" class="nav-link">Om mig</a></li>
-        </ul>
-        <button class="hamburger" aria-label="Åbn menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </nav>
-  </header>
-
+  <header><nav class="navbar"><div class="nav-container"><a href="index.html" class="logo">Danusan Padmarajah</a><ul class="nav-menu"><li><a href="index.html" class="nav-link">Forside</a></li><li><a href="portfolio.html" class="nav-link">Portfolio</a></li><li><a href="proces.html" class="nav-link">Proces</a></li><li><a href="om-mig.html" class="nav-link">Om mig</a></li></ul><button class="hamburger" aria-label="Åbn menu" aria-expanded="false"><span></span><span></span><span></span></button></div></nav></header>
   <main>
-    <section class="page-header">
-      <div class="container">
-        <h1>Tema 4 - Royal Click Fighter</h1>
-        <p>Animation, JavaScript, spilflow, interaktion og feedback.</p>
-      </div>
-    </section>
+    <section class="page-header"><div class="container"><h1>Tema 4 – Royal Click Fighter</h1><p>Mit interaktive klikspil med animation, point, liv, timer og forskellige spiltilstande.</p></div></section>
+    <section class="intro-section"><div class="container narrow">
+      <h2>Hvad jeg byggede</h2>
+      <p>Jeg udviklede Royal Click Fighter som et browser-spil. Brugeren skal starte spillet, klikke på gode elementer, undgå dårlige elementer og nå målet, før tiden eller livene løber ud.</p>
+      <p class="link-list"><a class="btn-link" href="royal-click-fighter.html">Spil den interne demo</a><a class="btn-link" href="#flow">Se spilflow</a><a class="btn-link" href="#teknik">Se teknik</a><a class="btn-link" href="#refleksion">Se refleksion</a></p>
 
-    <section class="intro-section">
-      <div class="container narrow">
-        <h2>Dokumentation</h2>
-        <p>Royal Click Fighter er mit Tema 4-projekt. Opgaven handlede om at udvikle et interaktivt browser-spil med animationer, point, liv, timer og tydelig feedback til brugeren.</p>
-        <p>Tidligere pegede Tema 4 på eksterne projektlinks, som ikke altid loader. Derfor er dokumentationen nu gjort intern i portfolioen med egne assets, wireframe, flowdiagram og en klikbar demo.</p>
+      <h3>Min rolle</h3>
+      <p>Projektet var individuelt. Jeg arbejdede med idé, UI, spilelementer, HTML-struktur, CSS-animationer, JavaScript-logik og dokumentation.</p>
 
-        <p class="link-list">
-          <a class="btn-link" href="royal-click-fighter.html">Spil intern demo</a>
-          <a class="btn-link" href="#grafik">Grafik og proces</a>
-          <a class="btn-link" href="#teknik">Teknik</a>
-          <a class="btn-link" href="#test">Test og refleksion</a>
-          <a class="btn-link" href="portfolio.html#tema-4">Tilbage til Tema 4</a>
-        </p>
+      <h3>Spillets opbygning</h3>
+      <p>Jeg byggede spillet i en 16:9-container med tre lag: baggrund, spilelementer og UI. Point, liv og timer ligger i UI-laget, mens de klikbare elementer bevæger sig ovenpå baggrunden.</p>
 
-        <figure class="doc-figure">
-          <img src="assets/images/royal-click-fighter.svg" alt="Royal Click Fighter intern spilillustration med point, liv og startknap">
-          <figcaption class="figure-caption">Intern illustration af det færdige spiludtryk: mørk baggrund, neonfarver, startknap, point, liv og klikbare elementer.</figcaption>
-          <p class="source-note">Assetet ligger i repoet, så billedet virker direkte på GitHub Pages.</p>
-        </figure>
+      <h3 id="flow">Mit spilflow</h3>
+      <ol>
+        <li>Brugeren trykker på start.</li>
+        <li>Score, liv og tid nulstilles.</li>
+        <li>Gode og dårlige elementer bevæger sig gennem banen.</li>
+        <li>Klik på et godt element giver point.</li>
+        <li>Klik på et dårligt element fjerner liv.</li>
+        <li>JavaScript kontrollerer løbende point, liv og tid.</li>
+        <li>Spillet ender med vundet eller tabt tilstand.</li>
+      </ol>
 
-        <h3>Opgave</h3>
-        <p>Jeg skulle udvikle et klikbaseret spil, hvor brugeren hurtigt kan forstå reglerne og få feedback gennem animation, point, liv og spiltilstande.</p>
+      <h3>Visuelt udtryk</h3>
+      <p>Jeg valgte et mørkt cyber/casino-udtryk med neonfarver. De gode elementer er lettere og mere belønnende i deres udtryk, mens de dårlige elementer er mørkere og mere aggressive. Jeg brugte SVG-grafik direkte i HTML til blandt andet mønt og bombe.</p>
 
-        <h3>Færdig løsning</h3>
-        <p>Løsningen blev Royal Click Fighter: et browser-spil med gode elementer, dårlige elementer, score, liv, timer og win/lose-flow. Jeg har også lavet en intern demo, så projektlinket fungerer uden eksterne afhængigheder.</p>
-      </div>
-    </section>
+      <h3 id="teknik">Teknik jeg arbejdede med</h3>
+      <ul>
+        <li><strong>HTML:</strong> container, lag, UI, knapper og klikbare elementer.</li>
+        <li><strong>CSS:</strong> keyframes, positionering, responsiv skalering og animationer.</li>
+        <li><strong>JavaScript:</strong> variabler, funktioner, events, DOM-opdatering, timer og reset.</li>
+        <li><strong>Feedback:</strong> point, liv, timer og slutbesked.</li>
+      </ul>
 
-    <section class="intro-section" id="grafik">
-      <div class="container narrow">
-        <h2>Grafik og proces</h2>
-        <p>Min proces startede med spilidé og papirprototype. Jeg planlagde UI-elementer som point, timer og liv, og jeg tegnede de objekter brugeren skulle klikke på eller undgå.</p>
+      <h3>Problemer jeg opdagede</h3>
+      <p>Dokumentationen og selve spillet er ikke helt konsekvente. Ét sted står der, at gode elementer giver +1 point, mens den tekniske dokumentation beskriver +10 point. Der står også både et mål på 10 og en vindergrænse på 50 point. Det viser, at jeg ændrede spillet undervejs uden at opdatere alle tekster.</p>
+      <p>Det er en konkret fejl i min proces: Når funktionalitet ændres, skal design, instruktioner og dokumentation ændres samtidig.</p>
 
-        <figure class="doc-figure">
-          <img src="assets/images/royal-click-fighter-wireframe.svg" alt="Wireframe for Royal Click Fighter med point, tid, liv og spilobjekter">
-          <figcaption class="figure-caption">Wireframe baseret på Tema 4-skitserne fra VS Code-mappen.</figcaption>
-          <p class="source-note">Den viser layoutet før kodning: point til venstre, timer i midten, liv til højre og spilobjekter i banen.</p>
-        </figure>
+      <h3>Hvad der fungerede</h3>
+      <ul>
+        <li>Spillets mål er let at forstå.</li>
+        <li>Point, liv og timer giver tydelig feedback.</li>
+        <li>16:9-containeren holder spilområdet samlet.</li>
+        <li>CSS-animationerne skaber tempo uden et grafisk framework.</li>
+      </ul>
 
-        <h3>Designvalg</h3>
-        <ul>
-          <li><strong>Stil:</strong> cyberpunk/casino med mørk baggrund, neonfarver og høj kontrast.</li>
-          <li><strong>Gode elementer:</strong> mønt, terning og stjerne, som giver point.</li>
-          <li><strong>Dårlige elementer:</strong> bombe/fare-elementer, som fjerner liv.</li>
-          <li><strong>Feedback:</strong> brugeren skal hurtigt kunne se point, liv og om spillet er vundet eller tabt.</li>
-        </ul>
+      <h3>Hvad jeg ville forbedre</h3>
+      <ul>
+        <li>Samle regler og pointværdier ét sted i JavaScript.</li>
+        <li>Opdele koden i mindre funktioner med tydelige navne.</li>
+        <li>Fjerne modstridende tekster i instruktioner og dokumentation.</li>
+        <li>Teste touch-flader og tempo på mobil.</li>
+        <li>Tilføje en tydelig pausefunktion og sværhedsgrader.</li>
+      </ul>
 
-        <h3>Hvad jeg ville forbedre visuelt</h3>
-        <p>Jeg ville gøre de færdige spilelementer mere konsekvente i stil, lave tydeligere hover/click-feedback og sikre, at alle assets ligger samme sted i projektmappen. I den oprindelige mappe var flere SVG-filer tomme, så det er vigtigt at kontrollere assets før publicering.</p>
-      </div>
-    </section>
-
-    <section class="intro-section" id="teknik">
-      <div class="container narrow">
-        <h2>Teknik</h2>
-        <p>Teknisk handlede projektet om at få HTML, CSS og JavaScript til at arbejde sammen som et spil. HTML gav strukturen, CSS gav layout og animationer, og JavaScript styrede spillets tilstande.</p>
-
-        <figure class="doc-figure">
-          <img src="assets/images/royal-click-fighter-flow.svg" alt="Aktivitetsdiagram for Royal Click Fighter spilflow">
-          <figcaption class="figure-caption">Aktivitetsdiagram for spillets flow.</figcaption>
-          <p class="source-note">Diagrammet viser startskærm, timer, spawn af elementer, klik på gode/dårlige elementer og sluttilstande.</p>
-        </figure>
-
-        <h3>HTML-struktur</h3>
-        <p>Spillet blev bygget omkring en game-container med lag til baggrund, spilelementer og UI. Det gør det lettere at styre, hvad der er baggrund, hvad brugeren klikker på, og hvad der viser information.</p>
-
-        <h3>CSS-animation</h3>
-        <p>Animationerne bruges til at få objekter til at bevæge sig i spilområdet. Det giver spillet tempo og gør, at brugeren skal reagere hurtigt.</p>
-
-        <h3>JavaScript</h3>
-        <ul>
-          <li><strong>State:</strong> score, liv, tid og om spillet er aktivt.</li>
-          <li><strong>Events:</strong> klik på gode og dårlige elementer.</li>
-          <li><strong>DOM:</strong> opdatering af point, liv og beskeder på skærmen.</li>
-          <li><strong>Timer:</strong> spillet slutter, hvis tiden løber ud.</li>
-          <li><strong>Reset:</strong> brugeren kan starte en ny runde.</li>
-        </ul>
-
-        <h3>Hvad jeg lærte teknisk</h3>
-        <p>Jeg lærte, at interaktive projekter hurtigt bliver uoverskuelige, hvis man ikke holder styr på variabler, funktioner og flow. Derfor er et aktivitetsdiagram og tydelig navngivning en stor hjælp, før man skriver JavaScript.</p>
-      </div>
-    </section>
-
-    <section class="intro-section" id="test">
-      <div class="container narrow">
-        <h2>Test og refleksion</h2>
-        <h3>Test</h3>
-        <p>Jeg testede om brugeren kunne forstå målet: klik på de gode elementer, undgå de dårlige, hold øje med liv og nå pointmålet før tiden løber ud. De vigtigste ting at kontrollere var, om knapperne virkede, om point/liv opdaterede korrekt, og om slutskærmen blev vist.</p>
-
-        <h3>Refleksion</h3>
-        <p>Projektet viste mig, at et spil ikke kun handler om grafik. Det handler også om tydelige regler, god feedback og en kode-struktur, der er nem at fejlfinde i.</p>
-        <p>Hvis jeg skulle arbejde videre, ville jeg opdele JavaScript-koden i mindre funktioner, tilføje sværhedsgrad, arbejde med lyd på en kontrolleret måde og teste med flere brugere tidligere i processen.</p>
-
-        <p class="link-list">
-          <a class="btn-link" href="royal-click-fighter.html">Spil intern demo</a>
-          <a class="btn-link" href="portfolio.html#tema-4">Tilbage til portfolio</a>
-        </p>
-      </div>
-    </section>
+      <h3 id="refleksion">Min vigtigste læring</h3>
+      <p>Jeg lærte, at et spil er et system og ikke kun en animation. Variabler, regler, feedback og sluttilstande skal hænge sammen. Når én regel ændres, påvirker det både kode, instruktioner og brugeroplevelse.</p>
+      <p>Royal Click Fighter viser min udvikling fra statiske websites til interaktion. Det er også et projekt, hvor mine fejl er synlige, og derfor er det vigtigt i portfolioen: Det viser konkret, hvad jeg forstår bedre nu.</p>
+      <p class="link-list"><a class="btn-link" href="royal-click-fighter.html">Spil demoen</a><a class="btn-link" href="portfolio.html#tema-4">Tilbage til Tema 4</a></p>
+    </div></section>
   </main>
-
-  <footer><div class="container"><p>&copy; 2026 Danusan Padmarajah | 1. semester portfolio</p></div></footer>
-  <script src="script.js"></script>
+  <footer><div class="container"><p>&copy; 2026 Danusan Padmarajah | 1. semester portfolio</p></div></footer><script src="script.js"></script>
 </body>
 </html>
