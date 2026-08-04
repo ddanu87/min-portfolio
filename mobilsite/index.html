@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
-  <title>Tema 2 - Grundlæggende web | Mobilsite</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="layout.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <a class="logo" href="index.html">Tema 2 · Grundlæggende web</a>
-      <ul class="menu">
-        <li><a href="index.html" aria-current="page">Forside</a></li>
-        <li><a href="min_computer.html">Min computer</a></li>
-        <li><a href="operativsystemer.html">Operativsystemer</a></li>
-        <li><a href="komponenter.html">Komponenter</a></li>
-        <li><a href="galleri.html">Galleri</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero grid_2-1">
-      <div>
-        <p class="eyebrow">Mobilsite · desktop-udbygning</p>
-        <h1>Computere</h1>
-        <p>Dette er Tema 2-projektet fra Grundlæggende web. Opgaven var at arbejde videre på et mobilsite, så det også fungerede på desktop med HTML, CSS, wireframe og layoutdiagram.</p>
-        <a class="button" href="min_computer.html">Se min computer</a>
-      </div>
-      <img src="../assets/images/mobilesite.svg" alt="Illustration af responsivt mobilsite">
-    </section>
 
-    <section class="panel grid_1-1">
-      <div>
-        <h2>Opgaven</h2>
-        <p>Websitet skulle bestå af fem sider, bruge farver og to forskellige fonte, have CSS opdelt i styling og layout og indeholde <code>noindex</code> i head.</p>
-      </div>
-      <div>
-        <h2>Min læring</h2>
-        <p>Jeg lærte at bygge HTML-struktur, arbejde med responsivt layout og bruge CSS mere systematisk fra mobil til desktop.</p>
-      </div>
-    </section>
-  </main>
-  <footer>2026 Danusan Padmarajah · Portfolio</footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Forside</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">T2</a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="min_computer.html">Min computer</a></li>
+                <li><a href="operativsystemer.html">Operativsystemer</a></li>
+                <li><a href="komponenter.html">Komponenter</a></li>
+                <li><a href="galleri.html">Galleri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Computere</h1>
+        <section class="grid_2-1">
+            <div class="col">
+                <p>Et site om computeren med alt fra dens historie til dens specifikationer og mine personlige
+                    præferencer, når
+                    det gælder
+                    computere og computerudstyr.</p>
+                <a class="button" href="min_computer.html">Min computer</a>
+            </div>
+            <div class="col">
+                <img src="imgs/computer-cutout.webp" alt="Computer-cutout">
+            </div>
+        </section>
+
+        <section class="grid_1-1">
+            <div class="col">
+                <h2>Computere i hjemmet</h2>
+                <p>Ni ud af ti familier ejer i 2022 en eller flere smartphones, mens knap seks ud af ti familier har en
+                    tablet-pc liggende.
+                    Hele 94 procent ejer en personlig computer, hvoraf fire ud af ti anvender Windows som deres primære
+                    operativsystem.</p>
+
+                <dl class="grid_1-1">
+                    <div>
+                        <dt>Personlig computer</dt>
+                        <dd>94%</dd>
+                    </div>
+
+                    <div>
+                        <dt>Windows</dt>
+                        <dd>40%</dd>
+                    </div>
+
+                    <div>
+                        <dt>Tablet</dt>
+                        <dd>56%</dd>
+                    </div>
+
+                    <div>
+                        <dt>Smartphone</dt>
+                        <dd>93%</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="order">
+                <img src="imgs/galleri/macbook.webp" alt="macbook">
+            </div>
+        </section>
+    </main>
+
+    <footer>2026 Danusan Padmarajah</footer>
 </body>
+
 </html>

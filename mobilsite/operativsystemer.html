@@ -1,26 +1,135 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
-  <title>Operativsystemer | Tema 2 Grundlæggende web</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="layout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Operativsystemer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+
 </head>
+
 <body>
-  <header><nav class="navbar"><a class="logo" href="index.html">Tema 2 · Grundlæggende web</a><ul class="menu"><li><a href="index.html">Forside</a></li><li><a href="min_computer.html">Min computer</a></li><li><a href="operativsystemer.html" aria-current="page">Operativsystemer</a></li><li><a href="komponenter.html">Komponenter</a></li><li><a href="galleri.html">Galleri</a></li></ul></nav></header>
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Indholdsside</p>
-      <h1>Operativsystemer</h1>
-      <p>Siden handlede om Mac, Windows, tablets og mobiler. Fokus var at strukturere længere tekst, bruge billeder og skabe et layout, der kunne læses på flere skærmstørrelser.</p>
-    </section>
-    <section class="panel grid_1-1">
-      <div><h2>Mac og Windows</h2><p>Jeg arbejdede med forskelle mellem operativsystemer og lærte at dele tekst op i overskrifter, afsnit og visuelle blokke.</p></div>
-      <div><h2>Mobil og tablet</h2><p>Mobil og tablet var relevant, fordi opgaven netop handlede om at starte mobile-first og derefter udbygge til desktop.</p></div>
-    </section>
-  </main>
-  <footer>2026 Danusan Padmarajah · Portfolio</footer>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">T2</a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="min_computer.html">Min computer</a></li>
+                <li><a href="operativsystemer.html">Operativsystemer</a></li>
+                <li><a href="komponenter.html">Komponenter</a></li>
+                <li><a href="galleri.html">Galleri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Operativsystemer</h1>
+        <section class="grid_5-3">
+            <div class="col">
+                <div class="grid_2-3">
+                    <div>
+                        <img src="imgs/galleri/macbook.webp" alt="MacBook">
+                    </div>
+
+                    <div>
+                        <h2>Mac</h2>
+                        <p>Ikke alle tænker over, at 'Mac' er en forkortelse af 'Macintosh'. Operativsystemet har en
+                            historie,
+                            der
+                            begynder i 1984,
+                            hvor den personlige computer (PC) ikke var alles eje.</p>
+                        <p>I dag er sagen en anden: De fleste mennesker kan i 2022 forventes at have mindst én computer.
+                            For
+                            nogle
+                            er
+                            det en
+                            mobiltelefon, for andre en laptop og for andre igen en stationær. Og langt de fleste
+                            danskere
+                            har
+                            også
+                            mere
+                            end én
+                            computer i deres hjem.</p>
+                        <p>I skrivende stund bruger de nyste Mac computere styresystemet macOS, der er et UNIX
+                            operativsystem.
+                            Seneste
+                            version er
+                            macOS 12.5 fra d. 20. juli, 2022. Mest spændende er nok det skifte, Apple, der står bag Mac,
+                            i
+                            2020
+                            begyndte
+                            på, da de
+                            præsenterede Apple M1 processoren, hvor de før brugte Intel Core processorer. M1 chippen
+                            skulle
+                            være
+                            revolutionær.</p>
+                    </div>
+                </div>
+
+                <div class="grid_3-2">
+                    <div>
+                        <img src="imgs/galleri/windows.webp" alt="Windows">
+                    </div>
+
+                    <div class="order">
+                        <h2>Windows</h2>
+                        <p>Fra Microsoft har vi styresystemet Windows. Det er udbredt til en lang række mærker indenfor
+                            PC-markedet.
+                            Windows vs Mac
+                            kan godt opleves som lidt af en (smags-)religion, men det er først og fremmest to
+                            forskellige
+                            systemer,
+                            som
+                            hver især
+                            kræver tilpas meget at blive effektiv i at bruge. Windows 11 er nyeste skud på stammen.</p>
+                        <p>En computer med Windows er ofte billigere end én med macOS, men du kan roligt regne med, at
+                            de
+                            fleste
+                            vil
+                            foretrække
+                            enten det ene eller andet og ikke altid overveje prisen på systemet, de bliver en del af.
+                        </p>
+                        <p>Der er klart flere computere, der kører på Windows i forhold til macOS. Du kan se lidt
+                            forskellig
+                            statistik
+                            på
+                            styresystemer hos f.eks. W3Schools under deres Browser Stats > Browsers OS:
+                            https://www.w3schools.com/browsers/browsers_os.asp</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="imgs/tablet.webp" alt="Tablet">
+                <h2>Tablets og mobiler</h2>
+                <p>Hvis du har en tablet eller en mobiltelefon, så har den også et styresystem. En smartphone i dag har
+                    typisk
+                    enten iOS
+                    (Apple) eller Android (mange forskellige mærker). For år tilbage kunne man også se mobiler med
+                    Windows
+                    Mobile. Men de er
+                    i dag en sjældenhed, selvom mange fandt tilgængeligheden for svagsynede bedst hos Windows.</p>
+                <p>Nogle tech-nørder afsværger Android og iOS og installerer i stedet f.eks. Linux på deres telefon. Det
+                    kan
+                    f.eks. være
+                    Ubuntu Touch. Apple har også lavet et tablet-dedikeret operativsystem, de kalder iPadOS.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>2026 Danusan Padmarajah</footer>
 </body>
+
 </html>

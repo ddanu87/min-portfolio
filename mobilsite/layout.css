@@ -1,41 +1,140 @@
-.grid_2-1,
-.grid_1-1,
-.grid_1-1-1,
-.grid_gallery {
+:root {
+  --space-black: #0b3d91; /* Mørk blå som baggrund */
+  --star-white: #ffffff; /* Hvid til tekst og lysende elementer */
+  --star-yellow: #ffd700; /* Gylden til accentfarve */
+  --nebula-purple: #8a2be2; /* Lilla til highlights */
+  --galaxy-blue: #1e90ff; /* Lys blå til sekundær farve */
+}
+
+body {
+  background-color: var(--space-black);
+  color: var(--star-white);
+}
+
+.desktop_code {
   display: grid;
-  gap: 24px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: var(--nebula-purple);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.grid_2-1 {
-  grid-template-columns: 2fr 1fr;
-}
-
-.grid_1-1 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid_1-1-1 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid_gallery {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.span-2 {
-  grid-column: span 2;
-}
-
-@media (max-width: 820px) {
-  .grid_2-1,
-  .grid_1-1,
-  .grid_1-1-1,
-  .grid_gallery {
-    grid-template-columns: 1fr;
+@media (min-width: 800px) {
+  /********************** Min Computer **********************/
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: var(--galaxy-blue);
+    padding: 20px;
+    border-radius: 10px;
   }
 
-  .span-2 {
-    grid-column: auto;
+  /********************** Forside **********************/
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    background-color: var(--nebula-purple);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  /********************** Operativsystemer **********************/
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 20px;
+    background-color: var(--galaxy-blue);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    background-color: var(--nebula-purple);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    background-color: var(--galaxy-blue);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  /********************** Galleri **********************/
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: var(--nebula-purple);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .apple {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .code {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+
+  .desktop_code {
+    display: grid;
+    grid-column: 3/5;
+  }
+
+  .keyboard {
+    grid-column: 2/5;
+    grid-row: 3/4;
+  }
+
+  .macbook {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .grid_1-1-1-1 img {
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  /********************** Komponenter **********************/
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: var(--galaxy-blue);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flex_col :last-child {
+    margin-top: auto;
   }
 }
