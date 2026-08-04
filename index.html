@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1. semester portfolio for multimediedesign af Danusan Padmarajah med projekter, proces, dokumentation og refleksion.">
+  <meta name="description" content="Danusan Padmarajahs 1. semester portfolio med konkrete projekter, kode, designproces og refleksion.">
   <title>Danusan Padmarajah | 1. semester portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="readability.css">
@@ -28,56 +28,77 @@
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">Multimediedesign · 1. semester · Forår 2026</p>
-        <h1>Mit 1. semester portfolio</h1>
-        <p>Her samler jeg mine projekter, min proces og min læring fra semesteret, så du hurtigt kan se, hvad jeg har lavet, og hvad jeg kan forklare til eksamen.</p>
+        <h1>Her er det, jeg faktisk har lavet</h1>
+        <p>Portfolioen viser mine fire semesterprojekter gennem færdige løsninger, billeder, kode, wireframes, fejl, ændringer og refleksioner. Fokus er mit arbejde og min udvikling — ikke generelle beskrivelser.</p>
         <div class="hero-buttons">
-          <a href="portfolio.html" class="btn btn-primary">Se mine projekter</a>
-          <a href="proces.html" class="btn btn-secondary">Læs min proces</a>
+          <a href="portfolio.html" class="btn btn-primary">Se mine værker</a>
+          <a href="proces.html" class="btn btn-secondary">Se min proces</a>
         </div>
       </div>
     </section>
 
     <section class="intro-section">
       <div class="container narrow">
-        <h2>Hvad sitet viser</h2>
-        <p>Portfolioet dokumenterer mit arbejde og min læring fra 1. semester. Det viser fire projekter fra undervisningen og forklarer opgave, løsning, proces, læring og refleksion for hvert projekt.</p>
-        <p>Sitet er udviklet fra bunden med HTML, CSS og JavaScript. Jeg har arbejdet med responsivt layout, semantisk struktur, navigation, læsbarhed og en enkel visuel stil, så indholdet er let at finde på både mobil og desktop.</p>
-        <p>Mit mål er, at portfolioet fungerer som både afleveringsprodukt og eksamensværktøj: det skal være nemt at navigere i, nemt at forklare og tydeligt forankret i de metoder og værktøjer, vi har arbejdet med på semesteret.</p>
+        <h2>Min udvikling gennem semesteret</h2>
+        <p>Jeg begyndte med et simpelt website om computere og lærte at bygge med semantisk HTML, CSS Grid, Flexbox og responsive layouts. Derefter arbejdede jeg med koncept, brugerrejse og visuel identitet i OBBG.dk, JavaScript og spilflow i Royal Click Fighter samt research, Figma og gruppearbejde i Bird Bar.</p>
+        <p>På projektsiderne viser jeg ikke kun slutresultatet. Jeg forklarer også mine konkrete valg, problemer, fejl og hvad jeg ville gøre anderledes i dag.</p>
       </div>
     </section>
 
-    <section class="highlights">
-      <div class="container">
-        <h2>Fokusområder</h2>
-        <div class="highlights-grid">
-          <article class="highlight-card"><h3>Webudvikling</h3><p>HTML, CSS, JavaScript, semantisk struktur, responsivt layout og test i browser.</p></article>
-          <article class="highlight-card"><h3>Designproces</h3><p>Research, designassociationer, styletile, wireframes, prototype og brugerrejse.</p></article>
-          <article class="highlight-card"><h3>Indhold</h3><p>Tekst, billeder, visuelle elementer, dokumentation og tydelig præsentation.</p></article>
-          <article class="highlight-card"><h3>Refleksion</h3><p>Mine valg, fejl, forbedringer og hvad jeg vil arbejde videre med på næste semester.</p></article>
-        </div>
-      </div>
-    </section>
+    <section class="projects-section">
+      <div class="container projects-stack">
+        <article class="project-card">
+          <div class="project-header">
+            <p class="project-theme">Tema 2 · Grundlæggende web</p>
+            <h2>Computersite</h2>
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS Grid</span><span class="tag">Responsive design</span></div>
+          </div>
+          <div class="project-content">
+            <div class="project-media"><img class="project-image" src="assets/images/mobilesite.svg" alt="Mit Tema 2 computersite vist på mobil og desktop"><p>Mit første website med fem sider, eget farvevalg, navigation, Grid, Flexbox og desktop-layout.</p></div>
+            <div class="project-links"><a class="btn-link" href="mobilsite/index.html">Se det færdige site</a><a class="btn-link" href="tema-2-mobilsite.html">Se proces og fejl</a></div>
+          </div>
+        </article>
 
-    <section class="intro-section">
-      <div class="container">
-        <h2>Direkte overblik</h2>
-        <div class="overview-grid">
-          <a class="overview-card" href="portfolio.html#tema-2"><span>Tema 2</span><strong>Grundlæggende web</strong><p>Mobilsite, 5 sider, mobile-first, desktop-layout, HTML, CSS og noindex.</p></a>
-          <a class="overview-card" href="portfolio.html#tema-3"><span>Tema 3</span><strong>OBBG.dk</strong><p>Emnesite/sandkassesite med designassociationer, budskab, brugerrejse og Figma-proces.</p></a>
-          <a class="overview-card" href="portfolio.html#tema-4"><span>Tema 4</span><strong>Royal Click Fighter</strong><p>Animation, JavaScript, interaktion og spilstruktur.</p></a>
-          <a class="overview-card" href="portfolio.html#tema-5"><span>Tema 5</span><strong>Bird Bar</strong><p>Virksomhedssite/redesign, research, indhold, test og gruppearbejde.</p></a>
-        </div>
+        <article class="project-card">
+          <div class="project-header">
+            <p class="project-theme">Tema 3 · UX og emnesite</p>
+            <h2>OBBG.dk</h2>
+            <div class="project-tags"><span class="tag">Figma</span><span class="tag">Brugerrejse</span><span class="tag">JavaScript</span></div>
+          </div>
+          <div class="project-content">
+            <div class="project-media"><img class="project-image" src="https://obbg.dk/kea/03_ux/01_kodet_site/hero-image.webp" onerror="this.onerror=null;this.src='assets/images/obbg.svg';" alt="Hero fra mit OBBG.dk projekt"><p>Et selvvalgt koncept med cyber/neon-identitet, formularer, navigation, interaktion og en fiktiv betting-platform.</p></div>
+            <div class="project-links"><a class="btn-link" href="https://obbg.dk/kea/03_ux/01_kodet_site/index.html" target="_blank" rel="noopener noreferrer">Se det kodede site</a><a class="btn-link" href="tema-3-emnesite-obbg.html">Se min proces</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <p class="project-theme">Tema 4 · Animation og JavaScript</p>
+            <h2>Royal Click Fighter</h2>
+            <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">CSS-animation</span><span class="tag">Spilflow</span></div>
+          </div>
+          <div class="project-content">
+            <div class="project-media"><img class="project-image" src="assets/images/royal-click-fighter.svg" alt="Mit browser-spil Royal Click Fighter"><p>Et klikbaseret spil med point, liv, timer, gode og dårlige elementer samt start-, vinder- og taberflow.</p></div>
+            <div class="project-links"><a class="btn-link" href="royal-click-fighter.html">Spil demoen</a><a class="btn-link" href="tema-4-animation.html">Se kode og proces</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <p class="project-theme">Tema 5 · Virksomhedssite</p>
+            <h2>Bird Bar</h2>
+            <div class="project-tags"><span class="tag">Research</span><span class="tag">Figma</span><span class="tag">Test</span></div>
+          </div>
+          <div class="project-content">
+            <div class="project-media"><img class="project-image" src="https://obbg.dk/kea/portfolio-eksamen/assets/virksomhed-proces.png" onerror="this.onerror=null;this.src='assets/images/birdbar-process.svg';" alt="Procesboard fra Bird Bar-projektet"><p>Et virksomhedssite udviklet i gruppe med research, moodboard, wireframes, prototype, egne billeder og brugertest.</p></div>
+            <div class="project-links"><a class="btn-link" href="birdbar-figma.html">Se Figma-processen</a><a class="btn-link" href="tema-5-virksomhedssite.html">Se min rolle og refleksion</a></div>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Danusan Padmarajah | 1. semester portfolio</p>
-      <p><a href="https://github.com/ddanu87/min-portfolio" target="_blank" rel="noopener noreferrer">GitHub repository</a></p>
-    </div>
-  </footer>
-
+  <footer><div class="container"><p>&copy; 2026 Danusan Padmarajah | 1. semester portfolio</p><p><a href="https://github.com/ddanu87/min-portfolio" target="_blank" rel="noopener noreferrer">GitHub repository</a></p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
