@@ -1,0 +1,189 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Fonts *********************/
+@font-face {
+  font-family: "Quicksand";
+  src: url(fonts/quicksand-variablefont_wght-webfont.woff2);
+}
+
+:root {
+  --space-black: #0b3d91; /* Mørk blå som baggrund */
+  --star-white: #ffffff; /* Hvid til tekst og lysende elementer */
+  --star-yellow: #ffd700; /* Gylden til accentfarve */
+  --nebula-purple: #8a2be2; /* Lilla til highlights */
+  --galaxy-blue: #1e90ff; /* Lys blå til sekundær farve */
+}
+
+li {
+  font-family: "Asap", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--star-white);
+}
+
+h1 {
+  font-family: "Sarala", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--star-yellow);
+}
+
+h2 {
+  font-family: "Asap", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-block: 30px 10px;
+  color: var(--star-white);
+}
+
+h3 {
+  font-family: "Asap", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--star-white);
+}
+
+p {
+  font-family: "Quicksand", serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 22px;
+  color: var(--star-white);
+}
+
+dl {
+  line-height: 1.5rem;
+  margin-block: 15px;
+}
+
+dt {
+  font-family: "Asap", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--star-yellow);
+}
+
+dd {
+  font-family: "Quicksand", serif;
+  font-weight: 100;
+  font-style: normal;
+  color: var(--star-white);
+}
+
+.button {
+  font-family: "Quicksand", serif;
+  background-color: var(--nebula-purple);
+  color: var(--star-white);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--galaxy-blue);
+}
+
+.mwidth {
+  max-width: 65ch;
+}
+
+/*************** Menu ****************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--space-black);
+}
+
+header .logo a {
+  color: var(--star-yellow);
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header .logo a:hover {
+  color: var(--galaxy-blue);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: var(--star-white);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: var(--star-yellow);
+}
+
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
+
+/*************** Margins & Padding *********************/
+
+body {
+  background-color: var(--space-black);
+}
+
+header {
+  padding: 20px;
+  border-bottom: solid 0.5px var(--star-white);
+}
+
+main {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 10px;
+  border-top: solid 0.5px var(--star-white);
+  color: var(--star-white);
+}
+
+img {
+  margin-block: 10px;
+}

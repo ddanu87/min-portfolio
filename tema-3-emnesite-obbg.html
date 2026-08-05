@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Min proces, mine designvalg og min refleksion over Tema 3-projektet OBBG.dk.">
+  <title>Tema 3: OBBG.dk | Danusan Padmarajah</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="readability.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Danusan Padmarajah</a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Forside</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="proces.html" class="nav-link">Proces</a></li>
+          <li><a href="om-mig.html" class="nav-link">Om mig</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Åbn menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow">Tema 3 · Grundlæggende UX</p>
+        <h1>OBBG.dk</h1>
+        <p>Et konceptsite om strategiske brætspil og færdighedsbaseret betting. Her viser jeg ikke kun resultatet, men også hvad jeg selv byggede, hvilke valg jeg tog, og hvad jeg i dag ville ændre.</p>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="container narrow">
+        <h2>Mit ansvar i projektet</h2>
+        <p>Projektet var mit eget emnesite. Jeg udviklede konceptet OBBG.dk, lavede den visuelle retning og byggede siderne med HTML, CSS og JavaScript. Jeg arbejdede blandt andet med logo, hero-billede, navigation, tilmeldingsflow, indholdssider, responsivt layout og interaktioner.</p>
+        <ul>
+          <li><strong>Rolle:</strong> koncept, visuel identitet, UX, frontend og dokumentation</li>
+          <li><strong>Værktøjer:</strong> Figma/FigJam, HTML, CSS, JavaScript og GitHub</li>
+          <li><strong>Fokus:</strong> sammenhæng mellem budskab, brugerrejse og visuelt udtryk</li>
+        </ul>
+
+        <h2>Idéen bag OBBG.dk</h2>
+        <p>Min idé var at kombinere klassiske strategispil som skak og backgammon med et digitalt betting-univers. Jeg ville skabe en identitet, der signalerede strategi, teknologi og konkurrence. Derfor valgte jeg et mørkt cyber-look med turkis, blå og lilla neonfarver.</p>
+
+        <figure class="doc-figure">
+          <img src="https://obbg.dk/kea/03_ux/01_kodet_site/favicon.webp.jpg" alt="Mit første logo til OBBG.dk med skakbrikker og elektroniske kredsløb">
+          <figcaption class="figure-caption">Mit logo kombinerer bogstaverne OBBG med en springer, en konge og elektroniske kredsløb.</figcaption>
+        </figure>
+
+        <figure class="doc-figure">
+          <img src="https://obbg.dk/kea/03_ux/01_kodet_site/hero-image.webp" alt="Hero-billede til OBBG.dk med digitale brætspil, kort, terninger og jetoner">
+          <figcaption class="figure-caption">Hero-billedet samler skak, backgammon, kort, terninger og digitale brugerflader i ét visuelt univers.</figcaption>
+        </figure>
+
+        <h2>Fra designidé til kodet løsning</h2>
+        <p>Jeg omsatte den visuelle retning til et designsystem i CSS. Jeg oprettede farvevariabler til primær blå, sekundær lilla, accentgrøn og mørke baggrunde. Det gjorde det muligt at genbruge de samme farver gennem hele sitet og holde udtrykket ensartet.</p>
+        <pre class="code-block"><code>:root {
+  --primary-color: #00a8ff;
+  --secondary-color: #ff00e4;
+  --accent-color: #00ff9d;
+  --dark-bg: #0a0a1a;
+  --light-bg: #1a1a2e;
+}</code></pre>
+        <p>Jeg brugte også CSS Grid til blandt andet spilkort, ranglister og tilmeldingssektionen. På mindre skærme ændrede jeg kolonnerne til én kolonne, så indholdet stadig kunne læses.</p>
+
+        <h2>Det jeg faktisk byggede</h2>
+        <h3>Navigation og mobilmenu</h3>
+        <p>Jeg byggede en fast navigation med en mobilmenu. JavaScript tilføjer og fjerner klassen <code>active</code>, skifter menuikon og lukker menuen igen, når brugeren vælger et link eller trykker Escape.</p>
+
+        <h3>Tilmeldingsflow</h3>
+        <p>Jeg udviklede en tilmeldingsside med personlige oplysninger, kontooplysninger, adgangskodestyrke og forskellige verifikationsvalg. JavaScript kontrollerer obligatoriske felter, e-mailformat og om adgangskoderne matcher.</p>
+        <p>Verifikationen med MitID er kun en simulation. Den åbner en modal, som forklarer, at en rigtig løsning kræver integration med en ekstern tjeneste. Det var vigtigt for mig at skelne mellem en frontend-prototype og en fungerende platform.</p>
+
+        <h3>Interaktion og visuelle effekter</h3>
+        <p>Jeg eksperimenterede med scroll-animationer, hover-effekter, 3D-bevægelse, testimonial-slider og forskellige neon-effekter. Det gav mig erfaring med event listeners, DOM-manipulation og CSS-animationer.</p>
+
+        <h2>Et konkret problem i min løsning</h2>
+        <p>Den oprindelige løsning blev for omfattende og for poleret i sit sprog. Sitet bruger formuleringer som “Danmarks førende platform”, “bank-niveau kryptering” og “100% sikker”, selv om projektet kun er en prototype. Det får løsningen til at ligne en rigtig virksomhed og gør det uklart, hvad der faktisk var udviklet.</p>
+        <p>I dag ville jeg tydeligt markere siden som et skoleprojekt og fjerne udokumenterede påstande. Jeg ville skrive mere præcist:</p>
+        <blockquote>“OBBG.dk er et koncept udviklet som en frontend-prototype på 1. semester. Tilmelding, betaling og identitetskontrol er ikke funktionelle integrationer.”</blockquote>
+        <p>Den ændring ville gøre projektet mere troværdigt og vise, at jeg forstår forskellen mellem koncept, prototype og færdigt produkt.</p>
+
+        <h2>Hvad der fungerede</h2>
+        <ul>
+          <li>Den visuelle identitet hænger tydeligt sammen med temaet strategi og teknologi.</li>
+          <li>Farvevariabler og genbrugelige klasser skaber sammenhæng på tværs af sider.</li>
+          <li>Jeg byggede flere interaktioner selv med JavaScript.</li>
+          <li>Layoutet tilpasser sig mobil, tablet og desktop.</li>
+          <li>Logo, hero og UI-elementer peger i samme visuelle retning.</li>
+        </ul>
+
+        <h2>Hvad der ikke fungerede</h2>
+        <ul>
+          <li>For mange neon-effekter konkurrerer om opmærksomheden.</li>
+          <li>Siden indeholder for meget tekst og for mange funktioner til et sandkassesite.</li>
+          <li>Flere links peger på sider, der ikke er udviklet.</li>
+          <li>Prototypefunktioner fremstår nogle steder som rigtige tjenester.</li>
+          <li>Jeg prioriterede det visuelle udtryk højere end en enkel brugerrejse.</li>
+        </ul>
+
+        <h2>Sådan ville jeg forbedre projektet nu</h2>
+        <ol>
+          <li>Afgrænse sitet til forsiden, spiloversigten og ét enkelt tilmeldingsflow.</li>
+          <li>Fjerne falske anmeldelser, velkomstbonusser og udokumenterede sikkerhedspåstande.</li>
+          <li>Reducere antallet af animationer og skabe et roligere visuelt hierarki.</li>
+          <li>Teste navigationen med brugere før jeg bygger flere sider.</li>
+          <li>Vise en tydelig prototype-markering i headeren og ved formularen.</li>
+          <li>Dokumentere ændringer med før/efter-billeder og korte testresultater.</li>
+        </ol>
+
+        <h2>Min vigtigste læring</h2>
+        <p>Jeg lærte, at et stærkt visuelt koncept ikke er nok. En digital løsning skal også være afgrænset, troværdig og let at forstå. I OBBG-projektet kunne jeg bygge mange elementer, men jeg manglede at prioritere. Min vigtigste læring er derfor at starte med brugerens vigtigste handling og kun bygge funktioner, som støtter den.</p>
+
+        <h2>Dokumentation og links</h2>
+        <p class="link-list">
+          <a class="btn-link" href="obbg-figma.html">Se Figma og proces</a>
+          <a class="btn-link" href="https://obbg.dk/kea/03_ux/01_kodet_site/index.html" target="_blank" rel="noopener noreferrer">Se den kodede prototype</a>
+          <a class="btn-link" href="https://obbg.dk/kea/03_ux/01_kodet_site/signup.html" target="_blank" rel="noopener noreferrer">Se tilmeldingsflowet</a>
+          <a class="btn-link" href="portfolio.html#tema-3">Tilbage til portfolio</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container"><p>&copy; 2026 Danusan Padmarajah | 1. semester portfolio</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

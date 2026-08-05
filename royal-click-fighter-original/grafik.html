@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+        content="Dokumentation af designprocessen bag det interaktive animerede spil. Se ideudvikling, inspiration, stiludgangspunkt, papirprototype, skitser og screendumps.">
+    <title>Grafik & Design | Interaktivt Animeret Spil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.webp.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Design documentation specific styles */
+        .design-section {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: rgba(10, 10, 26, 0.7);
+            padding: 30px;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--primary-color);
+        }
+
+        .design-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .design-card {
+            background-color: rgba(10, 10, 26, 0.5);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(0, 168, 255, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .design-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .design-image {
+            width: 100%;
+            height: 200px;
+            background-color: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .design-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .design-card:hover .design-image img {
+            transform: scale(1.05);
+        }
+
+        .design-content {
+            padding: 20px;
+        }
+
+        .design-content h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .design-content p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .process-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: var(--glow-gradient);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        .timeline-content {
+            width: 45%;
+            background-color: rgba(10, 10, 26, 0.7);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(0, 168, 255, 0.3);
+            position: relative;
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -20px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -20px;
+        }
+
+        .timeline-date {
+            position: absolute;
+            top: -30px;
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-date {
+            right: 0;
+        }
+
+        .timeline-item:nth-child(even) .timeline-date {
+            left: 0;
+        }
+
+        .timeline-content h3 {
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        .timeline-content p {
+            color: var(--text-dim);
+            margin-bottom: 15px;
+        }
+
+        .timeline-image {
+            width: 100%;
+            height: 150px;
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .timeline-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .color-swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: var(--border-radius);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.8rem;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .color-swatch span {
+            margin-top: 5px;
+        }
+
+        .inspiration-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .inspiration-item {
+            height: 150px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            border: 1px solid rgba(0, 168, 255, 0.3);
+        }
+
+        .inspiration-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .inspiration-item:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .process-timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                justify-content: flex-start;
+                padding-left: 50px;
+            }
+
+            .timeline-content {
+                width: 100%;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content::before,
+            .timeline-item:nth-child(even) .timeline-content::before {
+                left: -30px;
+                width: 30px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-date,
+            .timeline-item:nth-child(even) .timeline-date {
+                left: 50px;
+            }
+
+            .design-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="cyber-theme">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img src="favicon.webp.jpg" alt="Spil Logo" class="logo glow-effect">
+                <span class="logo-text cyber-font">Spil Docs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Forside</a></li>
+                <li><a href="spil.html"><i class="fas fa-gamepad"></i> Spil</a></li>
+                <li><a href="grafik.html" class="active"><i class="fas fa-paint-brush"></i> Grafik</a></li>
+                <li><a href="assets.html"><i class="fas fa-images"></i> Assets</a></li>
+                <li><a href="teknik.html"><i class="fas fa-code"></i> Teknik</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main class="about-container animate__animated animate__fadeIn">
+        <section class="hero-section">
+            <h1 class="neon-text pulse-effect">🎨 Grafik & Design 🖌️</h1>
+            <p class="subtitle">
+                Dokumentation af designprocessen bag det interaktive animerede spil. Fra idé til færdigt produkt.
+            </p>
+        </section>
+
+        <section class="design-section">
+            <h2 class="section-title neon-text">💡 Idéudvikling & Koncept</h2>
+            <p>
+                Udviklingen af dette spil begyndte med en brainstorming-session, hvor jeg udforskede forskellige idéer til et interaktivt animeret spil. Jeg ønskede at skabe et spil, der var både underholdende og udfordrende, og som kunne spilles på både mobil og desktop.
+            </p>
+            <p>
+                Inspireret af klassiske arkade-spil og moderne web-baserede spil, besluttede jeg mig for at skabe et klik-baseret spil, hvor spilleren skal reagere hurtigt og træffe strategiske beslutninger under tidspres.
+            </p>
+
+            <div class="design-grid">
+                <div class="design-card">
+                    <div class="design-image">
+                        <i class="fas fa-lightbulb" style="font-size: 4rem; color: var(--accent-color);"></i>
+                    </div>
+                    <div class="design-content">
+                        <h3>Oprindelig Idé</h3>
+                        <p>
+                            Den oprindelige idé var at skabe et spil, hvor spilleren skulle klikke på objekter, der dukkede op på skærmen. Jeg eksperimenterede med forskellige temaer, før jeg besluttede mig for et cyberpunk/neon-tema, der passede godt til spillets dynamiske natur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-image">
+                        <i class="fas fa-bullseye" style="font-size: 4rem; color: var(--primary-color);"></i>
+                    </div>
+                    <div class="design-content">
+                        <h3>Målgruppe & Formål</h3>
+                        <p>
+                            Spillet er designet til casual gamers i alle aldre, der nyder hurtige, udfordrende spil. Formålet er at skabe en sjov og engagerende oplevelse, der tester spillerens reaktionsevne og strategiske tænkning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2 class="section-title neon-text">🎭 Inspiration & Stiludgangspunkt</h2>
+            <p>
+                Spillets visuelle stil er stærkt inspireret af cyberpunk-æstetik og neon-farver. Jeg ønskede at skabe en futuristisk og energisk atmosfære, der ville engagere spilleren og passe til spillets hurtige tempo.
+            </p>
+
+            <h3 class="mt-4 mb-2">Farvepalette</h3>
+            <p>
+                Jeg valgte en farvepalette med stærke, neon-inspirerede farver mod en mørk baggrund for at skabe kontrast og visuel interesse:
+            </p>
+
+            <div class="color-palette">
+                <div class="color-swatch" style="background-color: #00a8ff;">
+                    <span>#00a8ff</span>
+                    <span>Primær</span>
+                </div>
+                <div class="color-swatch" style="background-color: #ff00e4;">
+                    <span>#ff00e4</span>
+                    <span>Sekundær</span>
+                </div>
+                <div class="color-swatch" style="background-color: #00ff9d;">
+                    <span>#00ff9d</span>
+                    <span>Accent</span>
+                </div>
+                <div class="color-swatch" style="background-color: #0a0a1a;">
+                    <span>#0a0a1a</span>
+                    <span>Baggrund</span>
+                </div>
+                <div class="color-swatch" style="background-color: #f0f0ff;">
+                    <span>#f0f0ff</span>
+                    <span>Tekst</span>
+                </div>
+            </div>
+
+            <h3 class="mt-4 mb-2">Inspirationskilder</h3>
+            <p>
+                Jeg fandt inspiration i forskellige kilder, herunder:
+            </p>
+
+            <div class="inspiration-gallery">
+                <div class="inspiration-item">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                        <i class="fas fa-gamepad" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    </div>
+                </div>
+                <div class="inspiration-item">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                        <i class="fas fa-desktop" style="font-size: 3rem; color: var(--secondary-color);"></i>
+                    </div>
+                </div>
+                <div class="inspiration-item">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                        <i class="fas fa-film" style="font-size: 3rem; color: var(--accent-color);"></i>
+                    </div>
+                </div>
+                <div class="inspiration-item">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                        <i class="fas fa-palette" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-3">
+                Disse inspirationskilder hjalp mig med at definere spillets visuelle identitet og skabe en sammenhængende æstetik, der understøtter spillets mekanik og tema.
+            </p>
+        </section>
+
+        <section class="design-section">
+            <h2 class="section-title neon-text">📝 Papirprototype & Skitser</h2>
+            <p>
+                Før jeg begyndte at kode, skabte jeg papirprototyper og skitser for at visualisere spillets layout, elementer og interaktioner. Dette hjalp mig med at identificere potentielle problemer og forbedre designet, før jeg begyndte implementeringen.
+            </p>
+
+            <div class="design-grid">
+                <div class="design-card">
+                    <div class="design-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #f0f0ff;">
+                            <img src="favicon.webp.jpg" alt="Papirprototype skitse" style="width: 50%; height: auto;">
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <h3>Første Skitse</h3>
+                        <p>
+                            Min første skitse fokuserede på spillets grundlæggende layout, herunder placeringen af point, liv og timer. Jeg eksperimenterede med forskellige måder at præsentere disse elementer på for at sikre, at de var synlige og intuitive.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #f0f0ff;">
+                            <img src="favicon.webp.jpg" alt="UI Wireframe" style="width: 50%; height: auto;">
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <h3>UI Wireframe</h3>
+                        <p>
+                            Jeg skabte wireframes for spillets brugergrænseflade, herunder startskærm, spilskærm og slutskærme. Dette hjalp mig med at visualisere brugeroplevelsen og sikre, at navigationen var intuitiv.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2 class="section-title neon-text">⏱️ Designprocessen</h2>
+            <p>
+                Designprocessen var iterativ, med flere runder af skitsering, prototyping og test. Her er en tidslinje over de vigtigste trin i processen:
+            </p>
+
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dag 1</div>
+                        <h3>Idéudvikling</h3>
+                        <p>
+                            Brainstorming og research af lignende spil. Definerede spillets grundlæggende koncept og mekanikker.
+                        </p>
+                        <div class="timeline-image">
+                            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                                <i class="fas fa-lightbulb" style="font-size: 3rem; color: var(--accent-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dag 2</div>
+                        <h3>Papirprototyper</h3>
+                        <p>
+                            Skabte papirprototyper og skitser af spillets layout og elementer. Testede forskellige designs og interaktioner.
+                        </p>
+                        <div class="timeline-image">
+                            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #f0f0ff;">
+                                <i class="fas fa-pencil-alt" style="font-size: 3rem; color: #333;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dag 3-4</div>
+                        <h3>Digital Mockup</h3>
+                        <p>
+                            Overførte papirprototyper til digitale mockups. Definerede farvepalette, typografi og visuelle elementer.
+                        </p>
+                        <div class="timeline-image">
+                            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                                <i class="fas fa-desktop" style="font-size: 3rem; color: var(--primary-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dag 5-7</div>
+                        <h3>Implementering</h3>
+                        <p>
+                            Implementerede designet i HTML, CSS og JavaScript. Testede responsivitet og brugeroplevelse.
+                        </p>
+                        <div class="timeline-image">
+                            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                                <i class="fas fa-code" style="font-size: 3rem; color: var(--secondary-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dag 8-10</div>
+                        <h3>Test & Iteration</h3>
+                        <p>
+                            Testede spillet og foretog justeringer baseret på feedback. Forbedrede visuelle elementer og brugeroplevelse.
+                        </p>
+                        <div class="timeline-image">
+                            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                                <i class="fas fa-sync-alt" style="font-size: 3rem; color: var(--accent-color);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2 class="section-title neon-text">📸 Screendumps</h2>
+            <p>
+                Her er nogle screendumps af det færdige spil, der viser de forskellige stadier og elementer:
+            </p>
+
+            <div class="design-grid">
+                <div class="design-card">
+                    <div class="design-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-gamepad" style="font-size: 4rem; color: var(--primary-color);"></i>
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <h3>Startskærm</h3>
+                        <p>
+                            Spillets startskærm med instruktioner og start-knap. Designet med en mørk baggrund og neon-elementer for at skabe en engagerende atmosfære.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-play" style="font-size: 4rem; color: var(--accent-color);"></i>
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <h3>Spil i Gang</h3>
+                        <p>
+                            Spillet i aktion, med gode og dårlige elementer på skærmen. UI viser point, liv og timer, så spilleren altid ved, hvordan de klarer sig.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-trophy" style="font-size: 4rem; color: var(--accent-color);"></i>
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <h3>Level Complete</h3>
+                        <p>
+                            Vinderskærmen, der vises når spilleren når målet inden tiden løber ud. Designet til at give en følelse af præstation og succes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-heart-broken" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <h3>Game Over</h3>
+                        <p>
+                            Taberskærmen, der vises når spilleren mister alle liv eller ikke når målet inden tiden løber ud. Designet til at opmuntre spilleren til at prøve igen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2 class="section-title neon-text">🔄 Iterationer & Forbedringer</h2>
+            <p>
+                Designprocessen involverede flere iterationer og forbedringer baseret på test og feedback. Her er nogle af de vigtigste ændringer, jeg foretog undervejs:
+            </p>
+
+            <div class="design-grid">
+                <div class="design-card">
+                    <div class="design-content">
+                        <h3>UI Forbedringer</h3>
+                        <p>
+                            Jeg forbedrede UI'en for at gøre den mere intuitiv og visuelt tiltalende. Dette inkluderede ændringer i placeringen af point, liv og timer, samt tilføjelse af visuelle effekter for at give bedre feedback til spilleren.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-content">
+                        <h3>Responsivt Design</h3>
+                        <p>
+                            Jeg optimerede spillet til både mobil og desktop ved at implementere et responsivt design, der tilpasser sig forskellige skærmstørrelser. Dette sikrer, at spillet kan spilles på en bred vifte af enheder.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-content">
+                        <h3>Visuelle Effekter</h3>
+                        <p>
+                            Jeg tilføjede flere visuelle effekter, såsom animationer og glow-effekter, for at forbedre spillets æstetik og give spilleren bedre feedback på deres handlinger.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-content">
+                        <h3>Sværhedsgrad</h3>
+                        <p>
+                            Jeg justerede spillets sværhedsgrad baseret på feedback for at sikre, at det var udfordrende men ikke frustrerende. Dette inkluderede ændringer i timeren, point-systemet og elementernes bevægelsesmønstre.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2 class="section-title neon-text">🎯 Konklusion</h2>
+            <p>
+                Designprocessen for dette spil var en spændende rejse fra idé til færdigt produkt. Gennem iterativ design og test har jeg skabt et spil, der er både visuelt tiltalende og engagerende at spille.
+            </p>
+            <p>
+                De vigtigste lektioner, jeg har lært undervejs, inkluderer:
+            </p>
+            <ul>
+                <li>Vigtigheden af papirprototyper og skitser i de tidlige faser af designprocessen</li>
+                <li>Værdien af iterativt design og kontinuerlig test</li>
+                <li>Betydningen af visuel æstetik og brugeroplevelse i spildesign</li>
+                <li>Udfordringerne ved at skabe et responsivt design, der fungerer på tværs af enheder</li>
+            </ul>
+            <p>
+                Det færdige spil opfylder de oprindelige mål om at skabe et underholdende og udfordrende spil, der tester spillerens reaktionsevne og strategiske tænkning.
+            </p>
+        </section>
+
+        <div class="cta-container" style="text-align: center; margin: 40px 0;">
+            <a href="spil.html" class="cta-button primary glow-effect">
+                <i class="fas fa-play"></i> Prøv Spillet
+            </a>
+            <a href="assets.html" class="cta-button secondary">
+                <i class="fas fa-images"></i> Se Assets
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="favicon.webp.jpg" alt="Spil Logo" class="logo" loading="lazy">
+                <span class="logo-text">Spil Docs</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="spil.html">Spil</a></li>
+                        <li><a href="grafik.html">Grafik</a></li>
+                        <li><a href="assets.html">Assets</a></li>
+                        <li><a href="teknik.html">Teknik</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dokumentation</h4>
+                    <ul>
+                        <li><a href="grafik.html">Design Proces</a></li>
+                        <li><a href="assets.html">Spil Assets</a></li>
+                        <li><a href="teknik.html">Tekniske Detaljer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Om Projektet</h4>
+                    <ul>
+                        <li><a href="index.html">Projektbeskrivelse</a></li>
+                        <li><a href="grafik.html">Designvalg</a></li>
+                        <li><a href="teknik.html">Implementering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 - Interaktivt Animeret Spil - Alle rettigheder forbeholdes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

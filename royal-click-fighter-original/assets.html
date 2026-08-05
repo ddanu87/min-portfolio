@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+        content="Se alle assets brugt i det interaktive animerede spil. Baggrunde, spil-elementer, UI-elementer, effektlyde, baggrundsmusik og mere.">
+    <title>Assets | Interaktivt Animeret Spil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.webp.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Assets page specific styles */
+        .assets-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: rgba(10, 10, 26, 0.7);
+            padding: 30px;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--primary-color);
+        }
+
+        .assets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .asset-card {
+            background-color: rgba(10, 10, 26, 0.5);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(0, 168, 255, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .asset-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .asset-preview {
+            width: 100%;
+            height: 180px;
+            background-color: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .asset-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .asset-preview i {
+            font-size: 4rem;
+            color: var(--primary-color);
+        }
+
+        .asset-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .asset-content h3 {
+            margin-bottom: 10px;
+            color: var(--text-light);
+            font-size: 1.2rem;
+        }
+
+        .asset-content p {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .asset-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .asset-type {
+            background-color: rgba(0, 168, 255, 0.2);
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: var(--primary-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .asset-type i {
+            font-size: 0.8rem;
+        }
+
+        .asset-size {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+
+        .asset-actions {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .asset-button {
+            background-color: rgba(0, 168, 255, 0.2);
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+        }
+
+        .asset-button:hover {
+            background-color: rgba(0, 168, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .asset-button i {
+            font-size: 0.8rem;
+        }
+
+        .asset-preview .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .asset-preview:hover .play-button {
+            opacity: 1;
+        }
+
+        .asset-category {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .asset-category h2 {
+            display: inline-block;
+            background-color: var(--dark-bg);
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .asset-category::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--glow-gradient);
+            z-index: 0;
+        }
+
+        .asset-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .asset-filter {
+            background-color: rgba(10, 10, 26, 0.7);
+            border: 1px solid rgba(0, 168, 255, 0.3);
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .asset-filter:hover, .asset-filter.active {
+            background-color: rgba(0, 168, 255, 0.2);
+            border-color: var(--primary-color);
+            color: var(--text-light);
+        }
+
+        .asset-filter i {
+            font-size: 0.9rem;
+        }
+
+        .asset-count {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .audio-player audio {
+            width: 100%;
+            height: 30px;
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            .assets-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .asset-preview {
+                height: 150px;
+            }
+
+            .asset-content {
+                padding: 15px;
+            }
+
+            .asset-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .asset-filters {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .assets-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="cyber-theme">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img src="favicon.webp.jpg" alt="Spil Logo" class="logo glow-effect">
+                <span class="logo-text cyber-font">Spil Docs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Forside</a></li>
+                <li><a href="spil.html"><i class="fas fa-gamepad"></i> Spil</a></li>
+                <li><a href="grafik.html"><i class="fas fa-paint-brush"></i> Grafik</a></li>
+                <li><a href="assets.html" class="active"><i class="fas fa-images"></i> Assets</a></li>
+                <li><a href="teknik.html"><i class="fas fa-code"></i> Teknik</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main class="about-container animate__animated animate__fadeIn">
+        <section class="hero-section">
+            <h1 class="neon-text pulse-effect">🖼️ Spil Assets 🎵</h1>
+            <p class="subtitle">
+                En komplet oversigt over alle assets brugt i det interaktive animerede spil. Udforsk baggrunde, spil-elementer, UI-elementer, effektlyde og baggrundsmusik.
+            </p>
+        </section>
+
+        <section class="assets-section">
+            <h2 class="section-title neon-text">Asset Bibliotek</h2>
+            <p>
+                Dette er en komplet liste over alle assets, der er brugt i spillet. Hvert asset er kategoriseret efter type og inkluderer en beskrivelse af dets formål og anvendelse i spillet.
+            </p>
+
+            <div class="asset-filters">
+                <div class="asset-filter active" data-filter="all">
+                    <i class="fas fa-border-all"></i> Alle
+                </div>
+                <div class="asset-filter" data-filter="visual">
+                    <i class="fas fa-image"></i> Visuelle
+                </div>
+                <div class="asset-filter" data-filter="ui">
+                    <i class="fas fa-desktop"></i> UI
+                </div>
+                <div class="asset-filter" data-filter="audio">
+                    <i class="fas fa-volume-up"></i> Lyd
+                </div>
+                <div class="asset-filter" data-filter="animation">
+                    <i class="fas fa-film"></i> Animation
+                </div>
+            </div>
+
+            <!-- Visual Assets -->
+            <div class="asset-category">
+                <h2 class="neon-text">Visuelle Assets <span class="asset-count">(5)</span></h2>
+            </div>
+
+            <div class="assets-grid">
+                <div class="asset-card" data-type="visual">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Spil Baggrund</h3>
+                        <p>
+                            Hovedbaggrunden for spillet med et cyberpunk/neon tema. Designet til at skabe en futuristisk atmosfære og fremhæve spil-elementerne.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-image"></i> Baggrund</span>
+                            <span class="asset-size">800x450px</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="visual">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #00ff9d; border-radius: 50%;">
+                            <i class="fas fa-star" style="color: #0a0a1a;"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Godt Element (Cirkel)</h3>
+                        <p>
+                            Cirkulært element, som spilleren skal klikke på for at få point. Designet med en grøn neon-farve for at tiltrække opmærksomhed.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-gamepad"></i> Spil Element</span>
+                            <span class="asset-size">50x50px</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="visual">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #ff00e4; transform: rotate(45deg);">
+                            <i class="fas fa-times" style="color: #0a0a1a;"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Dårligt Element (Firkant)</h3>
+                        <p>
+                            Firkantet element, som spilleren skal undgå. Designet med en pink neon-farve og roteret 45 grader for at skabe kontrast til de gode elementer.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-gamepad"></i> Spil Element</span>
+                            <span class="asset-size">50x50px</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="visual">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-trophy" style="color: #00ff9d;"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Level Complete Baggrund</h3>
+                        <p>
+                            Baggrund for "Level Complete" skærmen. Designet med en festlig og belønningsorienteret æstetik for at fejre spillerens succes.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-image"></i> Baggrund</span>
+                            <span class="asset-size">800x450px</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="visual">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-heart-broken" style="color: #ff00e4;"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Game Over Baggrund</h3>
+                        <p>
+                            Baggrund for "Game Over" skærmen. Designet med en mere dæmpet æstetik, men stadig med opmuntring til at prøve igen.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-image"></i> Baggrund</span>
+                            <span class="asset-size">800x450px</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI Assets -->
+            <div class="asset-category">
+                <h2 class="neon-text">UI Assets <span class="asset-count">(4)</span></h2>
+            </div>
+
+            <div class="assets-grid">
+                <div class="asset-card" data-type="ui">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: rgba(10, 10, 26, 0.8); padding: 10px; border-radius: 20px; border: 1px solid #00a8ff;">
+                            <i class="fas fa-star" style="color: #00ff9d; font-size: 1.5rem; margin-right: 10px;"></i>
+                            <span style="color: #f0f0ff; font-family: 'Orbitron', sans-serif;">Point: 0</span>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Point Tæller</h3>
+                        <p>
+                            UI-element der viser spillerens nuværende point. Designet med en stjerne-ikon og neon-tekst for at passe til spillets æstetik.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-desktop"></i> UI Element</span>
+                            <span class="asset-size">Variabel</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="ui">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: rgba(10, 10, 26, 0.8); padding: 10px; border-radius: 20px; border: 1px solid #00a8ff;">
+                            <i class="fas fa-heart" style="color: #ff5555; font-size: 1.5rem; margin-right: 10px;"></i>
+                            <span style="color: #f0f0ff; font-family: 'Orbitron', sans-serif;">Liv: 3</span>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Liv Indikator</h3>
+                        <p>
+                            UI-element der viser spillerens resterende liv. Designet med et hjerte-ikon og rød tekst for at indikere vigtigheden.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-desktop"></i> UI Element</span>
+                            <span class="asset-size">Variabel</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="ui">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a; padding: 20px;">
+                            <div style="width: 80%; height: 10px; background-color: rgba(10, 10, 26, 0.8); border-radius: 5px; overflow: hidden; border: 1px solid #00a8ff;">
+                                <div style="height: 100%; width: 70%; background: linear-gradient(to right, #00a8ff, #ff00e4);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Timer Bar</h3>
+                        <p>
+                            Progressbar der viser den resterende tid. Designet med en gradient fra blå til pink for at skabe visuel interesse og passe til spillets æstetik.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-desktop"></i> UI Element</span>
+                            <span class="asset-size">Variabel</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="ui">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a; padding: 20px;">
+                            <div style="padding: 10px 20px; background: linear-gradient(to right, #00a8ff, #ff00e4); color: white; border-radius: 5px; font-family: 'Rajdhani', sans-serif; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-play"></i> Start Spil
+                            </div>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Spil Knapper</h3>
+                        <p>
+                            Knapper til at starte, nulstille og genstarte spillet. Designet med en gradient baggrund og ikoner for at være intuitive og visuelt tiltalende.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-desktop"></i> UI Element</span>
+                            <span class="asset-size">Variabel</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Assets -->
+            <div class="asset-category">
+                <h2 class="neon-text">Lyd Assets <span class="asset-count">(5)</span></h2>
+            </div>
+
+            <div class="assets-grid">
+                <div class="asset-card" data-type="audio">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Baggrundsmusik</h3>
+                        <p>
+                            Elektronisk baggrundsmusik med cyberpunk-tema. Loopet for at kunne spille kontinuerligt under hele spillet.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-music"></i> Musik</span>
+                            <span class="asset-size">2:30 min</span>
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="#" type="audio/mpeg">
+                                Din browser understøtter ikke audio-elementet.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="audio">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Klik Lyd (God)</h3>
+                        <p>
+                            Positiv lyd der afspilles, når spilleren klikker på et godt element. Designet til at give positiv feedback og forstærke belønningsfølelsen.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-volume-up"></i> Effektlyd</span>
+                            <span class="asset-size">0.5 sek</span>
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="#" type="audio/mpeg">
+                                Din browser understøtter ikke audio-elementet.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="audio">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Klik Lyd (Dårlig)</h3>
+                        <p>
+                            Negativ lyd der afspilles, når spilleren klikker på et dårligt element. Designet til at give feedback om en fejl og indikere tab af liv.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-volume-up"></i> Effektlyd</span>
+                            <span class="asset-size">0.5 sek</span>
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="#" type="audio/mpeg">
+                                Din browser understøtter ikke audio-elementet.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="audio">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Level Complete Lyd</h3>
+                        <p>
+                            Triumferende lyd der afspilles, når spilleren gennemfører niveauet. Designet til at fejre spillerens succes og give en følelse af præstation.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-volume-up"></i> Effektlyd</span>
+                            <span class="asset-size">2 sek</span>
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="#" type="audio/mpeg">
+                                Din browser understøtter ikke audio-elementet.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="audio">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Game Over Lyd</h3>
+                        <p>
+                            Nedslående lyd der afspilles, når spilleren taber spillet. Designet til at indikere nederlag, men ikke være for demotiverende.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-volume-up"></i> Effektlyd</span>
+                            <span class="asset-size">1.5 sek</span>
+                        </div>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="#" type="audio/mpeg">
+                                Din browser understøtter ikke audio-elementet.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animation Assets -->
+            <div class="asset-category">
+                <h2 class="neon-text">Animations Assets <span class="asset-count">(3)</span></h2>
+            </div>
+
+            <div class="assets-grid">
+                <div class="asset-card" data-type="animation">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a;">
+                            <div style="width: 50px; height: 50px; background-color: #00ff9d; border-radius: 50%; animation: fadeInMove 2s infinite alternate;">
+                                <i class="fas fa-star" style="color: #0a0a1a; line-height: 50px; width: 100%; text-align: center;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Element Spawn Animation</h3>
+                        <p>
+                            Animation der vises, når et nyt element spawner i spillet. Fade-in effekt kombineret med en let bevægelse for at tiltrække opmærksomhed.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-film"></i> Animation</span>
+                            <span class="asset-size">0.5 sek</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="animation">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a; position: relative;">
+                            <div style="position: absolute; color: #00ff9d; font-weight: bold; font-family: 'Orbitron', sans-serif; animation: pointFloat 2s infinite;">+10</div>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Point Popup Animation</h3>
+                        <p>
+                            Animation der vises, når spilleren får point. Tekst der svæver opad og fader ud for at give visuel feedback på point-gevinst.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-film"></i> Animation</span>
+                            <span class="asset-size">1 sek</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset-card" data-type="animation">
+                    <div class="asset-preview">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0a0a1a; position: relative;">
+                            <div style="width: 80%; height: 10px; background-color: rgba(10, 10, 26, 0.8); border-radius: 5px; overflow: hidden; border: 1px solid #00a8ff;">
+                                <div style="height: 100%; width: 100%; background: linear-gradient(to right, #00a8ff, #ff00e4); animation: timerShrink 3s linear infinite;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="asset-content">
+                        <h3>Timer Animation</h3>
+                        <p>
+                            Animation af timeren, der gradvist bliver mindre efterhånden som tiden går. Lineær animation for at give en præcis fornemmelse af den resterende tid.
+                        </p>
+                        <div class="asset-meta">
+                            <span class="asset-type"><i class="fas fa-film"></i> Animation</span>
+                            <span class="asset-size">30 sek</span>
+                        </div>
+                        <div class="asset-actions">
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-eye"></i> Vis
+                            </a>
+                            <a href="#" class="asset-button">
+                                <i class="fas fa-info-circle"></i> Detaljer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-container" style="text-align: center; margin: 40px 0;">
+            <a href="spil.html" class="cta-button primary glow-effect">
+                <i class="fas fa-play"></i> Prøv Spillet
+            </a>
+            <a href="teknik.html" class="cta-button secondary">
+                <i class="fas fa-code"></i> Se Teknisk Dokumentation
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="favicon.webp.jpg" alt="Spil Logo" class="logo" loading="lazy">
+                <span class="logo-text">Spil Docs</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="spil.html">Spil</a></li>
+                        <li><a href="grafik.html">Grafik</a></li>
+                        <li><a href="assets.html">Assets</a></li>
+                        <li><a href="teknik.html">Teknik</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dokumentation</h4>
+                    <ul>
+                        <li><a href="grafik.html">Design Proces</a></li>
+                        <li><a href="assets.html">Spil Assets</a></li>
+                        <li><a href="teknik.html">Tekniske Detaljer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Om Projektet</h4>
+                    <ul>
+                        <li><a href="index.html">Projektbeskrivelse</a></li>
+                        <li><a href="grafik.html">Designvalg</a></li>
+                        <li><a href="teknik.html">Implementering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 - Interaktivt Animeret Spil - Alle rettigheder forbeholdes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        /* Animation keyframes for the preview */
+        @keyframes fadeInMove {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pointFloat {
+            0% {
+                opacity: 0;
+                transform: translateY(0);
+            }
+            20% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+        }
+
+        @keyframes timerShrink {
+            from {
+                width: 100%;
+            }
+            to {
+                width: 0%;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize navigation
+            if (typeof initNavigation === 'function') {
+                initNavigation();
+            }
+
+            // Asset filtering
+            const filterButtons = document.querySelectorAll('.asset-filter');
+            const assetCards = document.querySelectorAll('.asset-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Show/hide assets based on filter
+                    assetCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-type') === filterValue) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Play button hover effect
+            const assetPreviews = document.querySelectorAll('.asset-preview');
+            
+            assetPreviews.forEach(preview => {
+                const playButton = preview.querySelector('.play-button');
+                if (playButton) {
+                    preview.addEventListener('mouseenter', () => {
+                        playButton.style.opacity = '1';
+                    });
+                    
+                    preview.addEventListener('mouseleave', () => {
+                        playButton.style.opacity = '0';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

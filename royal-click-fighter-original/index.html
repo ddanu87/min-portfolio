@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+        content="Velkommen til mit interaktive animerede spil. Udforsk spillet, designprocessen, assets og den tekniske dokumentation.">
+    <title>Interaktivt Animeret Spil | Dokumentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.webp.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="cyber-theme">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img src="favicon.webp.jpg" alt="Spil Logo" class="logo glow-effect">
+                <span class="logo-text cyber-font">Spil Docs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Forside</a></li>
+                <li><a href="spil.html"><i class="fas fa-gamepad"></i> Spil</a></li>
+                <li><a href="grafik.html"><i class="fas fa-paint-brush"></i> Grafik</a></li>
+                <li><a href="assets.html"><i class="fas fa-images"></i> Assets</a></li>
+                <li><a href="teknik.html"><i class="fas fa-code"></i> Teknik</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" style="background-image: url('hero-image.webp');"
+        aria-label="Hero sektion med introduktion til det interaktive spil">
+        <div class="hero-overlay">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h1 class="neon-text pulse-effect">🎮 Interaktivt Animeret Spil 🎯</h1>
+                <p class="subtitle cyber-font">
+                    Velkommen til mit <strong class="highlight">interaktive animerede spil</strong> 🚀,
+                    hvor <strong class="highlight">hurtige reaktioner</strong> og <strong class="highlight">strategisk
+                        tænkning</strong> er nøglen til succes 🧠.
+                </p>
+                <p class="feature-text">
+                    <i class="fas fa-gamepad"></i> Spændende gameplay | <i class="fas fa-trophy"></i> Point system | <i
+                        class="fas fa-heart"></i> Liv system
+                    <br><span class="emphasis">✨ Test dine evner og se om du kan klare udfordringen! ✨</span>
+                </p>
+
+                <div class="security-badges">
+                    <div class="badge"><i class="fas fa-mobile-alt"></i> Mobil & Desktop 📱</div>
+                    <div class="badge"><i class="fas fa-clock"></i> Tidsbegrænset udfordring ⏱️</div>
+                    <div class="badge"><i class="fas fa-gamepad"></i> Klik-baseret gameplay 🖱️</div>
+                </div>
+
+                <div class="cta-container">
+                    <a href="spil.html" class="cta-button primary glow-effect">
+                        <i class="fas fa-play"></i> Spil nu
+                    </a>
+                    <a href="grafik.html" class="cta-button secondary">
+                        <i class="fas fa-info-circle"></i> Se dokumentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Game Features Section -->
+    <section class="featured-games text-center">
+        <h2 class="section-title neon-text">🎮 Spil Features 🎯</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-icon" aria-label="Gameplay ikon"><i class="fas fa-gamepad"></i></div>
+                <h3>Intuitivt Gameplay</h3>
+                <p>Enkelt at lære, men udfordrende at mestre - klik på de rigtige elementer og undgå fælder</p>
+                <a href="spil.html" class="game-link">Prøv spillet</a>
+            </div>
+            <div class="game-card">
+                <div class="game-icon" aria-label="Grafik ikon"><i class="fas fa-paint-brush"></i></div>
+                <h3>Flot Grafik</h3>
+                <p>Farverige animationer og responsivt design der fungerer på både mobil og desktop</p>
+                <a href="grafik.html" class="game-link">Se designet</a>
+            </div>
+            <div class="game-card">
+                <div class="game-icon" aria-label="Udfordring ikon"><i class="fas fa-trophy"></i></div>
+                <h3>Stigende Udfordring</h3>
+                <p>Test dine evner med et spil der kræver hurtige reaktioner og strategisk tænkning</p>
+                <a href="spil.html" class="game-link">Tag udfordringen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Mechanics Section -->
+    <section class="leaderboard-section text-center">
+        <h2 class="section-title neon-text pulse-effect">🎲 Spil Mekanik 🎮</h2>
+        <p class="subtitle">Forstå hvordan spillet fungerer og hvordan du vinder 🔥</p>
+
+        <div class="leaderboard-container">
+            <div class="leaderboard-card hover-3d">
+                <div class="leaderboard-header">
+                    <div class="leaderboard-icon" aria-label="Point ikon"><i class="fas fa-star pulse-glow"></i></div>
+                    <h3 class="neon-text">Point System</h3>
+                </div>
+                <div class="mechanics-content">
+                    <p>I spillet skal du samle point ved at klikke på de rigtige elementer. Jo hurtigere du reagerer, jo
+                        flere point får du.</p>
+                    <ul class="mechanics-list">
+                        <li><i class="fas fa-check"></i> Klik på gode elementer for at få point</li>
+                        <li><i class="fas fa-times"></i> Undgå dårlige elementer der giver strafpoint</li>
+                        <li><i class="fas fa-trophy"></i> Opnå et bestemt antal point for at vinde</li>
+                        <li><i class="fas fa-clock"></i> Tiden løber ud uanset hvad du gør</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="leaderboard-card hover-3d">
+                <div class="leaderboard-header">
+                    <div class="leaderboard-icon" aria-label="Liv ikon"><i class="fas fa-heart pulse-glow"></i></div>
+                    <h3 class="neon-text">Liv System</h3>
+                </div>
+                <div class="mechanics-content">
+                    <p>Du starter med et bestemt antal liv. Pas på ikke at miste dem alle!</p>
+                    <ul class="mechanics-list">
+                        <li><i class="fas fa-heart-broken"></i> Mist liv ved at klikke på forkerte elementer</li>
+                        <li><i class="fas fa-skull"></i> Mister du alle liv, er spillet slut</li>
+                        <li><i class="fas fa-stopwatch"></i> Selv hvis du har liv tilbage, kan tiden løbe ud</li>
+                        <li><i class="fas fa-balance-scale"></i> Balancer mellem at samle point og bevare liv</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section class="signup-section text-center">
+        <div class="section-header">
+            <h2 class="neon-text pulse-effect">📚 Dokumentation 📋</h2>
+            <p class="subtitle">Udforsk designprocessen, assets og tekniske detaljer bag spillet 🔍</p>
+        </div>
+
+        <div class="signup-container">
+            <div class="signup-form-wrapper">
+                <div class="security-banner text-center">
+                    <div class="security-icon">
+                        <i class="fas fa-book pulse-glow"></i>
+                    </div>
+                    <div class="security-text">
+                        <h3>📝 Omfattende Dokumentation 📊</h3>
+                        <p>Udforsk den komplette dokumentation af <strong class="highlight">designprocessen, assets og
+                                tekniske detaljer</strong> bag spillet 🎮</p>
+                    </div>
+                </div>
+
+                <div class="documentation-preview">
+                    <div class="doc-section">
+                        <div class="doc-icon"><i class="fas fa-paint-brush"></i></div>
+                        <div class="doc-content">
+                            <h4>Grafik & Design</h4>
+                            <p>Udforsk designprocessen, fra de første skitser til det endelige produkt</p>
+                            <a href="grafik.html" class="doc-link">Se designprocessen <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="doc-section">
+                        <div class="doc-icon"><i class="fas fa-images"></i></div>
+                        <div class="doc-content">
+                            <h4>Assets & Ressourcer</h4>
+                            <p>Se alle de grafiske elementer, lyde og andre ressourcer der er brugt i spillet</p>
+                            <a href="assets.html" class="doc-link">Udforsk assets <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="doc-section">
+                        <div class="doc-icon"><i class="fas fa-code"></i></div>
+                        <div class="doc-content">
+                            <h4>Teknisk Dokumentation</h4>
+                            <p>Dyk ned i den tekniske implementering med kode-eksempler og diagrammer</p>
+                            <a href="teknik.html" class="doc-link">Se tekniske detaljer <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-benefits">
+                <h3 class="neon-text">Spil Highlights</h3>
+                <ul class="benefits-list">
+                    <li>
+                        <i class="fas fa-gamepad"></i>
+                        <div class="benefit-content">
+                            <h4>Interaktivt Gameplay</h4>
+                            <p>Klik-baseret gameplay der tester dine reaktioner og strategiske tænkning</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="benefit-content">
+                            <h4>Responsivt Design</h4>
+                            <p>Spillet fungerer perfekt på både mobil og desktop i 16:9 format</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-trophy"></i>
+                        <div class="benefit-content">
+                            <h4>Point & Liv System</h4>
+                            <p>Saml point og bevar dine liv for at klare udfordringen inden tiden løber ud</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="benefit-content">
+                            <h4>Unik Grafisk Stil</h4>
+                            <p>Farverige animationer og et visuelt tiltalende design skaber en god spiloplevelse</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Highlights Section -->
+    <section class="why-choose-us text-center">
+        <h2 class="section-title neon-text">✨ Spil Highlights 🎯</h2>
+        <div class="features-container">
+            <div class="feature-box animate__animated animate__fadeInUp">
+                <div class="feature-icon" aria-label="Gameplay ikon"><i class="fas fa-gamepad"></i></div>
+                <h3>🎮 Sjovt & Udfordrende</h3>
+                <p>Et underholdende spil der tester dine reaktioner og strategiske tænkning.</p>
+            </div>
+            <div class="feature-box animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="feature-icon" aria-label="Responsivt ikon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>📱 Responsivt Design</h3>
+                <p>Spillet fungerer perfekt på både mobil og desktop i 16:9 format.</p>
+            </div>
+            <div class="feature-box animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                <div class="feature-icon" aria-label="Dokumentation ikon"><i class="fas fa-book"></i></div>
+                <h3>📚 Komplet Dokumentation</h3>
+                <p>Udforsk designprocessen, assets og tekniske detaljer bag spillet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="testimonials text-center">
+        <h2 class="section-title neon-text">🛠️ Udviklingsprocessen 🔧</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="quote">"Udviklingen af dette spil har været en spændende rejse fra idé til færdigt produkt.
+                    Jeg har fokuseret på at skabe en god balance mellem udfordring og underholdning."</div>
+                <div class="author">- Fra idé til koncept</div>
+            </div>
+            <div class="testimonial">
+                <div class="quote">"Designprocessen involverede mange iterationer for at finde den rette visuelle stil
+                    og gameplay mekanik. Jeg har lagt vægt på responsivt design der fungerer på alle enheder."</div>
+                <div class="author">- Design & implementering</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Play Now CTA -->
+    <section class="join-cta">
+        <div class="cta-content">
+            <h2 class="neon-text">🎮 Er Du Klar til at Spille? 🏆</h2>
+            <p>Test dine evner i dette interaktive animerede spil og se om du kan klare udfordringen! 🚀</p>
+            <a href="spil.html" class="cta-button primary glow-effect large-btn">
+                <i class="fas fa-play"></i> Spil nu 🎮
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="favicon.webp.jpg" alt="Spil Logo" class="logo" loading="lazy">
+                <span class="logo-text">Spil Docs</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="spil.html">Spil</a></li>
+                        <li><a href="grafik.html">Grafik</a></li>
+                        <li><a href="assets.html">Assets</a></li>
+                        <li><a href="teknik.html">Teknik</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dokumentation</h4>
+                    <ul>
+                        <li><a href="grafik.html">Design Proces</a></li>
+                        <li><a href="assets.html">Spil Assets</a></li>
+                        <li><a href="teknik.html">Tekniske Detaljer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Om Projektet</h4>
+                    <ul>
+                        <li><a href="index.html">Projektbeskrivelse</a></li>
+                        <li><a href="grafik.html">Designvalg</a></li>
+                        <li><a href="teknik.html">Implementering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 - Interaktivt Animeret Spil - Alle rettigheder forbeholdes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Teknisk dokumentation af Royal Click Fighter">
+    <title>Teknisk Dokumentation | Royal Click Fighter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.webp.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="cyber-theme">
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img src="assets/favicon.webp.jpg" alt="Spil Logo" class="logo glow-effect">
+                <span class="logo-text cyber-font">Royal Click Fighter</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Forside</a></li>
+                <li><a href="spil.html"><i class="fas fa-gamepad"></i> Spil</a></li>
+                <li><a href="grafik.html"><i class="fas fa-paint-brush"></i> Grafik</a></li>
+                <li><a href="assets.html"><i class="fas fa-images"></i> Assets</a></li>
+                <li><a href="teknik.html" class="active"><i class="fas fa-code"></i> Teknik</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main class="about-container animate__animated animate__fadeIn">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="neon-text pulse-effect">Teknisk Dokumentation</h1>
+            <p class="subtitle">Tekniske detaljer og implementering af Royal Click Fighter</p>
+        </section>
+
+        <!-- HTML Structure -->
+        <section class="tech-section">
+            <h2 class="section-title neon-text">HTML Struktur</h2>
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h3>16:9 Container/Sprite Struktur</h3>
+                    <pre class="code-block">
+&lt;div class="game-container"&gt;
+    &lt;div id="screen" style="padding-bottom: 56.25%"&gt;
+        &lt;div id="game"&gt;
+            &lt;div id="game_background" class="game-layer"&gt;&lt;/div&gt;
+            &lt;div id="game_elements" class="game-layer"&gt;
+                &lt;!-- Dynamiske spilelementer --&gt;
+            &lt;/div&gt;
+            &lt;div id="game_ui" class="game-layer"&gt;
+                &lt;!-- UI elementer --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    <p>Container/sprite-princippet er implementeret med:</p>
+                    <ul>
+                        <li>Fast 16:9 format (1920x1080) via padding-bottom: 56.25%</li>
+                        <li>Lagdelt struktur med baggrund, elementer og UI</li>
+                        <li>Absolut positionering for præcis kontrol</li>
+                        <li>Responsiv skalering der bevarer aspect ratio</li>
+                    </ul>
+                    <p>Spillet er opbygget med en container der følger 16:9 format og indeholder tre hovedlag:</p>
+                    <ul>
+                        <li>Baggrund (statisk)</li>
+                        <li>UI elementer (point, liv, tid)</li>
+                        <li>Spilelementer (gode og dårlige)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS Animations -->
+        <section class="tech-section">
+            <h2 class="section-title neon-text">CSS Animationer</h2>
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h3>Bevægelsesanimationer</h3>
+                    <pre class="code-block">
+@keyframes fallDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(300%); }
+}
+
+@keyframes moveAcross {
+    from { transform: translateX(-100%) rotate(45deg); }
+    to { transform: translateX(400%) rotate(45deg); }
+}</pre>
+                    <p>Animationerne er implementeret med CSS keyframes:</p>
+                    <ul>
+                        <li>Gode elementer falder ned oppefra</li>
+                        <li>Dårlige elementer bevæger sig på tværs</li>
+                        <li>Forsvindingsanimationer ved klik</li>
+                        <li>Timer animation der viser resterende tid</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Mechanics -->
+        <section class="tech-section">
+            <h2 class="section-title neon-text">Spilmekanik</h2>
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h3>Point System</h3>
+                    <ul>
+                        <li>Gode elementer giver +10 point</li>
+                        <li>Mål: 10 point for at vinde</li>
+                        <li>Tid: 20 sekunder per runde</li>
+                        <li>3 liv ved start</li>
+                    </ul>
+
+                    <h3>Spiltilstande</h3>
+                    <ul>
+                        <li>Start: Venter på spiller</li>
+                        <li>Spil: Aktiv spilletilstand</li>
+                        <li>Vundet: 50+ point inden tiden udløber</li>
+                        <li>Tabt: Tid udløbet eller ingen liv tilbage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Design -->
+        <section class="tech-section">
+            <h2 class="section-title neon-text">Responsivt Design</h2>
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h3>Responsivt Design System</h3>
+                    <p>Spillet er bygget med et omfattende responsivt design system:</p>
+
+                    <h4>Desktop (>= 1024px)</h4>
+                    <ul>
+                        <li>Fuld 16:9 visning (1920x1080 max)</li>
+                        <li>Store spilelementer (80x80px)</li>
+                        <li>Normal tekststørrelse (1rem)</li>
+                    </ul>
+
+                    <h4>Tablet (768px - 1023px)</h4>
+                    <pre class="code-block">
+@media (max-width: 1023px) {
+    .sprite_container {
+        width: 60px;
+        height: 60px;
+    }
+    .game-ui {
+        font-size: 0.95rem;
+    }
+}</pre>
+
+                    <h4>Mobil (< 768px)</h4>
+                            <pre class="code-block">
+@media (max-width: 767px) {
+    .sprite_container {
+        width: 40px;
+        height: 40px;
+    }
+    .game-ui {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    .game-stat {
+        padding: 3px 10px;
+    }
+}</pre>
+
+                            <h4>Tekniske Detaljer</h4>
+                            <ul>
+                                <li>Container skalerer proportionalt med viewport</li>
+                                <li>Elementer tilpasses skærmstørrelse via CSS</li>
+                                <li>Touch-optimeret på mobile enheder</li>
+                                <li>Performanceoptimeret animation scaling</li>
+                            </ul>
+                            <p>Responsive implementering inkluderer:</p>
+                            <ul>
+                                <li>Fleksibel container med fast aspect ratio</li>
+                                <li>Skalerbare spilelementer</li>
+                                <li>Tilpasset UI til mobile enheder</li>
+                                <li>Touch-venlig interaktion</li>
+                            </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance -->
+        <section class="tech-section">
+            <h2 class="section-title neon-text">Performance Optimering</h2>
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h3>Aktivitetsdiagram</h3>
+                    <pre class="code-block">
+[Start]
+   │
+   ▼
+[Initialiser Spil]
+   │
+   ▼
+[Vent på Start]◄────────┐
+   │                    │
+   ▼                    │
+[Start Timer]           │
+   │                    │
+   ▼                    │
+[Spawn Elementer]       │
+   │                    │
+   ▼                    │
+[Bruger Interaktion]    │
+   │                    │
+   ├─► [Klik på God]    │
+   │    │               │
+   │    ▼               │
+   │   [+10 Point]      │
+   │    │               │
+   │    └───────┐       │
+   │            ▼       │
+   ├─► [Klik på Ond]    │
+   │    │               │
+   │    ▼               │
+   │   [-1 Liv]         │
+   │    │               │
+   │    └───────┐       │
+   │            ▼       │
+   └────► [Tjek Status] │
+          │             │
+          ▼             │
+    [Point >= 10]───┐   │
+          │         │   │
+          ▼         ▼   │
+    [Liv <= 0]  [Level  │
+          │    Complete]│
+          ▼         │   │
+    [Game Over]    │   │
+          │         │   │
+          └────────┴───┘
+</pre>
+
+                    <h3>Performance Optimering</h3>
+                    <ul>
+                        <li>CSS transforms for bedre animation performance</li>
+                        <li>Minimal DOM manipulation</li>
+                        <li>Optimerede assets og ikoner</li>
+                        <li>Effektiv CSS struktur</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/favicon.webp.jpg" alt="Spil Logo" class="logo" loading="lazy">
+                <span class="logo-text">Royal Click Fighter</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="spil.html">Spil</a></li>
+                        <li><a href="grafik.html">Grafik</a></li>
+                        <li><a href="assets.html">Assets</a></li>
+                        <li><a href="teknik.html">Teknik</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dokumentation</h4>
+                    <ul>
+                        <li><a href="grafik.html">Design Proces</a></li>
+                        <li><a href="assets.html">Spil Assets</a></li>
+                        <li><a href="teknik.html">Tekniske Detaljer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Om Projektet</h4>
+                    <ul>
+                        <li><a href="index.html">Projektbeskrivelse</a></li>
+                        <li><a href="grafik.html">Designvalg</a></li>
+                        <li><a href="teknik.html">Implementering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 - Royal Click Fighter - Alle rettigheder forbeholdes</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">OBBG.dk koncept</title>
+  <desc id="desc">Illustration af et strategisk spilkoncept med UX/UI og Figma-proces.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#111820"/><stop offset="1" stop-color="#345c72"/></linearGradient></defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <circle cx="955" cy="175" r="86" fill="#28d7e6" opacity=".18"/>
+  <rect x="165" y="145" width="870" height="470" rx="28" fill="#f7fbff" opacity=".96"/>
+  <rect x="220" y="205" width="330" height="330" rx="20" fill="#17212b"/>
+  <g transform="translate(248 233)">
+    <rect width="274" height="274" fill="#233747"/>
+    <g fill="#f7fbff"><rect x="0" y="0" width="68" height="68"/><rect x="136" y="0" width="68" height="68"/><rect x="68" y="68" width="68" height="68"/><rect x="204" y="68" width="68" height="68"/><rect x="0" y="136" width="68" height="68"/><rect x="136" y="136" width="68" height="68"/><rect x="68" y="204" width="68" height="68"/><rect x="204" y="204" width="68" height="68"/></g>
+    <circle cx="101" cy="102" r="24" fill="#28d7e6"/><circle cx="206" cy="206" r="24" fill="#7a3b69"/>
+  </g>
+  <text x="625" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="900" fill="#17212b">OBBG.dk</text>
+  <text x="625" y="315" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#345c72">UX/UI · prototype · brugertest</text>
+  <rect x="625" y="370" width="285" height="54" rx="8" fill="#345c72"/>
+  <text x="768" y="407" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Figma proces</text>
+  <rect x="625" y="450" width="235" height="22" rx="11" fill="#dde5ea"/><rect x="625" y="490" width="330" height="22" rx="11" fill="#dde5ea"/><rect x="625" y="530" width="285" height="22" rx="11" fill="#dde5ea"/>
+</svg>

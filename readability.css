@@ -1,0 +1,97 @@
+:root {
+  --readable-text: #17212b;
+  --readable-muted: #24313a;
+  --readable-link: #173f54;
+  --readable-button: #204b60;
+}
+
+body,
+p,
+li {
+  color: var(--readable-muted);
+}
+
+h2,
+h3,
+.overview-card strong,
+.project-content strong,
+.intro-section strong {
+  color: #111827;
+}
+
+.hero-content p,
+.page-header p,
+.project-header h2,
+.project-header p,
+.highlight-card p,
+.highlight-card h3,
+.info-card p,
+.info-card h3,
+.info-card li {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.eyebrow,
+.project-theme {
+  opacity: 1;
+}
+
+.tag {
+  background-color: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+
+.project-media p,
+.figure-caption,
+.source-note {
+  color: var(--readable-text);
+}
+
+.project-content a:not(.btn-link),
+.intro-section a:not(.btn-link),
+.portfolio-intro a:not(.btn-link),
+.reflection-section a:not(.btn-link) {
+  color: var(--readable-link);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.btn-link {
+  background-color: var(--readable-button);
+  color: #ffffff !important;
+}
+
+.doc-figure {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #eef4f7;
+  border: 1px solid #cdd9df;
+  border-radius: 8px;
+}
+
+.doc-figure img {
+  width: 100%;
+  max-height: 430px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.figure-caption {
+  margin-top: 0.75rem;
+  font-size: 0.98rem;
+  font-weight: 650;
+}
+
+.source-note {
+  font-size: 0.95rem;
+  margin-top: 0.35rem;
+}
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
