@@ -1,39 +1,56 @@
-# Brugertest og feedback
+# Brugertest, feedback og kontrol
 
-Dette dokument samler brugertest og feedback fra mit arbejde på 1. semester.
+## Hvorfor jeg har rettet dette dokument
 
-## Formål
+I en tidligere version stod der en generel liste over opgaver til en “testperson”, men jeg havde ikke gemt konkrete svar fra den test. Det er ikke stærk dokumentation. Til reeksamen skelner jeg derfor mellem feedback, der faktisk findes i mit projektmateriale, gruppens testmateriale og den kontrol jeg selv har lavet af portfolioet.
 
-Formålet med brugertest og feedback er at undersøge, om brugeren forstår løsningen, kan navigere i den og oplever den som brugbar.
+## 1. Royal Click Fighter - bevaret prototypefeedback
 
-## Portfolio-test
+I forbindelse med spilprojektet arbejdede jeg med papirprototype og feedback på spilidé og brugerflow. Det materiale, der er bevaret sammen med projektet, bruges som dokumentation for arbejdet med blandt andet:
 
-Jeg testede portfolioet ved at undersøge:
+- spilidé og forståelighed
+- gode og dårlige objekter
+- vinder- og taberbetingelser
+- objektbevægelse
+- visuel retning
 
-- om forsiden forklarer formålet tydeligt
-- om brugeren kan finde projekterne
-- om brugeren kan finde processen
-- om hvert projekt viser opgave, proces, løsning, læring og refleksion
-- om navigationen virker på mobil og desktop
+Den vigtigste læring for mig var, at regler skal være tydelige og konsekvente. I min senere gennemgang af Royal Click Fighter opdagede jeg samtidig, at point og vindergrænser ikke er beskrevet ens alle steder. Det viser, at feedback og dokumentation ikke kun skal indsamles - de skal også holdes opdateret, når løsningen ændrer sig.
 
-## Testopgaver
+## 2. Bird Bar - gruppens test- og procesmateriale
 
-Testpersonen skulle:
+Bird Bar var et gruppeprojekt. Figma/procesmaterialet indeholder gruppens arbejde med research, wireframes, prototype og test/iteration.
 
-1. finde portfolio-siden
-2. finde proces-siden
-3. forklare hvad jeg har lært på 1. semester
-4. finde information om mig
-5. vurdere om projekterne er tydelige
+Jeg var ikke lige meget med i alle dele af projektet på grund af sygdom. Derfor skriver jeg ikke, at alle testaktiviteter var udført individuelt af mig. I portfolioet bruger jeg materialet til at forklare gruppens proces og til at reflektere over, hvordan test kan påvirke navigation, informationshierarki og indhold.
 
-## Feedback fra papirprototype
+## 3. Reeksamensportfolio - egen kontrol
 
-Jeg har også arbejdet med prototype-feedback i forbindelse med spiludvikling. Her vurderede jeg spilidé, gode og dårlige objekter, vinderbetingelser, taberbetingelser, objektbevægelse og visuel stil.
+På selve reeksamensportfolioet har jeg lavet en funktionel og indholdsmæssig kontrol. Det er ikke det samme som en formel brugertest med dokumenterede testpersoner.
 
-## Læring
+Jeg har kontrolleret:
 
-Feedback viste mig, at det er vigtigt at forklare idé, regler og brugerhandlinger tydeligt. Det gælder både spil og websites.
+- at hovednavigationen peger på de rigtige sider
+- at projektlinks passer til repository-strukturen
+- at Tema 2 og Royal Click Fighter kan åbnes som originalværker
+- at projektnavne og ejerskab er korrekte
+- at hver projektside indeholder konkrete valg, problemer og refleksioner
+- at dokumentation og de aktuelle filstier ikke modsiger hinanden
+- at repository og live-link kan bruges til WISEflow
 
-## Refleksion
+Under denne kontrol blev der blandt andet fundet gamle Tema 4-referencer i dokumentationen. De blev rettet til den aktuelle struktur med `royal-click-fighter-original/` og de nuværende ankre på Tema 4-siden.
 
-Hvis jeg skulle forbedre mine testmetoder, ville jeg dokumentere testpersonernes svar mere præcist og bruge resultaterne mere systematisk til iteration.
+## 4. Hvad jeg ville gøre bedre næste gang
+
+Hvis jeg starter et nyt projekt, vil jeg dokumentere brugertest i samme øjeblik den udføres. Jeg vil gemme:
+
+- dato og formål
+- hvem målgruppen/testpersonen repræsenterer uden unødvendige persondata
+- konkrete testopgaver
+- observationer eller svar
+- hvad jeg ændrede på baggrund af testen
+- før/efter-eksempler
+
+Det ville gøre det meget lettere at bevise min iteration bagefter.
+
+## Min refleksion
+
+Jeg har lært, at “jeg har testet det” ikke er nok som dokumentation. Hvis resultatet skal bruges fagligt, skal man kunne se hvad der blev testet, hvad man fandt, og hvad der blev ændret. Derfor vil jeg hellere være præcis omkring, hvad jeg faktisk har bevaret, end at udfylde hullerne med generelle testresultater.
