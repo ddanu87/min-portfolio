@@ -4,6 +4,8 @@
 
 Dette repository indeholder mit portfolio-website til 1. semester på multimediedesign. Portfolioet viser mine produktioner fra semesteret, min arbejdsproces, mine faglige valg, fejl, refleksioner og det, jeg har lært.
 
+Til reeksamen har jeg bevidst arbejdet med at gøre processen mindre generisk. Derfor ligger originalværker, kritiske refleksioner, ejerskab, ændringslog og min brug af AI som støtteværktøj synligt i repository.
+
 ## Links til aflevering
 
 - Live website: https://ddanu87.github.io/min-portfolio/
@@ -13,7 +15,7 @@ Dette repository indeholder mit portfolio-website til 1. semester på multimedie
 
 - `index.html` - forside og samlet introduktion
 - `portfolio.html` - de fire semesterprojekter og adgang til værkerne
-- `proces.html` - processen med at samle og udvikle portfolioet
+- `proces.html` - processen med at samle og udvikle portfolioet, inklusive AI-brug og reeksamensarbejde
 - `om-mig.html` - afsender, kompetencer og refleksion over 1. semester
 
 ## Semesterprojekter
@@ -60,12 +62,21 @@ Hvert tema skal gøre det muligt at se:
 - Figma/FigJam
 - Git og GitHub
 - GitHub Pages
+- ChatGPT som støtteværktøj under reeksamensarbejdet
 
 ## Dokumentation
 
 Baggrundsnoter, eksamensforberedelse og kontrolfiler ligger i `docs/`.
 
-Centrale filer:
+### Proces, ejerskab og AI
+
+- `docs/ai-og-kildeoversigt.md` - detaljeret, retrospektiv log over AI-samarbejdet og konkrete eksempler
+- `docs/brug-af-ai.md` - kortere forklaring af min arbejdsform med AI
+- `docs/ejerskab-og-bidrag.md` - skel mellem individuelt arbejde, gruppeprojekt og AI-støtte
+- `docs/aendringslog-reeksamen.md` - hvad jeg ændrede fra den tidligere/generiske version frem mod reeksamen
+- GitHub commit history - teknisk versionshistorik for ændringer i repository
+
+### Eksamens- og kontrolmateriale
 
 - `docs/eksamenskrav.md`
 - `docs/eksamenstjekliste.md`
@@ -74,11 +85,15 @@ Centrale filer:
 - `docs/mundtlig-disposition.md`
 - `docs/kodeforklaring.md`
 - `docs/brugertest-og-feedback.md`
-- `docs/ai-og-kildeoversigt.md`
+- `docs/proces-dokumentation.md`
 
 ## AI-brug
 
-AI er brugt som støtte til struktur, formulering, fejlfinding, overblik og dokumentation. Semesterprojekterne og det faglige materiale tager udgangspunkt i mine egne studieproduktioner. Jeg er ansvarlig for at kunne forklare indhold, kode, valg og refleksioner ved eksamen.
+AI-brugen er ikke skjult. ChatGPT har været brugt aktivt i udviklingen af selve reeksamensportfolioet til blandt andet struktur, kodegennemgang, formulering, dokumentation, fejlfinding, fil-/linkkontrol og sammenligning med eksamenskrav.
+
+De oprindelige semesterprojekter er fortsat grundlaget for portfolioet. AI-output bruges ikke som bevis for aktiviteter, der ikke kan dokumenteres på anden måde. Hvis noget er rekonstrueret bagefter, beskrives det som retrospektiv dokumentation eller refleksion.
+
+Jeg er ansvarlig for at kunne forklare indhold, kode, valg, ejerskab og refleksioner ved eksamen.
 
 ## WISEflow
 
