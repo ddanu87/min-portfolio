@@ -8,6 +8,7 @@ Denne mappe indeholder støtte- og procesdokumentation til min portfolio og reek
 - `brug-af-ai.md` - kortere forklaring af min praktiske arbejdsform med AI
 - `ejerskab-og-bidrag.md` - hvad der er individuelt arbejde, gruppeprojekt og AI-støtte
 - `aendringslog-reeksamen.md` - konkrete ændringer fra den tidligere version frem mod reeksamen
+- `reeksamen-arbejdslog-2026-08-09.md` - konkret log fra den afsluttende gennemgang med commit-hashes
 - `proces-dokumentation.md` - samlet beskrivelse af processen før, under og efter portfolioarbejdet
 
 ## Projekt- og faglig dokumentation
