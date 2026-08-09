@@ -1,19 +1,64 @@
-# Brug af AI
+# Sådan har jeg brugt AI
 
-## Hvad
-AI er brugt som støtte i portfolioarbejdet.
+Jeg har brugt ChatGPT som et hjælpemiddel under arbejdet med min reeksamensportfolio. Jeg vil hellere vise det åbent end få det til at se ud, som om jeg ikke har brugt værktøjet.
 
-## Hvor
-AI er brugt til struktur, formulering, README, dokumentation, tjekliste og refleksion.
+## Det vigtigste skel
 
-## Hvorfor
-Formålet var at skabe overblik over krav, projekter og dokumentation.
+Mine semesterprojekter er det materiale, portfolioet handler om. AI er især brugt bagefter til at hjælpe mig med at samle materialet, gennemgå det kritisk, strukturere portfolioet og gøre min egen refleksion tydeligere.
 
-## Hvordan
-Jeg gav mine egne projekter, links og krav som grundlag. Teksten blev derefter tilpasset, så den passer til mit portfolio.
+Det betyder også, at jeg ikke betragter et AI-svar som dokumentation for, at jeg tidligere har udført en aktivitet. Hvis jeg eksempelvis ikke har et reelt testresultat, skal AI ikke opfinde et for mig.
 
-## Min vurdering
-Jeg har kontrolleret indholdet og rettet det, så det hænger sammen med mine egne projekter.
+## Typiske ting jeg har bedt om hjælp til
 
-## Refleksion
-AI kan hjælpe med overblik og sprog, men jeg skal selv kunne forklare indhold, valg, kode og proces til eksamen.
+Jeg har blandt andet arbejdet med spørgsmål i stil med:
+
+- Hvordan får jeg en tydelig rød tråd gennem de fire temaer?
+- Hvad mangler i forhold til eksamenskravene?
+- Hvilke konkrete fejl kan jeg faktisk reflektere over i dette projekt?
+- Stemmer projektbeskrivelsen overens med de filer, der ligger i repository?
+- Hvordan forklarer jeg min JavaScript-kode på en måde jeg selv kan forstå og fremlægge?
+- Er der gamle eller forkerte links i dokumentationen?
+- Hvordan gør jeg det tydeligt, hvad der var mit bidrag i Bird Bar?
+- Hvordan dokumenterer jeg AI-brugen uden at lade som om AI ikke har været involveret?
+
+Det er eksempler på min arbejdsgang og ikke en ordret kopi af hele min chathistorik.
+
+## Et konkret eksempel på samarbejdet
+
+Ved Tema 4 blev kode og dokumentation gennemgået sammen. Der blev fundet forskellige beskrivelser af point og vinderbetingelser. AI hjalp med at pege på uoverensstemmelsen, men refleksionen jeg tager med fra det er min: Når funktionalitet ændres, skal instruktioner og dokumentation følge med.
+
+Et andet eksempel var den sidste afleveringskontrol, hvor gamle henvisninger til `royal-click-fighter.html` og `#grafik` stadig fandtes i interne dokumenter. De passede ikke længere til den aktuelle struktur og blev derfor rettet.
+
+## Hvad AI har hjulpet direkte med i reeksamensportfolioet
+
+- informationsstruktur
+- formulering og sproglig oprydning
+- HTML/CSS/JavaScript-gennemgang
+- README og dokumentationsfiler
+- tjek af filstier og links
+- sammenligning med eksamenskrav
+- tjeklister
+- mundtlige noter
+- kritiske spørgsmål til mine projekter
+- WISEflow-afleveringskontrol
+
+## Hvad jeg selv skal stå på mål for
+
+Jeg skal selv kunne forklare:
+
+- hvad der findes i mine projekter
+- hvorfor jeg traf bestemte designvalg
+- hvordan den kode jeg viser fungerer
+- hvilke fejl jeg har opdaget
+- hvad jeg har lært
+- hvilke dele der er individuelt arbejde, gruppeprocesser eller AI-støtte
+
+Hvis jeg ikke kan forklare en tekst eller en kodeændring, er den ikke nyttig for mig til eksamen.
+
+## Mere detaljeret dokumentation
+
+Den mere komplette samarbejdslog ligger i `ai-og-kildeoversigt.md`.
+
+Ejerskab og bidrag er beskrevet i `ejerskab-og-bidrag.md`.
+
+Ændringerne frem mod reeksamen er samlet i `aendringslog-reeksamen.md`.
