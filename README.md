@@ -74,6 +74,7 @@ Baggrundsnoter, eksamensforberedelse og kontrolfiler ligger i `docs/`.
 - `docs/brug-af-ai.md` - kortere forklaring af min arbejdsform med AI
 - `docs/ejerskab-og-bidrag.md` - skel mellem individuelt arbejde, gruppeprojekt og AI-støtte
 - `docs/aendringslog-reeksamen.md` - hvad jeg ændrede fra den tidligere/generiske version frem mod reeksamen
+- `docs/reeksamen-arbejdslog-2026-08-09.md` - konkret afsluttende arbejdslog med commit-hashes
 - GitHub commit history - teknisk versionshistorik for ændringer i repository
 
 ### Eksamens- og kontrolmateriale
