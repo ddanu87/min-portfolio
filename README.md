@@ -2,68 +2,89 @@
 
 ## Formål
 
-Dette repository indeholder mit portfolio-website til 1. semester på multimediedesign. Portfolioet viser, hvad jeg har lavet, hvordan jeg har arbejdet, og hvad jeg har lært.
+Dette repository indeholder mit portfolio-website til 1. semester på multimediedesign. Portfolioet viser mine produktioner fra semesteret, min arbejdsproces, mine faglige valg, fejl, refleksioner og det, jeg har lært.
 
 ## Links til aflevering
 
 - Live website: https://ddanu87.github.io/min-portfolio/
 - GitHub repository: https://github.com/ddanu87/min-portfolio
 
-## Sider
+## Hovedsider
 
-- `index.html` - forside, introduktion og hurtigt overblik
-- `portfolio.html` - fire projekter fra 1. semester med billeder, links, løsning, proces, læring og refleksion
-- `proces.html` - før, under og efter udviklingen af portfolioet
-- `om-mig.html` - afsender, portræt, uddannelse, kompetencer og refleksion
-- `mobilsite/index.html` - intern Tema 2-løsning for Grundlæggende web / Mobilsite
-- `obbg-figma.html` - Figma, FigJam/proces og kodet site til OBBG.dk
-- `birdbar-figma.html` - Figma-link til Bird Bar
-- `tema-2-mobilsite.html`, `tema-3-emnesite-obbg.html`, `tema-4-animation.html`, `tema-5-virksomhedssite.html` - klikbare dokumentationssider
-- `royal-click-fighter-original/` - Danusans komplette Royal Click Fighter-projekt
+- `index.html` - forside og samlet introduktion
+- `portfolio.html` - de fire semesterprojekter og adgang til værkerne
+- `proces.html` - processen med at samle og udvikle portfolioet
+- `om-mig.html` - afsender, kompetencer og refleksion over 1. semester
 
-## Projekter
+## Semesterprojekter
 
-1. Tema 2 - Grundlæggende web / Mobilsite
-2. Tema 3 - OBBG.dk / emnesite og sandkassesite
-3. Tema 4 - Animation og spil / Royal Click Fighter
-4. Tema 5 - Virksomhedssite/redesign - Bird Bar
+1. **Tema 2 - Grundlæggende web / Computersite**
+   - Original løsning: `mobilsite/`
+   - Proces og refleksion: `tema-2-mobilsite.html`
 
-## Teknologi
+2. **Tema 3 - Grundlæggende UX / OBBG.dk**
+   - Proces og refleksion: `tema-3-emnesite-obbg.html`
+   - Figma/FigJam: `obbg-figma.html`
+   - Kodet prototype: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
 
-- HTML til struktur og semantik
-- CSS til layout, typografi, farver og responsivt design
-- JavaScript til mobilmenu og interaktion
-- Figma/FigJam til design, prototyper og proces
-- GitHub til versionsstyring
-- GitHub Pages til publicering
+3. **Tema 4 - Animation og JavaScript / Royal Click Fighter**
+   - Originalt projekt: `royal-click-fighter-original/`
+   - Spil: `royal-click-fighter-original/spil.html`
+   - Proces og refleksion: `tema-4-animation.html`
+   - Original dokumentation: `royal-click-fighter-original/dokumentation/`
 
-## Assets og dokumentation
+4. **Tema 5 - Virksomhedssite / Bird Bar**
+   - Proces og refleksion: `tema-5-virksomhedssite.html`
+   - Figma-proces: `birdbar-figma.html`
 
-- Portfolioens billeder ligger i `assets/` og bruges via normale filstier eller projektlinks.
-- Den interne Tema 2-løsning ligger i `mobilsite/`.
-- De klikbare dokumentationssider ligger i roden som HTML-sider.
-- Baggrundsnoter og eksamensforberedelse ligger i `docs/`.
+## Fagligt fokus
 
-Vigtige dokumenter:
+Portfolioet dokumenterer progression fra grundlæggende HTML/CSS til UX/UI, JavaScript, animation, brugerforståelse, test, gruppearbejde og refleksion.
 
+Hvert tema skal gøre det muligt at se:
+
+- hvad opgaven gik ud på
+- hvad jeg eller gruppen producerede
+- min konkrete rolle
+- proces og metode
+- tekniske/designmæssige valg
+- fejl og udfordringer
+- hvad jeg lærte
+- hvad jeg ville forbedre i dag
+
+## Teknologi og værktøjer
+
+- HTML og semantisk struktur
+- CSS, Grid, Flexbox og responsivt design
+- JavaScript og DOM-interaktion
+- Figma/FigJam
+- Git og GitHub
+- GitHub Pages
+
+## Dokumentation
+
+Baggrundsnoter, eksamensforberedelse og kontrolfiler ligger i `docs/`.
+
+Centrale filer:
+
+- `docs/eksamenskrav.md`
 - `docs/eksamenstjekliste.md`
-- `docs/mundtlig-disposition.md`
-- `docs/ai-og-kildeoversigt.md`
+- `docs/afleveringsklar-tjekliste.md`
 - `docs/teststatus.md`
-- `docs/tema-2-mobilsite.md`
-- `docs/tema-3-emnesite-obbg.md`
-- `docs/tema-4-animation.md`
-- `docs/tema-5-virksomhedssite.md`
+- `docs/mundtlig-disposition.md`
+- `docs/kodeforklaring.md`
+- `docs/brugertest-og-feedback.md`
+- `docs/ai-og-kildeoversigt.md`
 
 ## AI-brug
 
-AI er brugt som støtte til struktur, formulering, overblik og dokumentation. AI er ikke brugt som erstatning for egne projekter. Indholdet bygger på mine egne studieprojekter og er kontrolleret af mig.
+AI er brugt som støtte til struktur, formulering, fejlfinding, overblik og dokumentation. Semesterprojekterne og det faglige materiale tager udgangspunkt i mine egne studieproduktioner. Jeg er ansvarlig for at kunne forklare indhold, kode, valg og refleksioner ved eksamen.
 
 ## WISEflow
 
-Til WISEflow skal der afleveres en PDF med to klikbare links:
+Afleveringen i WISEflow skal være en PDF med to klikbare links:
 
-1. Live website: https://ddanu87.github.io/min-portfolio/
-2. GitHub repository: https://github.com/ddanu87/min-portfolio
+1. https://ddanu87.github.io/min-portfolio/
+2. https://github.com/ddanu87/min-portfolio
 
-Repository skal være public, og live site og repository skal stemme overens. Efter aflevering må repoet ikke ændres.
+Repository er public. Portfolio-sitet og repository skal stemme overens ved afleveringen. Efter afleveringsfristen må repository ikke ændres.
