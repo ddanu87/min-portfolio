@@ -1,62 +1,81 @@
 # Teststatus
 
-## Testet i repoet
+## Verificeret i repository
+
+Følgende centrale filer og mapper findes på `main` og bruges af den aktuelle portfolio:
 
 - `index.html`
 - `portfolio.html`
 - `proces.html`
 - `om-mig.html`
-- `mobilsite/index.html`
-- `mobilsite/min_computer.html`
-- `mobilsite/operativsystemer.html`
-- `mobilsite/komponenter.html`
-- `mobilsite/galleri.html`
-- `obbg-figma.html`
-- `birdbar-figma.html`
-- `tema-2-mobilsite.html`
-- `tema-2-web.html` videresender til `tema-2-mobilsite.html`
-- `tema-3-emnesite-obbg.html`
-- `tema-4-animation.html`
-- `royal-click-fighter.html`
-- `tema-5-virksomhedssite.html`
 - `style.css`
 - `readability.css`
 - `script.js`
-- dokumentation i `docs/`
+- `mobilsite/`
+- `tema-2-mobilsite.html`
+- `tema-3-emnesite-obbg.html`
+- `obbg-figma.html`
+- `tema-4-animation.html`
+- `royal-click-fighter-original/`
+- `royal-click-fighter-original/index.html`
+- `royal-click-fighter-original/spil.html`
+- `royal-click-fighter-original/dokumentation/`
+- `tema-5-virksomhedssite.html`
+- `birdbar-figma.html`
+- `docs/`
 
-## Rettet
+## Aktuel projektstruktur
 
-- Tema 2 hedder nu “Grundlæggende web”.
-- Tema 2-projektet hedder “Mobilsite / desktop-udbygning”.
-- Mobilsite-projektet er lagt ind internt i `mobilsite/`, så links virker på GitHub Pages.
-- Tema 2 beskriver nu 5 sider, udleveret wireframe/layoutdiagram, to fonte, farver, CSS-opdeling, HTML-validering og noindex.
-- Den gamle side `tema-2-web.html` videresender til den nye Tema 2-dokumentationsside, så gamle links ikke dør.
-- Tema 3 er rettet til OBBG.dk som emnesite/sandkassesite.
-- Tema 3 beskriver selvvalgt emne, 3 designassociationer, centralt budskab, brugerrejse, styletile, storyboard, visuelle elementer, billeder og AI-dokumentation.
-- Tema 4 er intern og stabil med `royal-click-fighter.html`, `tema-4-animation.html#grafik`, `tema-4-animation.html#teknik` og interne SVG-assets.
-- Tema 5 er udbygget med virksomhedssite/redesign-krav: teamkontrakt, SCRUM/Trello, research, prototype, foto, form, custom property, noindex, test og Lighthouse.
-- `portfolio.html` viser nu alle fire projekter med opgave, løsning, proces, læring og refleksion.
-- Dokumentationssiderne har billeder/procesmateriale med forklarende billedtekster.
-- `readability.css` er tilføjet for bedre kontrast på tekst, billedtekster, links og knapper.
-- Alle hovedsider har navigation i et `<header>`-element.
-- Eksterne links bruger `rel="noopener noreferrer"`.
-- AI-brug og kilder er dokumenteret i `docs/ai-og-kildeoversigt.md`.
-- Eksamenskrav og mundtlig disposition er tilføjet i `docs/`.
+### Tema 2
+- Originalværk: `mobilsite/index.html`
+- Dokumentation: `tema-2-mobilsite.html`
 
-## Links der skal kontrolleres i browser før aflevering
+### Tema 3
+- Dokumentation: `tema-3-emnesite-obbg.html`
+- Figma/FigJam: `obbg-figma.html`
+- Kodet prototype: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
+
+### Tema 4
+- Originalprojekt: `royal-click-fighter-original/index.html`
+- Spil: `royal-click-fighter-original/spil.html`
+- Dokumentation: `tema-4-animation.html`
+- Spilflow: `tema-4-animation.html#flow`
+- Teknik: `tema-4-animation.html#teknik`
+- Refleksion: `tema-4-animation.html#refleksion`
+
+### Tema 5
+- Dokumentation: `tema-5-virksomhedssite.html`
+- Figma: `birdbar-figma.html`
+
+## Indholdsmæssig status
+
+- Tema 2 forklarer eget arbejde, konkrete CSS/layoutvalg, problemer og forbedringer.
+- Tema 3 forklarer koncept, UX, frontend, prototypebegrænsninger, fejl og læring.
+- Tema 4 forklarer spilflow, JavaScript/CSS, inkonsistenser i regler/dokumentation og læring.
+- Tema 5 skelner tydeligt mellem gruppens samlede arbejde og mit eget dokumenterede bidrag.
+- Sygdom/fravær beskrives som refleksion over arbejdsproces og rollefordeling.
+- README beskriver den aktuelle struktur og AI-brug.
+- Repository er public og er sat op til GitHub Pages.
+
+## Manuelt browsercheck før aflevering
+
+Disse punkter skal kontrolleres på den publicerede GitHub Pages-version umiddelbart før WISEflow-upload:
+
+1. Forside og hovednavigation.
+2. `portfolio.html`.
+3. Tema 2 originalværk.
+4. Tema 4 originalværk og spil.
+5. OBBG eksternt site.
+6. OBBG Figma/FigJam-link.
+7. Bird Bar Figma-link.
+8. Mobilvisning af hovednavigation og projektkort.
+9. Begge links i afleverings-PDF'en.
+
+## Afleveringslinks
 
 - Live portfolio: https://ddanu87.github.io/min-portfolio/
-- GitHub repo: https://github.com/ddanu87/min-portfolio
-- Intern Tema 2 mobilsite: https://ddanu87.github.io/min-portfolio/mobilsite/index.html
-- Intern Tema 2 dokumentation: https://ddanu87.github.io/min-portfolio/tema-2-mobilsite.html
-- OBBG Figma prototype: https://www.figma.com/proto/0x2RSKlqVBpHzFcGiEQKsw/obbg?page-id=0%3A1&node-id=17-465&p=f&viewport=485%2C1291%2C0.03&t=1lQ5wbO7FVfwLYhr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A465
-- OBBG kodet site: https://obbg.dk/kea/03_ux/01_kodet_site/index.html
-- Intern Tema 4 demo: https://ddanu87.github.io/min-portfolio/royal-click-fighter.html
-- Intern Tema 4 dokumentation: https://ddanu87.github.io/min-portfolio/tema-4-animation.html
-- Bird Bar Figma: https://www.figma.com/design/D3txRVoQ9moesPEuZxYDFn/Virksomhed-site?node-id=0-1&p=f&t=WPAA1Ppk9YOMbGkP-0
+- GitHub repository: https://github.com/ddanu87/min-portfolio
 
-## Klar til aflevering
+## Efter aflevering
 
-Projektet er sat op til aflevering, når GitHub Pages viser de seneste ændringer, og afleverings-PDF'en med de to klikbare links er kontrolleret.
-
-Efter aflevering må repoet ikke ændres, fordi eksamensinformationen siger, at portfolio-site og GitHub repository skal stemme overens ved deadline.
+Når PDF'en er afleveret i WISEflow, må repository ikke ændres. Live portfolio og repository skal fortsat være den version, der blev afleveret.
